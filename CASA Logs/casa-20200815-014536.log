@@ -1,0 +1,18 @@
+2020-08-15 01:45:38	INFO	::casa	
+2020-08-15 01:45:38	INFO	::casa	Checking telemetry submission interval
+2020-08-15 01:45:38	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-08-15 01:45:38	INFO	::casa	Next telemetry data submission in: 6 days, 23:58:17.526730
+2020-08-15 01:45:38	INFO	::casa	CASA Version  5.6.0-60  
+2020-08-15 01:46:02	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename 
+2020-08-15 01:46:02	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2020-08-15 01:46:02	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-08-15 01:47:13	INFO	exportfits::::	
+2020-08-15 01:47:13	INFO	exportfits::::+	##########################################
+2020-08-15 01:47:13	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-08-15 01:47:13	INFO	exportfits::::	exportfits(imagename="W51North_spw_21.image",fitsimage="W51North_spw_21.fits",velocity=False,optical=False,bitpix=-32,
+2020-08-15 01:47:13	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-08-15 01:47:13	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-08-15 01:47:14	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-08-15 01:47:14	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2020-08-15 01:47:17	INFO	exportfits::::	##### End Task: exportfits           #####
+2020-08-15 01:47:17	INFO	exportfits::::+	##########################################

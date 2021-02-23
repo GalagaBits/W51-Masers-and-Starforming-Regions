@@ -1,0 +1,6 @@
+2020-06-16 21:33:41	INFO	::casa	
+2020-06-16 21:33:41	INFO	::casa	Checking telemetry submission interval
+2020-06-16 21:33:41	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-2ac1d82432ad2983d0.stamp
+2020-06-16 21:33:41	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-06-16 21:33:41	INFO	::casa	Next telemetry data submission in: 6 days, 23:59:59.995990
+2020-06-16 21:33:41	INFO	::casa	CASA Version  5.6.0-60  

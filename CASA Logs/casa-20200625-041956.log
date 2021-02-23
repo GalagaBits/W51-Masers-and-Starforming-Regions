@@ -1,0 +1,8 @@
+2020-06-25 04:20:01	INFO	::casa	
+2020-06-25 04:20:01	INFO	::casa	Checking telemetry submission interval
+2020-06-25 04:20:01	INFO	::casa	Telemetry submit interval reached, submitting telemetry data.
+2020-06-25 04:20:01	INFO	::casa	Couldn't create telemetry tarfile
+2020-06-25 04:20:01	INFO	::casa	[Errno 28] No space left on device: '/home/dealderod/.casa/telemetry-2ac1d82432ad2983d0-20200625002001.tar.gz'
+2020-06-25 04:20:01	INFO	::casa	Couldn't remove  /home/dealderod/.casa/telemetry-2ac1d82432ad2983d0-20200625002001.tar.gz
+2020-06-25 04:20:01	INFO	::casa	[Errno 2] No such file or directory: '/home/dealderod/.casa/telemetry-2ac1d82432ad2983d0-20200625002001.tar.gz'
+2020-06-25 04:20:01	INFO	::casa	CASA Version  5.6.0-60  

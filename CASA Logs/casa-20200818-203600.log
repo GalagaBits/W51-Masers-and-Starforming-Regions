@@ -1,0 +1,15 @@
+2020-08-18 20:36:03	INFO	::casa	
+2020-08-18 20:36:03	INFO	::casa	Checking telemetry submission interval
+2020-08-18 20:36:03	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-08-18 20:36:03	INFO	::casa	Next telemetry data submission in: 6 days, 23:55:08.086546
+2020-08-18 20:36:03	INFO	::casa	CASA Version  5.6.0-60  
+2020-08-18 20:36:36	INFO	exportfits::::	
+2020-08-18 20:36:36	INFO	exportfits::::+	##########################################
+2020-08-18 20:36:36	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-08-18 20:36:36	INFO	exportfits::::	exportfits(imagename="W51North_spw_27.image",fitsimage="W51North_spw_27.fits",velocity=False,optical=False,bitpix=-32,
+2020-08-18 20:36:36	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-08-18 20:36:36	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-08-18 20:36:37	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-08-18 20:36:37	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2020-08-18 20:36:40	INFO	exportfits::::	##### End Task: exportfits           #####
+2020-08-18 20:36:40	INFO	exportfits::::+	##########################################

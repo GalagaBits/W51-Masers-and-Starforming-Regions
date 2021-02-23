@@ -1,0 +1,627 @@
+2020-06-14 03:39:42	INFO	::casa	
+2020-06-14 03:39:42	INFO	::casa	Checking telemetry submission interval
+2020-06-14 03:39:42	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-06-14 03:39:42	INFO	::casa	Next telemetry data submission in: 5 days, 16:07:41.713327
+2020-06-14 03:39:42	INFO	::casa	CASA Version  5.6.0-60  
+2020-06-14 03:57:18	INFO	tclean::::	
+2020-06-14 03:57:18	INFO	tclean::::+	##########################################
+2020-06-14 03:57:18	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-06-14 03:57:18	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="3",timerange="",
+2020-06-14 03:57:18	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-06-14 03:57:18	INFO	tclean::::+	        datacolumn="corrected",imagename="W51 North_spw=3_2",imsize=100,cell="0.05arcsec",phasecenter="",
+2020-06-14 03:57:18	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-06-14 03:57:18	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-06-14 03:57:18	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-06-14 03:57:18	INFO	tclean::::+	        psfphasecenter="",chanchunks=1,wprojplanes=1,vptable="",mosweight=True,
+2020-06-14 03:57:18	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-06-14 03:57:18	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-06-14 03:57:18	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-06-14 03:57:18	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="briggs",
+2020-06-14 03:57:18	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=0,
+2020-06-14 03:57:18	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-06-14 03:57:18	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-06-14 03:57:18	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-06-14 03:57:18	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-06-14 03:57:18	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-06-14 03:57:18	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-06-14 03:57:18	INFO	tclean::::	Verifying Input Parameters
+2020-06-14 03:57:20	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :3 | [Opened in readonly mode]
+2020-06-14 03:57:22	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-14 03:57:25	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)	Leap second table TAI_UTC seems out-of-date.
+2020-06-14 03:57:25	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	Until the table is updated (see the CASA documentation or your system admin),
+2020-06-14 03:57:25	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	times and coordinates derived from UTC could be wrong by 1s or more.
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51 North_spw=3_2] : 
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.26838e+10 Hz
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 512
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 7.99967e+06 Hz
+2020-06-14 03:57:26	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.26798e+10 Hz, upper edge = 2.26878e+10 Hz
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::defineImage 	Shape : [100, 100, 1, 512]Spectral : [2.26798e+10] at [0] with increment [15624.4]
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51 North_spw=3_2] with ftmachine : gridft
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Briggs weighting: sidelobes will be suppressed over full image
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::weight() 	Doing spectral cube Briggs weighting formula --  norm
+2020-06-14 03:57:26	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-06-14 03:57:26	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :3 | [Opened in readonly mode]
+2020-06-14 03:57:27	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-14 03:57:28	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51 North_spw=3_2] : hogbom
+2020-06-14 03:57:28	INFO	SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-06-14 04:01:17	INFO	tclean::::	
+2020-06-14 04:01:17	INFO	tclean::::+	##########################################
+2020-06-14 04:01:17	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-06-14 04:01:17	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="3",timerange="",
+2020-06-14 04:01:17	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-06-14 04:01:17	INFO	tclean::::+	        datacolumn="corrected",imagename="W51 North_spw=3_2",imsize=100,cell="0.05arcsec",phasecenter="",
+2020-06-14 04:01:17	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-06-14 04:01:17	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-06-14 04:01:17	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-06-14 04:01:17	INFO	tclean::::+	        psfphasecenter="",chanchunks=1,wprojplanes=1,vptable="",mosweight=True,
+2020-06-14 04:01:17	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-06-14 04:01:17	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-06-14 04:01:17	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-06-14 04:01:17	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="briggs",
+2020-06-14 04:01:17	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=0,
+2020-06-14 04:01:17	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-06-14 04:01:17	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-06-14 04:01:17	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-06-14 04:01:17	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-06-14 04:01:17	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=False,restart=True,savemodel="none",
+2020-06-14 04:01:17	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-06-14 04:01:17	INFO	tclean::::	Verifying Input Parameters
+2020-06-14 04:01:17	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :3 | [Opened in readonly mode]
+2020-06-14 04:01:18	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51 North_spw=3_2] : 
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.26838e+10 Hz
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 512
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 7.99967e+06 Hz
+2020-06-14 04:01:19	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.26798e+10 Hz, upper edge = 2.26878e+10 Hz
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::defineImage 	Shape : [100, 100, 1, 512]Spectral : [2.26798e+10] at [0] with increment [15624.4]
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51 North_spw=3_2] with ftmachine : gridft
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Briggs weighting: sidelobes will be suppressed over full image
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::weight() 	Doing spectral cube Briggs weighting formula --  norm
+2020-06-14 04:01:19	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-06-14 04:01:19	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :3 | [Opened in readonly mode]
+2020-06-14 04:01:21	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-14 04:01:21	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51 North_spw=3_2] : hogbom
+2020-06-14 04:01:21	INFO	SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-06-14 04:03:54	INFO	SIImageStore::calcSensitivity 	[W51 North_spw=3_2] Theoretical sensitivity (Jy/bm):c0:none c1:none c2:none c3:none c4:none c5:none c6:none c7:none c8:none c9:none c10:none c11:none c12:none c13:none c14:none c15:none c16:none c17:none c18:none c19:none c20:none c21:none c22:none c23:none c24:none c25:none c26:0.00476357 c27:0.00476935 c28:0.00475982 c29:0.00476038 c30:0.00476041 c31:0.00474859 c32:0.00469692 c33:0.00469161 c34:0.00469739 c35:0.00469877 c36:0.00469754 c37:0.00470274 c38:0.00469828 c39:0.00469566 c40:0.00474082 c41:0.00473819 c42:0.0047397 c43:0.00473941 c44:0.00468896 c45:0.00468456 c46:0.00468293 c47:0.00468441 c48:0.00468565 c49:0.0046881 c50:0.00468726 c51:0.00468568 c52:0.004685 c53:0.00468038 c54:0.0046854 c55:0.00469082 c56:0.0047368 c57:0.00474202 c58:0.00473431 c59:0.00468778 c60:0.00469152 c61:0.00468702 c62:0.0046875 c63:0.00468374 c64:0.0046778 c65:0.00468179 c66:0.00468719 c67:0.00468906 c68:0.00468691 c69:0.00468007 c70:0.00467701 c71:0.00468398 c72:0.00469161 c73:0.00468515 c74:0.00467754 c75:0.00467497 c76:0.00468336 c77:0.00468632 c78:0.00473415 c79:0.00473387 c80:0.00468653 c81:0.00469093 c82:0.00473758 c83:0.00473727 c84:0.00468358 c85:0.00467852 c86:0.00468519 c87:0.00469033 c88:0.00469036 c89:0.00468441 c90:0.0046781 c91:0.00468489 c92:0.00473163 c93:0.00472992 c94:0.00467967 c95:0.00467726 c96:0.00468053 c97:0.0046794 c98:0.00468045 c99:0.00468846 c100:0.00468588 c101:0.00468034 c102:0.0046767 c103:0.00467932 c104:0.00468653 c105:0.00468368 c106:0.00472917 c107:0.00472879 c108:0.00468135 c109:0.00467792 c110:0.00468056 c111:0.00468126 c112:0.00468212 c113:0.00468525 c114:0.00468425 c115:0.00468578 c116:0.00473067 c117:0.0047273 c118:0.00467848 c119:0.00467739 c120:0.00467403 c121:0.00467352 c122:0.0046844 c123:0.00469402 c124:0.00469005 c125:0.00468728 c126:0.0046899 c127:0.00468463 c128:0.00467898 c129:0.00467773 c130:0.00468416 c131:0.00468732 c132:0.00468818 c133:0.00468543 c134:0.00467898 c135:0.00467993 c136:0.00468018 c137:0.00467562 c138:0.00467539 c139:0.00468312 c140:0.00468339 c141:0.00468608 c142:0.00468809 c143:0.00468614 c144:0.004688 c145:0.00468661 c146:0.00468945 c147:0.00469124 c148:0.0047355 c149:0.00474357 c150:0.00473446 c151:0.0046881 c152:0.00468482 c153:0.00468658 c154:0.00468414 c155:0.00468312 c156:0.00468964 c157:0.0046894 c158:0.00469138 c159:0.00469423 c160:0.00469221 c161:0.0046939 c162:0.00469145 c163:0.00469216 c164:0.00468909 c165:0.00468356 c166:0.00468047 c167:0.00468569 c168:0.00469002 c169:0.0046869 c170:0.00468633 c171:0.00468417 c172:0.00473305 c173:0.00474298 c174:0.00473101 c175:0.00467687 c176:0.00467769 c177:0.00468347 c178:0.00468339 c179:0.00468199 c180:0.00468784 c181:0.00469284 c182:0.00468756 c183:0.00468118 c184:0.00468525 c185:0.00469035 c186:0.00469133 c187:0.00468869 c188:0.00468639 c189:0.00468865 c190:0.00468752 c191:0.00468876 c192:0.00473274 c193:0.00474053 c194:0.00473401 c195:0.00473276 c196:0.00473251 c197:0.00468368 c198:0.00468652 c199:0.00468989 c200:0.00468607 c201:0.00467827 c202:0.00467696 c203:0.00467622 c204:0.00467644 c205:0.00468194 c206:0.00468711 c207:0.00468316 c208:0.00467347 c209:0.00467163 c210:0.00467569 c211:0.00468126 c212:0.00468276 c213:0.00468646 c214:0.0046853 c215:0.00468185 c216:0.00468445 c217:0.00473133 c218:0.0047306 c219:0.00468151 c220:0.00467894 c221:0.00467723 c222:0.00467595 c223:0.00467774 c224:0.00467809 c225:0.00467565 c226:0.00468298 c227:0.00468688 c228:0.00468379 c229:0.00467952 c230:0.00468265 c231:0.00468636 c232:0.00468073 c233:0.00468132 c234:0.00468198 c235:0.00468351 c236:0.00468157 c237:0.00468371 c238:0.00468437 c239:0.00468368 c240:0.00468072 c241:0.00467859 c242:0.00468185 c243:0.00468713 c244:0.00469103 c245:0.00468767 c246:0.00468766 c247:0.00468718 c248:0.00468459 c249:0.00468 c250:0.00467823 c251:0.00468106 c252:0.00468145 c253:0.00467836 c254:0.00468048 c255:0.00468481 c256:0.00467881 c257:0.00467578 c258:0.00468208 c259:0.0046853 c260:0.00468203 c261:0.00467833 c262:0.00473136 c263:0.00473452 c264:0.00468499 c265:0.00468021 c266:0.0046747 c267:0.00467427 c268:0.00468024 c269:0.00467915 c270:0.00467471 c271:0.00467655 c272:0.00468145 c273:0.00467998 c274:0.00467948 c275:0.00468114 c276:0.00468957 c277:0.0046907 c278:0.00468785 c279:0.00468532 c280:0.00468155 c281:0.00468432 c282:0.00468284 c283:0.00468103 c284:0.00467745 c285:0.00467815 c286:0.00467992 c287:0.00468025 c288:0.0046867 c289:0.00468796 c290:0.00469064 c291:0.00468762 c292:0.00468575 c293:0.0046837 c294:0.00468255 c295:0.00473178 c296:0.00473901 c297:0.00472925 c298:0.00467801 c299:0.0046811 c300:0.00468724 c301:0.0047352 c302:0.00474246 c303:0.00473898 c304:0.00473125 c305:0.00468353 c306:0.00468083 c307:0.00468228 c308:0.00467837 c309:0.00467945 c310:0.00468392 c311:0.00468437 c312:0.00468115 c313:0.00467971 c314:0.00468134 c315:0.00468176 c316:0.00468287 c317:0.00467931 c318:0.00468175 c319:0.00468588 c320:0.00468574 c321:0.00468426 c322:0.00468186 c323:0.00468267 c324:0.00468242 c325:0.00468153 c326:0.00468451 c327:0.00468443 c328:0.00468418 c329:0.00467809 c330:0.00467504 c331:0.00473056 c332:0.00473053 c333:0.00467718 c334:0.00467355 c335:0.00467581 c336:0.00467485 c337:0.00467504 c338:0.0046783 c339:0.0046847 c340:0.00468844 c341:0.00473155 c342:0.00473048 c343:0.0046818 c344:0.00467809 c345:0.00467778 c346:0.00468157 c347:0.00468924 c348:0.00473652 c349:0.00474097 c350:0.00473158 c351:0.00468591 c352:0.00468594 c353:0.00469351 c354:0.00469565 c355:0.00468938 c356:0.00468118 c357:0.00468318 c358:0.00468762 c359:0.00468667 c360:0.00468785 c361:0.00468921 c362:0.00468863 c363:0.0046856 c364:0.00468023 c365:0.00467472 c366:0.00467804 c367:0.00468393 c368:0.00468887 c369:0.00468665 c370:0.00473677 c371:0.00474445 c372:0.00473223 c373:0.00468133 c374:0.0046797 c375:0.00468212 c376:0.0046854 c377:0.00473588 c378:0.00473507 c379:0.00468883 c380:0.00468814 c381:0.00469068 c382:0.0047342 c383:0.00473285 c384:0.00468997 c385:0.00469355 c386:0.00469548 c387:0.00468798 c388:0.00468223 c389:0.00468079 c390:0.0046843 c391:0.00468995 c392:0.00469234 c393:0.00469014 c394:0.00468387 c395:0.00468071 c396:0.00468462 c397:0.00469125 c398:0.00468999 c399:0.00469121 c400:0.00469435 c401:0.00473783 c402:0.00473511 c403:0.00469028 c404:0.00468884 c405:0.00468691 c406:0.00468668 c407:0.00469068 c408:0.00473786 c409:0.00474428 c410:0.00473079 c411:0.00468105 c412:0.00468254 c413:0.00468594 c414:0.00469213 c415:0.00469139 c416:0.00468698 c417:0.00468473 c418:0.00468675 c419:0.0046901 c420:0.00468815 c421:0.00468407 c422:0.00473586 c423:0.00473878 c424:0.0046947 c425:0.00469043 c426:0.00468946 c427:0.00469315 c428:0.00473204 c429:0.00473678 c430:0.00472629 c431:0.00467854 c432:0.00467796 c433:0.00468057 c434:0.0046824 c435:0.00467941 c436:0.00467935 c437:0.00468778 c438:0.00468931 c439:0.00468379 c440:0.00473215 c441:0.00473322 c442:0.00468748 c443:0.00468718 c444:0.00468234 c445:0.00468155 c446:0.0046899 c447:0.00473565 c448:0.00472998 c449:0.00468109 c450:0.0046861 c451:0.004689 c452:0.00468633 c453:0.00468823 c454:0.00468533 c455:0.00468198 c456:0.00468702 c457:0.00473662 c458:0.00474489 c459:0.00473602 c460:0.00473747 c461:0.00474796 c462:0.00474988 c463:0.00474573 c464:0.00473685 c465:0.00473419 c466:0.00473751 c467:0.00474062 c468:0.00474587 c469:0.00474234 c470:0.00470743 c471:0.00471174 c472:0.00475875 c473:0.00475423 c474:0.00470408 c475:0.00474703 c476:0.00476038 c477:0.00477199 c478:0.00477289 c479:0.0047647 c480:0.00475126 c481:0.0047074 c482:0.00471407 c483:0.00476542 c484:0.00477543 c485:0.00477734 c486:0.0047814 c487:none c488:none c489:none c490:none c491:none c492:none c493:none c494:none c495:none c496:none c497:none c498:none c499:none c500:none c501:none c502:none c503:none c504:none c505:none c506:none c507:none c508:none c509:none c510:none c511:none 
+2020-06-14 04:03:54	WARN	SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-06-14 04:03:54	INFO	SIImageStore::printBeamSet 	Restoring Beams 
+2020-06-14 04:03:54	INFO	SIImageStore::printBeamSet +	Pol   Type Chan          Freq     Vel
+2020-06-14 04:03:54	INFO	SIImageStore::printBeamSet +	  I    Max    0 2.2679774e+10 12838.36    0.1272 arcsec x    0.0670 arcsec pa= 44.5552 deg
+2020-06-14 04:03:54	INFO	SIImageStore::printBeamSet +	  I    Min  173 2.2682477e+10 12804.16    0.1266 arcsec x    0.0663 arcsec pa= 44.8143 deg
+2020-06-14 04:03:54	INFO	SIImageStore::printBeamSet +	  I Median  305 2.2684540e+10 12778.06    0.1271 arcsec x    0.0669 arcsec pa= 44.7206 deg
+2020-06-14 04:03:55	INFO	task_tclean::SynthesisImagerVi2::makePrimaryBeam 	vi2 : Evaluating Primary Beam model onto image grid(s)
+2020-06-14 04:03:58	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run (Last) Major Cycle 1 -------------------------------------
+2020-06-14 04:06:17	INFO	task_tclean::SDAlgorithmBase::restore 	[W51 North_spw=3_2] : Restoring model image.
+2020-06-14 04:06:17	WARN	task_tclean::SIImageStore::restore (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 2068)	Restoring with an empty model image. Only residuals will be processed to form the output restored image.
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 0 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 1 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 2 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 3 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 4 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 5 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 6 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 7 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 8 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 9 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 10 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 11 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 12 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 13 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 14 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 15 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 16 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 17 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 18 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 19 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 20 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 21 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 22 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 23 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 24 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 25 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 26 : 0.126839 arcsec, 0.0666367 arcsec, 44.5506 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 27 : 0.126746 arcsec, 0.066548 arcsec, 44.3955 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 28 : 0.126742 arcsec, 0.0665397 arcsec, 44.4183 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 29 : 0.126725 arcsec, 0.0665049 arcsec, 44.5284 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 30 : 0.12669 arcsec, 0.0664575 arcsec, 44.5751 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 31 : 0.12682 arcsec, 0.066603 arcsec, 44.6306 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 32 : 0.127103 arcsec, 0.0669576 arcsec, 44.5037 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 33 : 0.127131 arcsec, 0.0669863 arcsec, 44.5296 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 34 : 0.127074 arcsec, 0.0669033 arcsec, 44.6438 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 35 : 0.127062 arcsec, 0.066894 arcsec, 44.611 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 36 : 0.127065 arcsec, 0.0669019 arcsec, 44.5762 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 37 : 0.127008 arcsec, 0.0668347 arcsec, 44.5747 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 38 : 0.127063 arcsec, 0.0669061 arcsec, 44.5302 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 39 : 0.127087 arcsec, 0.0669338 arcsec, 44.5337 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 40 : 0.126806 arcsec, 0.06658 arcsec, 44.6848 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 41 : 0.126818 arcsec, 0.0665867 arcsec, 44.7325 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 42 : 0.126785 arcsec, 0.0665393 arcsec, 44.7952 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 43 : 0.126792 arcsec, 0.0665447 arcsec, 44.8206 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 44 : 0.127062 arcsec, 0.0668917 arcsec, 44.6235 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 45 : 0.127107 arcsec, 0.066943 arcsec, 44.6412 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 46 : 0.127113 arcsec, 0.0669476 arcsec, 44.6592 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 47 : 0.127111 arcsec, 0.0669434 arcsec, 44.6694 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 48 : 0.127121 arcsec, 0.066953 arcsec, 44.6897 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 49 : 0.127085 arcsec, 0.0669071 arcsec, 44.7168 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 50 : 0.127084 arcsec, 0.0669101 arcsec, 44.6815 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 51 : 0.127064 arcsec, 0.0668899 arcsec, 44.6519 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 52 : 0.127058 arcsec, 0.0668869 arcsec, 44.6297 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 53 : 0.127092 arcsec, 0.0669324 arcsec, 44.5919 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 54 : 0.127086 arcsec, 0.0669184 arcsec, 44.6421 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 55 : 0.127076 arcsec, 0.0669115 arcsec, 44.6005 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 56 : 0.126798 arcsec, 0.0665601 arcsec, 44.7593 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 57 : 0.12667 arcsec, 0.0664135 arcsec, 44.7226 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 58 : 0.126809 arcsec, 0.0665729 arcsec, 44.7571 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 59 : 0.12708 arcsec, 0.066929 arcsec, 44.5082 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 60 : 0.127074 arcsec, 0.0669187 arcsec, 44.5302 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 61 : 0.127118 arcsec, 0.0669682 arcsec, 44.5481 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 62 : 0.127116 arcsec, 0.0669684 arcsec, 44.5296 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 63 : 0.127128 arcsec, 0.0669757 arcsec, 44.5879 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 64 : 0.127125 arcsec, 0.0669661 arcsec, 44.6262 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 65 : 0.127101 arcsec, 0.0669355 arcsec, 44.6449 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 66 : 0.127057 arcsec, 0.0668738 arcsec, 44.7106 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 67 : 0.127051 arcsec, 0.0668637 arcsec, 44.7316 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 68 : 0.127039 arcsec, 0.0668495 arcsec, 44.737 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 69 : 0.127096 arcsec, 0.0669263 arcsec, 44.665 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 70 : 0.127115 arcsec, 0.0669603 arcsec, 44.5854 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 71 : 0.127084 arcsec, 0.0669197 arcsec, 44.6113 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 72 : 0.127044 arcsec, 0.0668667 arcsec, 44.6504 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 73 : 0.127108 arcsec, 0.066944 arcsec, 44.6431 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 74 : 0.127138 arcsec, 0.0669843 arcsec, 44.61 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 75 : 0.127146 arcsec, 0.0669888 arcsec, 44.6489 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 76 : 0.12708 arcsec, 0.0669076 arcsec, 44.6658 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 77 : 0.12707 arcsec, 0.0668934 arcsec, 44.6804 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 78 : 0.126753 arcsec, 0.0664911 arcsec, 44.8736 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 79 : 0.126777 arcsec, 0.0665186 arcsec, 44.8784 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 80 : 0.127059 arcsec, 0.0668818 arcsec, 44.6725 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 81 : 0.127052 arcsec, 0.066872 arcsec, 44.6785 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 82 : 0.126761 arcsec, 0.0665043 arcsec, 44.8418 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 83 : 0.126818 arcsec, 0.0665864 arcsec, 44.7349 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 84 : 0.127157 arcsec, 0.067021 arcsec, 44.5069 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 85 : 0.127147 arcsec, 0.0670097 arcsec, 44.4998 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 86 : 0.127096 arcsec, 0.0669372 arcsec, 44.5886 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 87 : 0.127023 arcsec, 0.0668418 arcsec, 44.6553 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 88 : 0.127037 arcsec, 0.0668549 arcsec, 44.6759 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 89 : 0.127083 arcsec, 0.0669149 arcsec, 44.6364 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 90 : 0.127122 arcsec, 0.0669626 arcsec, 44.6295 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 91 : 0.12707 arcsec, 0.0668928 arcsec, 44.69 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 92 : 0.126739 arcsec, 0.0664748 arcsec, 44.8711 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 93 : 0.126784 arcsec, 0.0665227 arcsec, 44.9053 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 94 : 0.127081 arcsec, 0.0669048 arcsec, 44.6923 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 95 : 0.12709 arcsec, 0.0669207 arcsec, 44.6551 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 96 : 0.127102 arcsec, 0.0669314 arcsec, 44.6828 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 97 : 0.127111 arcsec, 0.0669426 arcsec, 44.6786 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 98 : 0.127103 arcsec, 0.066936 arcsec, 44.6548 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 99 : 0.127072 arcsec, 0.0669031 arcsec, 44.6303 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 100 : 0.127109 arcsec, 0.0669576 arcsec, 44.5529 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 101 : 0.127162 arcsec, 0.0670326 arcsec, 44.461 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 102 : 0.127144 arcsec, 0.0670042 arcsec, 44.5195 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 103 : 0.127119 arcsec, 0.0669577 arcsec, 44.6372 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 104 : 0.127071 arcsec, 0.0668978 arcsec, 44.6559 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 105 : 0.127074 arcsec, 0.0668985 arcsec, 44.6833 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 106 : 0.126784 arcsec, 0.0665339 arcsec, 44.8262 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 107 : 0.126816 arcsec, 0.0665776 arcsec, 44.7879 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 108 : 0.127093 arcsec, 0.0669301 arcsec, 44.6127 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 109 : 0.127109 arcsec, 0.0669456 arcsec, 44.6387 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 110 : 0.127102 arcsec, 0.0669382 arcsec, 44.6339 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 111 : 0.127091 arcsec, 0.0669222 arcsec, 44.6578 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 112 : 0.127092 arcsec, 0.0669191 arcsec, 44.6834 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 113 : 0.127057 arcsec, 0.0668786 arcsec, 44.6788 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 114 : 0.127075 arcsec, 0.0669023 arcsec, 44.6645 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 115 : 0.127049 arcsec, 0.0668693 arcsec, 44.6787 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 116 : 0.126747 arcsec, 0.066481 arcsec, 44.891 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 117 : 0.126784 arcsec, 0.0665218 arcsec, 44.9114 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 118 : 0.127089 arcsec, 0.0669177 arcsec, 44.6694 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 119 : 0.127121 arcsec, 0.0669605 arcsec, 44.6375 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 120 : 0.127142 arcsec, 0.066983 arcsec, 44.6499 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 121 : 0.127128 arcsec, 0.0669616 arcsec, 44.6875 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 122 : 0.127052 arcsec, 0.0668707 arcsec, 44.6952 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 123 : 0.127008 arcsec, 0.0668223 arcsec, 44.6672 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 124 : 0.127075 arcsec, 0.0669048 arcsec, 44.6395 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 125 : 0.127092 arcsec, 0.066922 arcsec, 44.6669 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 126 : 0.127055 arcsec, 0.0668722 arcsec, 44.7044 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 127 : 0.127065 arcsec, 0.0668887 arcsec, 44.6704 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 128 : 0.12709 arcsec, 0.0669232 arcsec, 44.6405 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 129 : 0.1271 arcsec, 0.0669308 arcsec, 44.6703 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 130 : 0.127074 arcsec, 0.0669014 arcsec, 44.6564 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 131 : 0.127077 arcsec, 0.0669086 arcsec, 44.6315 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 132 : 0.127075 arcsec, 0.0669087 arcsec, 44.6119 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 133 : 0.127103 arcsec, 0.066949 arcsec, 44.563 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 134 : 0.127134 arcsec, 0.0669832 arcsec, 44.5799 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 135 : 0.127113 arcsec, 0.0669468 arcsec, 44.6619 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 136 : 0.127113 arcsec, 0.0669442 arcsec, 44.6868 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 137 : 0.127148 arcsec, 0.0669983 arcsec, 44.5964 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 138 : 0.127169 arcsec, 0.0670225 arcsec, 44.6 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 139 : 0.127097 arcsec, 0.066934 arcsec, 44.6198 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 140 : 0.127117 arcsec, 0.0669629 arcsec, 44.5869 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 141 : 0.1271 arcsec, 0.0669393 arcsec, 44.6037 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 142 : 0.127042 arcsec, 0.0668616 arcsec, 44.668 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 143 : 0.127057 arcsec, 0.0668783 arcsec, 44.6797 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 144 : 0.127025 arcsec, 0.0668325 arcsec, 44.736 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 145 : 0.127068 arcsec, 0.066892 arcsec, 44.6714 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 146 : 0.127112 arcsec, 0.0669514 arcsec, 44.6196 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 147 : 0.127086 arcsec, 0.0669232 arcsec, 44.6028 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 148 : 0.126775 arcsec, 0.0665262 arcsec, 44.8031 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 149 : 0.12664 arcsec, 0.0663678 arcsec, 44.7979 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 150 : 0.126757 arcsec, 0.0664963 arcsec, 44.8637 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 151 : 0.127067 arcsec, 0.0668952 arcsec, 44.6443 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 152 : 0.12711 arcsec, 0.066954 arcsec, 44.584 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 153 : 0.127112 arcsec, 0.0669637 arcsec, 44.5348 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 154 : 0.127122 arcsec, 0.0669731 arcsec, 44.5514 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 155 : 0.127092 arcsec, 0.0669287 arcsec, 44.6141 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 156 : 0.127037 arcsec, 0.0668649 arcsec, 44.6071 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 157 : 0.127074 arcsec, 0.0669093 arcsec, 44.5982 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 158 : 0.127061 arcsec, 0.0668993 arcsec, 44.5647 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 159 : 0.127024 arcsec, 0.0668411 arcsec, 44.6624 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 160 : 0.12704 arcsec, 0.0668646 arcsec, 44.6278 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 161 : 0.127044 arcsec, 0.0668763 arcsec, 44.5835 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 162 : 0.127065 arcsec, 0.066897 arcsec, 44.6109 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 163 : 0.127044 arcsec, 0.0668622 arcsec, 44.6888 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 164 : 0.127053 arcsec, 0.0668734 arcsec, 44.6796 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 165 : 0.127073 arcsec, 0.0668982 arcsec, 44.6744 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 166 : 0.127084 arcsec, 0.0669099 arcsec, 44.6855 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 167 : 0.127034 arcsec, 0.0668506 arcsec, 44.6786 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 168 : 0.127034 arcsec, 0.0668551 arcsec, 44.6537 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 169 : 0.127103 arcsec, 0.0669471 arcsec, 44.5782 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 170 : 0.127131 arcsec, 0.066981 arcsec, 44.5715 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 171 : 0.127102 arcsec, 0.0669379 arcsec, 44.6342 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 172 : 0.126766 arcsec, 0.0665105 arcsec, 44.8379 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 173 : 0.126618 arcsec, 0.0663387 arcsec, 44.8143 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 174 : 0.1268 arcsec, 0.0665436 arcsec, 44.8964 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 175 : 0.127123 arcsec, 0.0669564 arcsec, 44.6817 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 176 : 0.127102 arcsec, 0.066931 arcsec, 44.6856 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 177 : 0.127081 arcsec, 0.0669157 arcsec, 44.6159 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 178 : 0.127106 arcsec, 0.0669439 arcsec, 44.6241 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 179 : 0.127094 arcsec, 0.0669278 arcsec, 44.6382 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 180 : 0.127062 arcsec, 0.0668936 arcsec, 44.6149 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 181 : 0.127038 arcsec, 0.0668638 arcsec, 44.6214 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 182 : 0.127072 arcsec, 0.0669014 arcsec, 44.6427 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 183 : 0.127111 arcsec, 0.0669434 arcsec, 44.6763 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 184 : 0.127083 arcsec, 0.0669093 arcsec, 44.6822 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 185 : 0.127078 arcsec, 0.0669004 arcsec, 44.7033 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 186 : 0.127064 arcsec, 0.0668899 arcsec, 44.658 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 187 : 0.127059 arcsec, 0.0668795 arcsec, 44.6887 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 188 : 0.127029 arcsec, 0.066836 arcsec, 44.7473 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 189 : 0.127012 arcsec, 0.0668173 arcsec, 44.7318 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 190 : 0.127057 arcsec, 0.0668832 arcsec, 44.6476 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 191 : 0.127065 arcsec, 0.0668944 arcsec, 44.6321 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 192 : 0.12676 arcsec, 0.0665033 arcsec, 44.8451 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 193 : 0.126651 arcsec, 0.0663834 arcsec, 44.7744 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 194 : 0.12678 arcsec, 0.0665296 arcsec, 44.8256 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 195 : 0.126772 arcsec, 0.0665205 arcsec, 44.82 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 196 : 0.126791 arcsec, 0.0665469 arcsec, 44.7896 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 197 : 0.127101 arcsec, 0.0669394 arcsec, 44.6144 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 198 : 0.127087 arcsec, 0.0669187 arcsec, 44.6424 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 199 : 0.12706 arcsec, 0.0668919 arcsec, 44.6091 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 200 : 0.127082 arcsec, 0.0669144 arcsec, 44.6351 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 201 : 0.127128 arcsec, 0.0669616 arcsec, 44.6879 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 202 : 0.127126 arcsec, 0.0669658 arcsec, 44.6402 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 203 : 0.127144 arcsec, 0.0669934 arcsec, 44.5921 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 204 : 0.127138 arcsec, 0.0669821 arcsec, 44.6226 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 205 : 0.127088 arcsec, 0.0669128 arcsec, 44.6987 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 206 : 0.127049 arcsec, 0.0668625 arcsec, 44.7258 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 207 : 0.127071 arcsec, 0.0668875 arcsec, 44.7368 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 208 : 0.127147 arcsec, 0.066986 arcsec, 44.6792 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 209 : 0.12715 arcsec, 0.0669909 arcsec, 44.6626 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 210 : 0.127136 arcsec, 0.0669795 arcsec, 44.6308 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 211 : 0.127122 arcsec, 0.0669598 arcsec, 44.6464 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 212 : 0.127104 arcsec, 0.0669311 arcsec, 44.706 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 213 : 0.127088 arcsec, 0.0669127 arcsec, 44.6954 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 214 : 0.127102 arcsec, 0.0669316 arcsec, 44.6841 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 215 : 0.127115 arcsec, 0.0669518 arcsec, 44.6458 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 216 : 0.127086 arcsec, 0.0669122 arcsec, 44.6831 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 217 : 0.126748 arcsec, 0.066491 arcsec, 44.8308 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 218 : 0.126818 arcsec, 0.0665745 arcsec, 44.8232 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 219 : 0.127082 arcsec, 0.0669121 arcsec, 44.6522 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 220 : 0.127105 arcsec, 0.0669308 arcsec, 44.7096 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 221 : 0.127098 arcsec, 0.0669234 arcsec, 44.7037 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 222 : 0.127115 arcsec, 0.0669482 arcsec, 44.6756 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 223 : 0.127084 arcsec, 0.0669113 arcsec, 44.6759 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 224 : 0.12709 arcsec, 0.0669167 arcsec, 44.6886 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 225 : 0.127116 arcsec, 0.0669482 arcsec, 44.6854 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 226 : 0.127086 arcsec, 0.0669102 arcsec, 44.6957 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 227 : 0.127094 arcsec, 0.0669223 arcsec, 44.6806 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 228 : 0.127102 arcsec, 0.0669301 arcsec, 44.6941 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 229 : 0.127093 arcsec, 0.066914 arcsec, 44.7326 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 230 : 0.127059 arcsec, 0.066879 arcsec, 44.6963 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 231 : 0.127057 arcsec, 0.066882 arcsec, 44.6496 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 232 : 0.127111 arcsec, 0.0669481 arcsec, 44.6406 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 233 : 0.127115 arcsec, 0.0669498 arcsec, 44.6636 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 234 : 0.127076 arcsec, 0.0669008 arcsec, 44.6798 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 235 : 0.12705 arcsec, 0.0668663 arcsec, 44.7091 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 236 : 0.127061 arcsec, 0.0668807 arcsec, 44.6984 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 237 : 0.127088 arcsec, 0.0669187 arcsec, 44.6559 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 238 : 0.127085 arcsec, 0.0669101 arcsec, 44.6913 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 239 : 0.12706 arcsec, 0.0668798 arcsec, 44.6988 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 240 : 0.127095 arcsec, 0.0669236 arcsec, 44.6785 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 241 : 0.127109 arcsec, 0.0669448 arcsec, 44.6478 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 242 : 0.127088 arcsec, 0.066918 arcsec, 44.6633 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 243 : 0.127064 arcsec, 0.0668882 arcsec, 44.6725 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 244 : 0.127019 arcsec, 0.0668282 arcsec, 44.7131 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 245 : 0.12703 arcsec, 0.0668458 arcsec, 44.6807 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 246 : 0.127049 arcsec, 0.0668693 arcsec, 44.6766 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 247 : 0.127048 arcsec, 0.0668715 arcsec, 44.6548 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 248 : 0.127071 arcsec, 0.0669005 arcsec, 44.6434 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 249 : 0.127107 arcsec, 0.0669382 arcsec, 44.6739 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 250 : 0.127102 arcsec, 0.0669276 arcsec, 44.7136 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 251 : 0.127073 arcsec, 0.0668923 arcsec, 44.7181 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 252 : 0.127072 arcsec, 0.0668877 arcsec, 44.7431 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 253 : 0.127085 arcsec, 0.0669108 arcsec, 44.6823 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 254 : 0.127082 arcsec, 0.0669034 arcsec, 44.7109 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 255 : 0.127065 arcsec, 0.0668806 arcsec, 44.7318 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 256 : 0.127083 arcsec, 0.0669026 arcsec, 44.7252 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 257 : 0.127111 arcsec, 0.0669358 arcsec, 44.7291 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 258 : 0.12708 arcsec, 0.066905 arcsec, 44.6844 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 259 : 0.127069 arcsec, 0.0668894 arcsec, 44.705 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 260 : 0.127077 arcsec, 0.0668952 arcsec, 44.731 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 261 : 0.127087 arcsec, 0.0669077 arcsec, 44.7259 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 262 : 0.126757 arcsec, 0.066498 arcsec, 44.8549 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 263 : 0.126797 arcsec, 0.0665483 arcsec, 44.8341 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 264 : 0.127068 arcsec, 0.0668895 arcsec, 44.6913 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 265 : 0.127084 arcsec, 0.0669067 arcsec, 44.7094 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 266 : 0.127128 arcsec, 0.0669611 arcsec, 44.6919 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 267 : 0.127154 arcsec, 0.0669979 arcsec, 44.6467 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 268 : 0.127117 arcsec, 0.066961 arcsec, 44.6007 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 269 : 0.127104 arcsec, 0.0669407 arcsec, 44.6346 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 270 : 0.127104 arcsec, 0.0669404 arcsec, 44.6361 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 271 : 0.127107 arcsec, 0.0669392 arcsec, 44.6683 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 272 : 0.127077 arcsec, 0.0668973 arcsec, 44.7109 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 273 : 0.127113 arcsec, 0.0669446 arcsec, 44.6831 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 274 : 0.127097 arcsec, 0.0669258 arcsec, 44.6828 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 275 : 0.127084 arcsec, 0.0669114 arcsec, 44.6686 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 276 : 0.12701 arcsec, 0.0668217 arcsec, 44.6896 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 277 : 0.127014 arcsec, 0.0668217 arcsec, 44.7185 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 278 : 0.127038 arcsec, 0.06685 arcsec, 44.7236 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 279 : 0.127043 arcsec, 0.0668572 arcsec, 44.7141 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 280 : 0.12707 arcsec, 0.0668937 arcsec, 44.6807 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 281 : 0.12708 arcsec, 0.0669082 arcsec, 44.6571 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 282 : 0.127116 arcsec, 0.0669464 arcsec, 44.6949 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 283 : 0.127118 arcsec, 0.0669504 arcsec, 44.6824 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 284 : 0.127115 arcsec, 0.0669485 arcsec, 44.6743 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 285 : 0.127095 arcsec, 0.0669223 arcsec, 44.6879 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 286 : 0.127078 arcsec, 0.0669006 arcsec, 44.6954 deg
+2020-06-14 04:06:17	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 287 : 0.127078 arcsec, 0.0668989 arcsec, 44.7087 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 288 : 0.12704 arcsec, 0.0668523 arcsec, 44.7191 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 289 : 0.127059 arcsec, 0.0668835 arcsec, 44.6628 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 290 : 0.12703 arcsec, 0.0668435 arcsec, 44.6985 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 291 : 0.127037 arcsec, 0.0668517 arcsec, 44.7035 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 292 : 0.127021 arcsec, 0.0668312 arcsec, 44.715 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 293 : 0.127046 arcsec, 0.0668653 arcsec, 44.6807 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 294 : 0.12708 arcsec, 0.0669143 arcsec, 44.6196 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 295 : 0.126793 arcsec, 0.0665446 arcsec, 44.8241 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 296 : 0.126662 arcsec, 0.0663924 arcsec, 44.8059 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 297 : 0.126803 arcsec, 0.0665453 arcsec, 44.9061 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 298 : 0.127113 arcsec, 0.0669406 arcsec, 44.7107 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 299 : 0.127095 arcsec, 0.0669204 arcsec, 44.7053 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 300 : 0.127045 arcsec, 0.0668647 arcsec, 44.6766 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 301 : 0.126755 arcsec, 0.0664962 arcsec, 44.8541 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 302 : 0.126655 arcsec, 0.0663854 arcsec, 44.7945 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 303 : 0.126661 arcsec, 0.0663885 arcsec, 44.822 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 304 : 0.126766 arcsec, 0.0665015 arcsec, 44.9103 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 305 : 0.127082 arcsec, 0.066902 arcsec, 44.7206 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 306 : 0.127107 arcsec, 0.0669382 arcsec, 44.6742 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 307 : 0.127067 arcsec, 0.0668903 arcsec, 44.6772 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 308 : 0.127111 arcsec, 0.0669392 arcsec, 44.7073 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 309 : 0.127109 arcsec, 0.0669263 arcsec, 44.7777 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 310 : 0.127056 arcsec, 0.0668701 arcsec, 44.7346 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 311 : 0.127072 arcsec, 0.0668989 arcsec, 44.659 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 312 : 0.127101 arcsec, 0.066937 arcsec, 44.6356 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 313 : 0.127116 arcsec, 0.0669471 arcsec, 44.6878 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 314 : 0.127082 arcsec, 0.0669034 arcsec, 44.717 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 315 : 0.12709 arcsec, 0.0669161 arcsec, 44.6878 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 316 : 0.127101 arcsec, 0.066937 arcsec, 44.6323 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 317 : 0.127137 arcsec, 0.0669857 arcsec, 44.5902 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 318 : 0.12714 arcsec, 0.0669917 arcsec, 44.5691 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 319 : 0.12713 arcsec, 0.0669746 arcsec, 44.6061 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 320 : 0.127082 arcsec, 0.0669085 arcsec, 44.6786 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 321 : 0.127074 arcsec, 0.0668927 arcsec, 44.7189 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 322 : 0.127088 arcsec, 0.0669051 arcsec, 44.7542 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 323 : 0.127053 arcsec, 0.0668645 arcsec, 44.7494 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 324 : 0.127041 arcsec, 0.0668501 arcsec, 44.7499 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 325 : 0.127053 arcsec, 0.0668655 arcsec, 44.7399 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 326 : 0.127052 arcsec, 0.0668659 arcsec, 44.7298 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 327 : 0.127048 arcsec, 0.0668652 arcsec, 44.6951 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 328 : 0.12708 arcsec, 0.0669086 arcsec, 44.6571 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 329 : 0.127104 arcsec, 0.0669306 arcsec, 44.7078 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 330 : 0.127117 arcsec, 0.0669443 arcsec, 44.7213 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 331 : 0.126775 arcsec, 0.066507 arcsec, 44.9483 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 332 : 0.126786 arcsec, 0.0665239 arcsec, 44.9176 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 333 : 0.12711 arcsec, 0.0669438 arcsec, 44.6661 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 334 : 0.127133 arcsec, 0.0669703 arcsec, 44.6694 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 335 : 0.127128 arcsec, 0.066962 arcsec, 44.6884 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 336 : 0.127125 arcsec, 0.0669587 arcsec, 44.6861 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 337 : 0.127132 arcsec, 0.0669746 arcsec, 44.6235 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 338 : 0.12714 arcsec, 0.0669808 arcsec, 44.6478 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 339 : 0.127078 arcsec, 0.0669 arcsec, 44.7004 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 340 : 0.127045 arcsec, 0.0668592 arcsec, 44.7154 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 341 : 0.126751 arcsec, 0.0664836 arcsec, 44.907 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 342 : 0.126758 arcsec, 0.0664901 arcsec, 44.9241 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 343 : 0.127081 arcsec, 0.0668942 arcsec, 44.7692 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 344 : 0.127101 arcsec, 0.0669222 arcsec, 44.7448 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 345 : 0.127115 arcsec, 0.0669392 arcsec, 44.7356 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 346 : 0.127095 arcsec, 0.0669217 arcsec, 44.6953 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 347 : 0.12706 arcsec, 0.0668901 arcsec, 44.6171 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 348 : 0.126751 arcsec, 0.0665024 arcsec, 44.7739 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 349 : 0.126641 arcsec, 0.0663645 arcsec, 44.8244 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 350 : 0.126782 arcsec, 0.0665304 arcsec, 44.8395 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 351 : 0.127106 arcsec, 0.0669477 arcsec, 44.5944 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 352 : 0.127086 arcsec, 0.0669257 arcsec, 44.5844 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 353 : 0.127078 arcsec, 0.0669226 arcsec, 44.5405 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 354 : 0.127065 arcsec, 0.0669028 arcsec, 44.5707 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 355 : 0.127083 arcsec, 0.0669174 arcsec, 44.624 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 356 : 0.127092 arcsec, 0.0669197 arcsec, 44.6846 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 357 : 0.127079 arcsec, 0.0669 arcsec, 44.7117 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 358 : 0.127046 arcsec, 0.0668604 arcsec, 44.7182 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 359 : 0.127072 arcsec, 0.0668941 arcsec, 44.6961 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 360 : 0.127078 arcsec, 0.0669055 arcsec, 44.662 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 361 : 0.127096 arcsec, 0.0669295 arcsec, 44.6435 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 362 : 0.12707 arcsec, 0.0668916 arcsec, 44.6947 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 363 : 0.12707 arcsec, 0.0668907 arcsec, 44.7066 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 364 : 0.127123 arcsec, 0.0669631 arcsec, 44.6327 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 365 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 366 : 0.127164 arcsec, 0.0670249 arcsec, 44.5399 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 367 : 0.127132 arcsec, 0.0669764 arcsec, 44.614 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 368 : 0.127074 arcsec, 0.066898 arcsec, 44.681 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 369 : 0.127086 arcsec, 0.0669186 arcsec, 44.6335 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 370 : 0.126791 arcsec, 0.066545 arcsec, 44.8072 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 371 : 0.126672 arcsec, 0.0664064 arcsec, 44.7925 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 372 : 0.126803 arcsec, 0.0665451 arcsec, 44.9084 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 373 : 0.127101 arcsec, 0.0669233 arcsec, 44.738 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 374 : 0.127106 arcsec, 0.0669243 arcsec, 44.7722 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 375 : 0.127114 arcsec, 0.0669397 arcsec, 44.7275 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 376 : 0.127116 arcsec, 0.0669419 arcsec, 44.7298 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 377 : 0.126757 arcsec, 0.06649 arcsec, 44.9104 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 378 : 0.126788 arcsec, 0.0665327 arcsec, 44.8679 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 379 : 0.127039 arcsec, 0.0668573 arcsec, 44.6744 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 380 : 0.127059 arcsec, 0.0668798 arcsec, 44.6821 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 381 : 0.127028 arcsec, 0.0668398 arcsec, 44.7111 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 382 : 0.126738 arcsec, 0.0664682 arcsec, 44.9091 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 383 : 0.126759 arcsec, 0.0664955 arcsec, 44.8929 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 384 : 0.12702 arcsec, 0.0668296 arcsec, 44.7147 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 385 : 0.127014 arcsec, 0.0668202 arcsec, 44.7277 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 386 : 0.127018 arcsec, 0.0668231 arcsec, 44.7407 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 387 : 0.127071 arcsec, 0.0668911 arcsec, 44.7048 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 388 : 0.127102 arcsec, 0.0669239 arcsec, 44.7362 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 389 : 0.127092 arcsec, 0.0669089 arcsec, 44.7584 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 390 : 0.12707 arcsec, 0.0668848 arcsec, 44.7492 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 391 : 0.127019 arcsec, 0.0668244 arcsec, 44.7479 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 392 : 0.126986 arcsec, 0.0667831 arcsec, 44.7611 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 393 : 0.127013 arcsec, 0.0668141 arcsec, 44.764 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 394 : 0.127085 arcsec, 0.0669032 arcsec, 44.7424 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 395 : 0.127118 arcsec, 0.06695 arcsec, 44.6842 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 396 : 0.127076 arcsec, 0.0668978 arcsec, 44.6985 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 397 : 0.12703 arcsec, 0.0668435 arcsec, 44.6998 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 398 : 0.127043 arcsec, 0.0668679 arcsec, 44.6367 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 399 : 0.127048 arcsec, 0.0668704 arcsec, 44.6614 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 400 : 0.127037 arcsec, 0.0668521 arcsec, 44.694 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 401 : 0.126743 arcsec, 0.0664807 arcsec, 44.8606 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 402 : 0.126775 arcsec, 0.0665162 arcsec, 44.8742 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 403 : 0.12701 arcsec, 0.0668098 arcsec, 44.7706 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 404 : 0.127029 arcsec, 0.0668316 arcsec, 44.7789 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 405 : 0.127073 arcsec, 0.0668866 arcsec, 44.7608 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 406 : 0.127085 arcsec, 0.0669012 arcsec, 44.7556 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 407 : 0.127051 arcsec, 0.0668611 arcsec, 44.7531 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 408 : 0.126744 arcsec, 0.0664743 arcsec, 44.9183 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 409 : 0.126629 arcsec, 0.0663388 arcsec, 44.9089 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 410 : 0.12679 arcsec, 0.0665281 arcsec, 44.9226 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 411 : 0.127079 arcsec, 0.0669059 arcsec, 44.6732 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 412 : 0.127072 arcsec, 0.0668962 arcsec, 44.6779 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 413 : 0.127053 arcsec, 0.0668671 arcsec, 44.7255 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 414 : 0.127007 arcsec, 0.0668113 arcsec, 44.7381 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 415 : 0.127031 arcsec, 0.0668347 arcsec, 44.7734 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 416 : 0.127076 arcsec, 0.0668888 arcsec, 44.7697 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 417 : 0.127082 arcsec, 0.0668973 arcsec, 44.7586 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 418 : 0.127074 arcsec, 0.0668925 arcsec, 44.726 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 419 : 0.127065 arcsec, 0.0668835 arcsec, 44.7143 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 420 : 0.127051 arcsec, 0.0668625 arcsec, 44.7417 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 421 : 0.127057 arcsec, 0.0668725 arcsec, 44.7237 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 422 : 0.126748 arcsec, 0.0664799 arcsec, 44.9108 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 423 : 0.126764 arcsec, 0.0665044 arcsec, 44.8732 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 424 : 0.127042 arcsec, 0.0668577 arcsec, 44.701 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 425 : 0.127059 arcsec, 0.0668814 arcsec, 44.6705 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 426 : 0.127047 arcsec, 0.066865 arcsec, 44.6938 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 427 : 0.126996 arcsec, 0.0667966 arcsec, 44.7501 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 428 : 0.12673 arcsec, 0.0664575 arcsec, 44.9143 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 429 : 0.126645 arcsec, 0.0663623 arcsec, 44.8746 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 430 : 0.126792 arcsec, 0.0665268 arcsec, 44.9503 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 431 : 0.127088 arcsec, 0.0669076 arcsec, 44.7366 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 432 : 0.127099 arcsec, 0.0669234 arcsec, 44.7199 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 433 : 0.127087 arcsec, 0.0669109 arcsec, 44.7068 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 434 : 0.12708 arcsec, 0.0668992 arcsec, 44.7259 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 435 : 0.127067 arcsec, 0.0668818 arcsec, 44.7401 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 436 : 0.127069 arcsec, 0.0668801 arcsec, 44.7691 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 437 : 0.127038 arcsec, 0.0668418 arcsec, 44.7776 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 438 : 0.127052 arcsec, 0.0668635 arcsec, 44.743 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 439 : 0.127067 arcsec, 0.0668821 arcsec, 44.7402 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 440 : 0.126766 arcsec, 0.0664984 arcsec, 44.9263 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 441 : 0.126765 arcsec, 0.0665007 arcsec, 44.9077 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 442 : 0.127072 arcsec, 0.0668868 arcsec, 44.75 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 443 : 0.127053 arcsec, 0.0668619 arcsec, 44.7628 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 444 : 0.127102 arcsec, 0.0669204 arcsec, 44.7654 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 445 : 0.127115 arcsec, 0.0669438 arcsec, 44.7016 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 446 : 0.127107 arcsec, 0.0669488 arcsec, 44.5999 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 447 : 0.126803 arcsec, 0.0665674 arcsec, 44.7503 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 448 : 0.126836 arcsec, 0.0665944 arcsec, 44.8327 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 449 : 0.127133 arcsec, 0.0669695 arcsec, 44.6716 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 450 : 0.127093 arcsec, 0.0669108 arcsec, 44.7562 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 451 : 0.127069 arcsec, 0.0668782 arcsec, 44.7819 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 452 : 0.127078 arcsec, 0.0669022 arcsec, 44.6873 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 453 : 0.127085 arcsec, 0.0669113 arcsec, 44.6808 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 454 : 0.127083 arcsec, 0.0669126 arcsec, 44.6575 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 455 : 0.127118 arcsec, 0.0669542 arcsec, 44.6585 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 456 : 0.1271 arcsec, 0.0669259 arcsec, 44.7021 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 457 : 0.126763 arcsec, 0.0664972 arcsec, 44.9106 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 458 : 0.126654 arcsec, 0.0663847 arcsec, 44.7895 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 459 : 0.126791 arcsec, 0.0665344 arcsec, 44.8822 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 460 : 0.126753 arcsec, 0.0664926 arcsec, 44.8639 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 461 : 0.126642 arcsec, 0.0663755 arcsec, 44.7518 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 462 : 0.126652 arcsec, 0.0663837 arcsec, 44.7838 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 463 : 0.126654 arcsec, 0.0663764 arcsec, 44.8484 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 464 : 0.12677 arcsec, 0.0665068 arcsec, 44.9027 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 465 : 0.126739 arcsec, 0.0664658 arcsec, 44.9322 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 466 : 0.126663 arcsec, 0.0663814 arcsec, 44.8897 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 467 : 0.126677 arcsec, 0.0664022 arcsec, 44.8588 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 468 : 0.126669 arcsec, 0.066393 arcsec, 44.8568 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 469 : 0.126747 arcsec, 0.0664822 arcsec, 44.8853 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 470 : 0.127001 arcsec, 0.0668054 arcsec, 44.7279 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 471 : 0.127017 arcsec, 0.0668313 arcsec, 44.6764 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 472 : 0.126745 arcsec, 0.0664916 arcsec, 44.7978 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 473 : 0.12679 arcsec, 0.0665354 arcsec, 44.8642 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 474 : 0.127075 arcsec, 0.0669074 arcsec, 44.6243 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 475 : 0.12677 arcsec, 0.0665133 arcsec, 44.8532 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 476 : 0.126645 arcsec, 0.0663802 arcsec, 44.7457 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 477 : 0.126636 arcsec, 0.066377 arcsec, 44.6906 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 478 : 0.126698 arcsec, 0.0664661 arcsec, 44.5805 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 479 : 0.126716 arcsec, 0.066482 arcsec, 44.6162 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 480 : 0.12681 arcsec, 0.0665839 arcsec, 44.6892 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 481 : 0.127075 arcsec, 0.0669332 arcsec, 44.436 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 482 : 0.127079 arcsec, 0.0669414 arcsec, 44.4072 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 483 : 0.126804 arcsec, 0.0665927 arcsec, 44.5712 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 484 : 0.126667 arcsec, 0.0664205 arcsec, 44.6437 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 485 : 0.12665 arcsec, 0.0663864 arcsec, 44.7445 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 486 : 0.126623 arcsec, 0.0663522 arcsec, 44.7623 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 487 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 488 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 489 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 490 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 491 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 492 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 493 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 494 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 495 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 496 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 497 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 498 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 499 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 500 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 501 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 502 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 503 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 504 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 505 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 506 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 507 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 508 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 509 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 510 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:18	INFO	task_tclean::SIImageStore::restore 	Beam for chan : 511 : 0.127176 arcsec, 0.0670365 arcsec, 44.5552 deg
+2020-06-14 04:06:19	INFO	tclean::::	##### End Task: tclean               #####
+2020-06-14 04:06:19	INFO	tclean::::+	##########################################
+2020-06-14 04:08:45	INFO	viewer::::	
+2020-06-14 04:08:45	INFO	viewer::::+	##########################################
+2020-06-14 04:08:45	INFO	viewer::::+	##### Begin Task: viewer             #####
+2020-06-14 04:08:45	INFO	viewer::::	viewer(infile="",displaytype="raster",channel=0,zoom=1,outfile="",
+2020-06-14 04:08:45	INFO	viewer::::+	        outscale=1.0,outdpi=300,outformat="jpg",outlandscape=False,gui=True)
+2020-06-14 04:08:46	SEVERE	viewer::::	An error occurred running task viewer.
+2020-06-14 04:09:49	INFO	viewer::::	
+2020-06-14 04:09:49	INFO	viewer::::+	##########################################
+2020-06-14 04:09:49	INFO	viewer::::+	##### Begin Task: viewer             #####
+2020-06-14 04:09:49	INFO	viewer::::	viewer(infile="",displaytype="raster",channel=0,zoom=1,outfile="",
+2020-06-14 04:09:49	INFO	viewer::::+	        outscale=1.0,outdpi=300,outformat="jpg",outlandscape=False,gui=True)
+2020-06-14 04:09:49	SEVERE	viewer::::	An error occurred running task viewer.

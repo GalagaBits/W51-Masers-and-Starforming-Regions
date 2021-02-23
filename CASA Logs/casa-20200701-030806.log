@@ -1,0 +1,25 @@
+2020-07-01 03:08:48	INFO	::casa	
+2020-07-01 03:08:48	INFO	::casa	Checking telemetry submission interval
+2020-07-01 03:08:48	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-07-01 03:08:48	INFO	::casa	Next telemetry data submission in: 2 days, 10:14:12.966017
+2020-07-01 03:08:48	INFO	::casa	CASA Version  5.6.0-60  
+2020-07-01 03:17:42	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename 
+2020-07-01 03:17:42	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2020-07-01 03:17:42	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-07-01 03:18:22	INFO	exportfits::::	
+2020-07-01 03:18:22	INFO	exportfits::::+	##########################################
+2020-07-01 03:18:22	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-07-01 03:18:22	INFO	exportfits::::	exportfits(imagename="W51North_spw_6_1.image",fitsimage="",velocity=False,optical=False,bitpix=-32,
+2020-07-01 03:18:22	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-07-01 03:18:22	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-07-01 03:18:26	SEVERE	exportfits::image::tofits (file ../../tools/images/image_cmpt.cc, line 6211)	Exception Reported: Exception: fitsfile must be specified.
+2020-07-01 03:18:26	SEVERE	exportfits::image::tofits (file ../../tools/images/image_cmpt.cc, line 6211)+	... thrown by bool casac::image::tofits(const string&, bool, bool, int, double, double, const casac::variant&, const casac::variant&, bool, bool, bool, bool, bool, bool, bool, bool, bool) at File: ../../tools/images/image_cmpt.cc, line: 6220
+2020-07-01 03:18:26	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-07-01 03:19:07	INFO	exportfits::::	
+2020-07-01 03:19:07	INFO	exportfits::::+	##########################################
+2020-07-01 03:19:07	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-07-01 03:19:07	INFO	exportfits::::	exportfits(imagename="W51North_spw_6_1.image",fitsimage="W51 North_spw=5_1.fits",velocity=False,optical=False,bitpix=-32,
+2020-07-01 03:19:07	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-07-01 03:19:07	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-07-01 03:19:07	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-07-01 03:19:07	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh

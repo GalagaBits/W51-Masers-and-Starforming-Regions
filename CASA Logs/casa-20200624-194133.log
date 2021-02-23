@@ -1,0 +1,641 @@
+2020-06-24 19:41:37	INFO	::casa	
+2020-06-24 19:41:37	INFO	::casa	Checking telemetry submission interval
+2020-06-24 19:41:37	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-06-24 19:41:37	INFO	::casa	Next telemetry data submission in: 6 days, 23:51:12.665512
+2020-06-24 19:41:37	INFO	::casa	CASA Version  5.6.0-60  
+2020-06-24 19:49:21	INFO	tclean::::	
+2020-06-24 19:49:21	INFO	tclean::::+	##########################################
+2020-06-24 19:49:21	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-06-24 19:49:21	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="6",timerange="",
+2020-06-24 19:49:21	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-06-24 19:49:21	INFO	tclean::::+	        datacolumn="corrected",imagename="spw_6",imsize=1000,cell="0.05arcsec",phasecenter="",
+2020-06-24 19:49:21	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-06-24 19:49:21	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-06-24 19:49:21	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-06-24 19:49:21	INFO	tclean::::+	        psfphasecenter="",chanchunks=1,wprojplanes=1,vptable="",mosweight=True,
+2020-06-24 19:49:21	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-06-24 19:49:21	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-06-24 19:49:21	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-06-24 19:49:21	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="natural",
+2020-06-24 19:49:21	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=100000,
+2020-06-24 19:49:21	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-06-24 19:49:21	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-06-24 19:49:21	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-06-24 19:49:21	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-06-24 19:49:21	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-06-24 19:49:21	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-06-24 19:49:21	INFO	tclean::::	Verifying Input Parameters
+2020-06-24 19:49:24	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :6 | [Opened in readonly mode]
+2020-06-24 19:49:26	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-24 19:49:26	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)	Leap second table TAI_UTC seems out-of-date.
+2020-06-24 19:49:26	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	Until the table is updated (see the CASA documentation or your system admin),
+2020-06-24 19:49:26	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	times and coordinates derived from UTC could be wrong by 1s or more.
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [spw_6] : 
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.29203e+10 Hz
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 512
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 7.99967e+06 Hz
+2020-06-24 19:49:27	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.29163e+10 Hz, upper edge = 2.29243e+10 Hz
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::defineImage 	Shape : [1000, 1000, 1, 512]Spectral : [2.29163e+10] at [0] with increment [15624.4]
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [spw_6] with ftmachine : gridft
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Natural weighting
+2020-06-24 19:49:27	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-06-24 19:49:27	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :6 | [Opened in readonly mode]
+2020-06-24 19:49:29	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-06-24 19:49:29	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [spw_6] : hogbom
+2020-06-24 19:49:29	INFO	SynthesisIterBot::setupIteration 	Set Iteration Control Options
+2020-06-24 19:49:29	INFO	task_tclean::SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-06-24 19:53:40	INFO	task_tclean::SIImageStore::calcSensitivity 	[spw_6] Theoretical sensitivity (Jy/bm):c0:none c1:none c2:none c3:none c4:none c5:none c6:none c7:none c8:none c9:none c10:none c11:none c12:none c13:none c14:none c15:none c16:none c17:none c18:none c19:none c20:none c21:none c22:none c23:none c24:none c25:none c26:0.00315363 c27:0.00313214 c28:0.0031477 c29:0.00314661 c30:0.00314382 c31:0.00314483 c32:0.00314083 c33:0.00311464 c34:0.0031056 c35:0.00310763 c36:0.00311095 c37:0.00312008 c38:0.00313749 c39:0.00313764 c40:0.00311685 c41:0.00311344 c42:0.00310981 c43:0.00310466 c44:0.00310444 c45:0.00310643 c46:0.00312864 c47:0.00312618 c48:0.00311004 c49:0.00311174 c50:0.00311456 c51:0.00311229 c52:0.00310657 c53:0.00310155 c54:0.00309673 c55:0.00309479 c56:0.00309904 c57:0.0031035 c58:0.00310259 c59:0.00309511 c60:0.00309382 c61:0.00309613 c62:0.00310064 c63:0.00309777 c64:0.00309461 c65:0.00309728 c66:0.00310374 c67:0.00311031 c68:0.00310826 c69:0.00310122 c70:0.00310565 c71:0.00311046 c72:0.00310929 c73:0.00310297 c74:0.00309945 c75:0.00309946 c76:0.00309702 c77:0.00310219 c78:0.00311144 c79:0.00310804 c80:0.00309619 c81:0.0030988 c82:0.00310703 c83:0.00310872 c84:0.00310403 c85:0.00310006 c86:0.00309763 c87:0.0030975 c88:0.0030994 c89:0.00310588 c90:0.00310702 c91:0.00310115 c92:0.00310512 c93:0.00310509 c94:0.00309791 c95:0.00309996 c96:0.00309897 c97:0.00310418 c98:0.00310807 c99:0.00310393 c100:0.00310311 c101:0.003107 c102:0.00310484 c103:0.00310359 c104:0.00312397 c105:0.00312315 c106:0.0031091 c107:0.00310636 c108:0.00311393 c109:0.0031131 c110:0.00310583 c111:0.0031036 c112:0.00309841 c113:0.00309544 c114:0.00309847 c115:0.00310241 c116:0.00310501 c117:0.00310091 c118:0.00309364 c119:0.00309279 c120:0.00309639 c121:0.0031075 c122:0.00311126 c123:0.00310606 c124:0.00309805 c125:0.00309958 c126:0.00310128 c127:0.0030985 c128:0.00309875 c129:0.00310611 c130:0.0031234 c131:0.00312244 c132:0.00312177 c133:0.00309494 c134:0.00309061 c135:0.00309043 c136:0.00308884 c137:0.0030944 c138:0.00310626 c139:0.0031076 c140:0.00310149 c141:0.00309902 c142:0.00310144 c143:0.00310566 c144:0.00310808 c145:0.00310599 c146:0.00310301 c147:0.00310167 c148:0.00309617 c149:0.00309924 c150:0.00310491 c151:0.00310137 c152:0.00310047 c153:0.00310156 c154:0.00309428 c155:0.00308917 c156:0.00309023 c157:0.00309593 c158:0.00309812 c159:0.00310376 c160:0.00310815 c161:0.00310862 c162:0.00311286 c163:0.00311002 c164:0.00309972 c165:0.00309496 c166:0.00309858 c167:0.00310137 c168:0.00310826 c169:0.00311139 c170:0.00310312 c171:0.00309312 c172:0.00309538 c173:0.00310337 c174:0.00311006 c175:0.00311118 c176:0.00310629 c177:0.00309913 c178:0.00309294 c179:0.00310134 c180:0.00310578 c181:0.0031008 c182:0.00312011 c183:0.00312223 c184:0.0031071 c185:0.00309455 c186:0.00309718 c187:0.0030999 c188:0.0030947 c189:0.00309009 c190:0.00309363 c191:0.00310444 c192:0.00310616 c193:0.00310656 c194:0.00310623 c195:0.00309841 c196:0.00309942 c197:0.00309848 c198:0.00309681 c199:0.00309935 c200:0.00309946 c201:0.00309757 c202:0.00309938 c203:0.00309741 c204:0.00309206 c205:0.00309652 c206:0.00309926 c207:0.00310216 c208:0.00310619 c209:0.00310693 c210:0.00310582 c211:0.00310367 c212:0.0031013 c213:0.0030991 c214:0.00310144 c215:0.00309995 c216:0.00309642 c217:0.00310509 c218:0.0031042 c219:0.00309247 c220:0.00309765 c221:0.00310075 c222:0.00309658 c223:0.00309672 c224:0.00309757 c225:0.00309673 c226:0.00309518 c227:0.00309717 c228:0.00309886 c229:0.0030998 c230:0.00309849 c231:0.00309925 c232:0.00310562 c233:0.00310755 c234:0.00310894 c235:0.00310605 c236:0.00309951 c237:0.00310023 c238:0.00310068 c239:0.00309753 c240:0.00309553 c241:0.00309395 c242:0.00309336 c243:0.00309805 c244:0.00310138 c245:0.00310065 c246:0.00309904 c247:0.00310129 c248:0.00310885 c249:0.00310839 c250:0.00310341 c251:0.00309677 c252:0.00309045 c253:0.00309333 c254:0.00309809 c255:0.00310733 c256:0.00311057 c257:0.00310356 c258:0.00309571 c259:0.00309571 c260:0.0030984 c261:0.00310218 c262:0.00310644 c263:0.00310136 c264:0.00309121 c265:0.00309741 c266:0.00311746 c267:0.00311954 c268:0.00312227 c269:0.00311055 c270:0.00310434 c271:0.00310519 c272:0.00310159 c273:0.00309878 c274:0.00310912 c275:0.00310986 c276:0.00310287 c277:0.00309722 c278:0.00309777 c279:0.00310167 c280:0.00310515 c281:0.00310557 c282:0.00310449 c283:0.00310266 c284:0.00309987 c285:0.00309654 c286:0.00309699 c287:0.0031002 c288:0.00310282 c289:0.003101 c290:0.0030976 c291:0.00310306 c292:0.00310403 c293:0.00309732 c294:0.00309589 c295:0.00309606 c296:0.00309952 c297:0.00309986 c298:0.00309654 c299:0.00310069 c300:0.00310079 c301:0.00310268 c302:0.00310165 c303:0.00309506 c304:0.00310146 c305:0.00311282 c306:0.00310985 c307:0.00310239 c308:0.0031066 c309:0.00311031 c310:0.0031208 c311:0.00312044 c312:0.00310133 c313:0.00309827 c314:0.00309372 c315:0.00309332 c316:0.00309517 c317:0.00309927 c318:0.00309873 c319:0.00309668 c320:0.00309535 c321:0.00309861 c322:0.00310267 c323:0.00310165 c324:0.00310019 c325:0.00309971 c326:0.00309898 c327:0.00309795 c328:0.00310011 c329:0.00310338 c330:0.00310048 c331:0.00309555 c332:0.00309517 c333:0.00309693 c334:0.00309811 c335:0.00309677 c336:0.00309617 c337:0.00309293 c338:0.00308766 c339:0.00309099 c340:0.0031044 c341:0.00311169 c342:0.00310697 c343:0.00309843 c344:0.00310409 c345:0.00310329 c346:0.00309582 c347:0.00309491 c348:0.00309768 c349:0.00310135 c350:0.00309995 c351:0.00309797 c352:0.00310343 c353:0.00310316 c354:0.00310285 c355:0.00310749 c356:0.00310539 c357:0.00310003 c358:0.00310119 c359:0.00310745 c360:0.00311349 c361:0.00311031 c362:0.0031033 c363:0.00310305 c364:0.00310103 c365:0.0030985 c366:0.00309804 c367:0.00310196 c368:0.00310522 c369:0.00310164 c370:0.00309933 c371:0.00310128 c372:0.00309897 c373:0.00309536 c374:0.00309711 c375:0.00309606 c376:0.00310021 c377:0.00310326 c378:0.00309834 c379:0.00309716 c380:0.00310591 c381:0.00310733 c382:0.00310385 c383:0.00310814 c384:0.00310513 c385:0.00309736 c386:0.00309731 c387:0.0031076 c388:0.00311139 c389:0.00310659 c390:0.0031087 c391:0.0031093 c392:0.00310281 c393:0.00310445 c394:0.00310555 c395:0.00310472 c396:0.00310746 c397:0.00310732 c398:0.00310088 c399:0.00310149 c400:0.00310871 c401:0.00310987 c402:0.00310197 c403:0.00309662 c404:0.00309911 c405:0.00310165 c406:0.00310187 c407:0.00309949 c408:0.00310712 c409:0.00311058 c410:0.00312321 c411:0.0031217 c412:0.00310606 c413:0.00311133 c414:0.00310807 c415:0.00310282 c416:0.00310281 c417:0.00310247 c418:0.00310761 c419:0.00311147 c420:0.00312415 c421:0.00312426 c422:0.00310639 c423:0.00309378 c424:0.00309346 c425:0.00309909 c426:0.00309969 c427:0.00309708 c428:0.00309594 c429:0.00309777 c430:0.0030986 c431:0.00310084 c432:0.00310307 c433:0.00310544 c434:0.00310756 c435:0.00310464 c436:0.00309761 c437:0.00309574 c438:0.00309758 c439:0.00309636 c440:0.00310285 c441:0.0031107 c442:0.00311018 c443:0.00310766 c444:0.00312214 c445:0.00312471 c446:0.00310011 c447:0.00309816 c448:0.00310424 c449:0.00310796 c450:0.00312399 c451:0.00312764 c452:0.0031143 c453:0.00310487 c454:0.00309226 c455:0.00310114 c456:0.00312565 c457:0.00312621 c458:0.00312813 c459:0.00311458 c460:0.00311404 c461:0.00311146 c462:0.00310639 c463:0.00310602 c464:0.00310657 c465:0.00310358 c466:0.00310934 c467:0.00311345 c468:0.00311602 c469:0.00311702 c470:0.00313184 c471:0.00313268 c472:0.00311927 c473:0.0031268 c474:0.00313438 c475:0.00312954 c476:0.00312673 c477:0.00312393 c478:0.00312421 c479:0.00314363 c480:0.0031455 c481:0.00313484 c482:0.00313272 c483:0.00313669 c484:0.00314207 c485:0.00314263 c486:0.00314235 c487:none c488:none c489:none c490:none c491:none c492:none c493:none c494:none c495:none c496:none c497:none c498:none c499:none c500:none c501:none c502:none c503:none c504:none c505:none c506:none c507:none c508:none c509:none c510:none c511:none 
+2020-06-24 19:53:46	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-06-24 19:53:46	INFO	task_tclean::SIImageStore::printBeamSet 	Restoring Beams 
+2020-06-24 19:53:46	INFO	task_tclean::SIImageStore::printBeamSet +	Pol   Type Chan          Freq     Vel
+2020-06-24 19:53:46	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Max    0 2.2916327e+10 9845.40    0.1344 arcsec x    0.0765 arcsec pa= 38.8402 deg
+2020-06-24 19:53:46	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Min  458 2.2923483e+10 9754.86    0.1339 arcsec x    0.0759 arcsec pa= 38.9108 deg
+2020-06-24 19:53:46	INFO	task_tclean::SIImageStore::printBeamSet +	  I Median  377 2.2922217e+10 9770.87    0.1343 arcsec x    0.0763 arcsec pa= 38.8903 deg
+2020-06-24 19:53:47	INFO	task_tclean::SynthesisImagerVi2::makePrimaryBeam 	vi2 : Evaluating Primary Beam model onto image grid(s)
+2020-06-24 19:54:37	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run Major Cycle 1 -------------------------------------
+2020-06-24 19:57:42	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-06-24 19:58:05	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Peak residual (max,min) over full image : (0.325836,-0.0463538)
+2020-06-24 19:58:11	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Total Model Flux : 0
+2020-06-24 20:00:03	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[spw_6] Initializing new mask to 1.0 for the full image
+2020-06-24 20:00:05	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[spw_6] Number of pixels in the clean mask : 5.12e+08 out of a total of 5.12e+08 pixels. [ 100 % ]
+2020-06-24 20:00:31	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-06-24 20:00:50	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Peak residual (max,min) within mask : (0.325836,-0.0463538) over full image : (0.325836,-0.0463538)
+2020-06-24 20:00:52	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Total Model Flux : 0
+2020-06-24 20:01:14	INFO	task_tclean::SynthesisDeconvolver::executeMinorCycle 	---------------------------------------------------- Run Minor Cycle Iterations  ---------------------------------------------
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6] Run Hogbom minor-cycle on 512 chans | CycleThreshold=0.0725074, CycleNiter=100000, Gain=0.1
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C0] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C1] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C2] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C3] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C4] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C5] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C6] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C7] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C8] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C9] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C10] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C11] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C12] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C13] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C14] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C15] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C16] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C17] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C18] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C19] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C20] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C21] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C22] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C23] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C24] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C25] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C26] iters=0->0 [0], model=0->0, peakres=0.0430958->0.0430958, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C27] iters=0->0 [0], model=0->0, peakres=0.0398563->0.0398563, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C28] iters=0->0 [0], model=0->0, peakres=0.0452959->0.0452959, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C29] iters=0->0 [0], model=0->0, peakres=0.0397779->0.0397779, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C30] iters=0->0 [0], model=0->0, peakres=0.039675->0.039675, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C31] iters=0->0 [0], model=0->0, peakres=0.0426405->0.0426405, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C32] iters=0->0 [0], model=0->0, peakres=0.0399672->0.0399672, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C33] iters=0->0 [0], model=0->0, peakres=0.0373952->0.0373952, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C34] iters=0->0 [0], model=0->0, peakres=0.0393645->0.0393645, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C35] iters=0->0 [0], model=0->0, peakres=0.035267->0.035267, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C36] iters=0->0 [0], model=0->0, peakres=0.0352433->0.0352433, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C37] iters=0->0 [0], model=0->0, peakres=0.0400686->0.0400686, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C38] iters=0->0 [0], model=0->0, peakres=0.0378068->0.0378068, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C39] iters=0->0 [0], model=0->0, peakres=0.0364862->0.0364862, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C40] iters=0->0 [0], model=0->0, peakres=0.0378185->0.0378185, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C41] iters=0->0 [0], model=0->0, peakres=0.0388569->0.0388569, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C42] iters=0->0 [0], model=0->0, peakres=0.0351245->0.0351245, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C43] iters=0->0 [0], model=0->0, peakres=0.0369061->0.0369061, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C44] iters=0->0 [0], model=0->0, peakres=0.0352816->0.0352816, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C45] iters=0->0 [0], model=0->0, peakres=0.0333461->0.0333461, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C46] iters=0->0 [0], model=0->0, peakres=0.0368208->0.0368208, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C47] iters=0->0 [0], model=0->0, peakres=0.0380108->0.0380108, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C48] iters=0->0 [0], model=0->0, peakres=0.0373994->0.0373994, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C49] iters=0->0 [0], model=0->0, peakres=0.041458->0.041458, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C50] iters=0->0 [0], model=0->0, peakres=0.0347715->0.0347715, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C51] iters=0->0 [0], model=0->0, peakres=0.038678->0.038678, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C52] iters=0->0 [0], model=0->0, peakres=0.0381376->0.0381376, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C53] iters=0->0 [0], model=0->0, peakres=0.037314->0.037314, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C54] iters=0->0 [0], model=0->0, peakres=0.0352218->0.0352218, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C55] iters=0->0 [0], model=0->0, peakres=0.0376472->0.0376472, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C56] iters=0->0 [0], model=0->0, peakres=0.0355926->0.0355926, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C57] iters=0->0 [0], model=0->0, peakres=0.0378019->0.0378019, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C58] iters=0->0 [0], model=0->0, peakres=0.0364841->0.0364841, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C59] iters=0->0 [0], model=0->0, peakres=0.0389635->0.0389635, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C60] iters=0->0 [0], model=0->0, peakres=0.0341041->0.0341041, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C61] iters=0->0 [0], model=0->0, peakres=0.034474->0.034474, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C62] iters=0->0 [0], model=0->0, peakres=0.0349912->0.0349912, Reached cyclethreshold.
+2020-06-24 20:01:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C63] iters=0->0 [0], model=0->0, peakres=0.0342095->0.0342095, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C64] iters=0->0 [0], model=0->0, peakres=0.0341149->0.0341149, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C65] iters=0->0 [0], model=0->0, peakres=0.0348876->0.0348876, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C66] iters=0->0 [0], model=0->0, peakres=0.0333564->0.0333564, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C67] iters=0->0 [0], model=0->0, peakres=0.035376->0.035376, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C68] iters=0->0 [0], model=0->0, peakres=0.0341079->0.0341079, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C69] iters=0->0 [0], model=0->0, peakres=0.0391425->0.0391425, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C70] iters=0->0 [0], model=0->0, peakres=0.0349049->0.0349049, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C71] iters=0->0 [0], model=0->0, peakres=0.0336173->0.0336173, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C72] iters=0->0 [0], model=0->0, peakres=0.0374412->0.0374412, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C73] iters=0->0 [0], model=0->0, peakres=0.0356135->0.0356135, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C74] iters=0->0 [0], model=0->0, peakres=0.0364862->0.0364862, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C75] iters=0->0 [0], model=0->0, peakres=0.0342247->0.0342247, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C76] iters=0->0 [0], model=0->0, peakres=0.0356512->0.0356512, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C77] iters=0->0 [0], model=0->0, peakres=0.034708->0.034708, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C78] iters=0->0 [0], model=0->0, peakres=0.0340052->0.0340052, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C79] iters=0->0 [0], model=0->0, peakres=0.0357958->0.0357958, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C80] iters=0->0 [0], model=0->0, peakres=0.0360007->0.0360007, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C81] iters=0->0 [0], model=0->0, peakres=0.0340564->0.0340564, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C82] iters=0->0 [0], model=0->0, peakres=0.033871->0.033871, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C83] iters=0->0 [0], model=0->0, peakres=0.0335006->0.0335006, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C84] iters=0->0 [0], model=0->0, peakres=0.041031->0.041031, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C85] iters=0->0 [0], model=0->0, peakres=0.0362271->0.0362271, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C86] iters=0->0 [0], model=0->0, peakres=0.037199->0.037199, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C87] iters=0->0 [0], model=0->0, peakres=0.0351275->0.0351275, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C88] iters=0->0 [0], model=0->0, peakres=0.0347992->0.0347992, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C89] iters=0->0 [0], model=0->0, peakres=0.038514->0.038514, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C90] iters=0->0 [0], model=0->0, peakres=0.0342965->0.0342965, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C91] iters=0->0 [0], model=0->0, peakres=0.0332226->0.0332226, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C92] iters=0->0 [0], model=0->0, peakres=0.0349145->0.0349145, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C93] iters=0->0 [0], model=0->0, peakres=0.0343643->0.0343643, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C94] iters=0->0 [0], model=0->0, peakres=0.035432->0.035432, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C95] iters=0->0 [0], model=0->0, peakres=0.0358584->0.0358584, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C96] iters=0->0 [0], model=0->0, peakres=0.0344365->0.0344365, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C97] iters=0->0 [0], model=0->0, peakres=0.0321109->0.0321109, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C98] iters=0->0 [0], model=0->0, peakres=0.0331975->0.0331975, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C99] iters=0->0 [0], model=0->0, peakres=0.0376706->0.0376706, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C100] iters=0->0 [0], model=0->0, peakres=0.0367136->0.0367136, Reached cyclethreshold.
+2020-06-24 20:01:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C101] iters=0->0 [0], model=0->0, peakres=0.0348982->0.0348982, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C102] iters=0->0 [0], model=0->0, peakres=0.0379411->0.0379411, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C103] iters=0->0 [0], model=0->0, peakres=0.0378031->0.0378031, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C104] iters=0->0 [0], model=0->0, peakres=0.0415981->0.0415981, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C105] iters=0->0 [0], model=0->0, peakres=0.0333636->0.0333636, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C106] iters=0->0 [0], model=0->0, peakres=0.0353466->0.0353466, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C107] iters=0->0 [0], model=0->0, peakres=0.0354896->0.0354896, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C108] iters=0->0 [0], model=0->0, peakres=0.0333199->0.0333199, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C109] iters=0->0 [0], model=0->0, peakres=0.0358709->0.0358709, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C110] iters=0->0 [0], model=0->0, peakres=0.0354977->0.0354977, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C111] iters=0->0 [0], model=0->0, peakres=0.0341953->0.0341953, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C112] iters=0->0 [0], model=0->0, peakres=0.0345519->0.0345519, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C113] iters=0->0 [0], model=0->0, peakres=0.0359817->0.0359817, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C114] iters=0->0 [0], model=0->0, peakres=0.0360919->0.0360919, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C115] iters=0->0 [0], model=0->0, peakres=0.0370856->0.0370856, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C116] iters=0->0 [0], model=0->0, peakres=0.0370885->0.0370885, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C117] iters=0->0 [0], model=0->0, peakres=0.0345975->0.0345975, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C118] iters=0->0 [0], model=0->0, peakres=0.0335112->0.0335112, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C119] iters=0->0 [0], model=0->0, peakres=0.0350683->0.0350683, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C120] iters=0->0 [0], model=0->0, peakres=0.0340817->0.0340817, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C121] iters=0->0 [0], model=0->0, peakres=0.0346758->0.0346758, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C122] iters=0->0 [0], model=0->0, peakres=0.0348306->0.0348306, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C123] iters=0->0 [0], model=0->0, peakres=0.0341374->0.0341374, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C124] iters=0->0 [0], model=0->0, peakres=0.0409474->0.0409474, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C125] iters=0->0 [0], model=0->0, peakres=0.0352884->0.0352884, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C126] iters=0->0 [0], model=0->0, peakres=0.0355607->0.0355607, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C127] iters=0->0 [0], model=0->0, peakres=0.0344746->0.0344746, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C128] iters=0->0 [0], model=0->0, peakres=0.0367511->0.0367511, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C129] iters=0->0 [0], model=0->0, peakres=0.033481->0.033481, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C130] iters=0->0 [0], model=0->0, peakres=0.0345049->0.0345049, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C131] iters=0->0 [0], model=0->0, peakres=0.0326275->0.0326275, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C132] iters=0->0 [0], model=0->0, peakres=0.0350599->0.0350599, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C133] iters=0->0 [0], model=0->0, peakres=0.0362064->0.0362064, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C134] iters=0->0 [0], model=0->0, peakres=0.0326739->0.0326739, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C135] iters=0->0 [0], model=0->0, peakres=0.033021->0.033021, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C136] iters=0->0 [0], model=0->0, peakres=0.0337506->0.0337506, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C137] iters=0->0 [0], model=0->0, peakres=0.0335385->0.0335385, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C138] iters=0->0 [0], model=0->0, peakres=0.0366313->0.0366313, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C139] iters=0->0 [0], model=0->0, peakres=0.0326577->0.0326577, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C140] iters=0->0 [0], model=0->0, peakres=0.032527->0.032527, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C141] iters=0->0 [0], model=0->0, peakres=0.0342573->0.0342573, Reached cyclethreshold.
+2020-06-24 20:01:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C142] iters=0->0 [0], model=0->0, peakres=0.0340888->0.0340888, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C143] iters=0->0 [0], model=0->0, peakres=0.0355552->0.0355552, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C144] iters=0->0 [0], model=0->0, peakres=0.0343616->0.0343616, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C145] iters=0->0 [0], model=0->0, peakres=0.0348583->0.0348583, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C146] iters=0->0 [0], model=0->0, peakres=0.0360379->0.0360379, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C147] iters=0->0 [0], model=0->0, peakres=0.0348307->0.0348307, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C148] iters=0->0 [0], model=0->0, peakres=0.0360035->0.0360035, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C149] iters=0->0 [0], model=0->0, peakres=0.0344192->0.0344192, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C150] iters=0->0 [0], model=0->0, peakres=0.0336705->0.0336705, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C151] iters=0->0 [0], model=0->0, peakres=0.0356507->0.0356507, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C152] iters=0->0 [0], model=0->0, peakres=0.0349771->0.0349771, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C153] iters=0->0 [0], model=0->0, peakres=0.035129->0.035129, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C154] iters=0->0 [0], model=0->0, peakres=0.0322977->0.0322977, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C155] iters=0->0 [0], model=0->0, peakres=0.0328261->0.0328261, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C156] iters=0->0 [0], model=0->0, peakres=0.0350173->0.0350173, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C157] iters=0->0 [0], model=0->0, peakres=0.032835->0.032835, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C158] iters=0->0 [0], model=0->0, peakres=0.036325->0.036325, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C159] iters=0->0 [0], model=0->0, peakres=0.035455->0.035455, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C160] iters=0->0 [0], model=0->0, peakres=0.0327045->0.0327045, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C161] iters=0->0 [0], model=0->0, peakres=0.0340685->0.0340685, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C162] iters=0->0 [0], model=0->0, peakres=0.0360609->0.0360609, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C163] iters=0->0 [0], model=0->0, peakres=0.0417381->0.0417381, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C164] iters=0->0 [0], model=0->0, peakres=0.0394579->0.0394579, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C165] iters=0->0 [0], model=0->0, peakres=0.0352627->0.0352627, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C166] iters=0->0 [0], model=0->0, peakres=0.0318856->0.0318856, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C167] iters=0->0 [0], model=0->0, peakres=0.0349692->0.0349692, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C168] iters=0->0 [0], model=0->0, peakres=0.0355381->0.0355381, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C169] iters=0->0 [0], model=0->0, peakres=0.0363729->0.0363729, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C170] iters=0->0 [0], model=0->0, peakres=0.0390405->0.0390405, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C171] iters=0->0 [0], model=0->0, peakres=0.0333502->0.0333502, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C172] iters=0->0 [0], model=0->0, peakres=0.0336532->0.0336532, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C173] iters=0->0 [0], model=0->0, peakres=0.0325829->0.0325829, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C174] iters=0->0 [0], model=0->0, peakres=0.0355825->0.0355825, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C175] iters=0->0 [0], model=0->0, peakres=0.0350686->0.0350686, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C176] iters=0->0 [0], model=0->0, peakres=0.0349396->0.0349396, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C177] iters=0->0 [0], model=0->0, peakres=0.0337656->0.0337656, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C178] iters=0->0 [0], model=0->0, peakres=0.0347102->0.0347102, Reached cyclethreshold.
+2020-06-24 20:01:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C179] iters=0->0 [0], model=0->0, peakres=0.0342836->0.0342836, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C180] iters=0->0 [0], model=0->0, peakres=0.0362283->0.0362283, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C181] iters=0->0 [0], model=0->0, peakres=0.0359623->0.0359623, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C182] iters=0->0 [0], model=0->0, peakres=0.0344935->0.0344935, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C183] iters=0->0 [0], model=0->0, peakres=0.035558->0.035558, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C184] iters=0->0 [0], model=0->0, peakres=0.0333903->0.0333903, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C185] iters=0->0 [0], model=0->0, peakres=0.0329073->0.0329073, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C186] iters=0->0 [0], model=0->0, peakres=0.0332461->0.0332461, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C187] iters=0->0 [0], model=0->0, peakres=0.0347905->0.0347905, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C188] iters=0->0 [0], model=0->0, peakres=0.0362209->0.0362209, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C189] iters=0->0 [0], model=0->0, peakres=0.0338769->0.0338769, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C190] iters=0->0 [0], model=0->0, peakres=0.0359246->0.0359246, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C191] iters=0->0 [0], model=0->0, peakres=0.0362689->0.0362689, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C192] iters=0->0 [0], model=0->0, peakres=0.0365511->0.0365511, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C193] iters=0->0 [0], model=0->0, peakres=0.0385623->0.0385623, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C194] iters=0->0 [0], model=0->0, peakres=0.0341413->0.0341413, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C195] iters=0->0 [0], model=0->0, peakres=0.033889->0.033889, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C196] iters=0->0 [0], model=0->0, peakres=0.0355988->0.0355988, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C197] iters=0->0 [0], model=0->0, peakres=0.0341159->0.0341159, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C198] iters=0->0 [0], model=0->0, peakres=0.033237->0.033237, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C199] iters=0->0 [0], model=0->0, peakres=0.0352876->0.0352876, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C200] iters=0->0 [0], model=0->0, peakres=0.0362265->0.0362265, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C201] iters=0->0 [0], model=0->0, peakres=0.0358063->0.0358063, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C202] iters=0->0 [0], model=0->0, peakres=0.0327514->0.0327514, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C203] iters=0->0 [0], model=0->0, peakres=0.0349349->0.0349349, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C204] iters=0->0 [0], model=0->0, peakres=0.0333756->0.0333756, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C205] iters=0->0 [0], model=0->0, peakres=0.0326049->0.0326049, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C206] iters=0->0 [0], model=0->0, peakres=0.037715->0.037715, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C207] iters=0->0 [0], model=0->0, peakres=0.033772->0.033772, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C208] iters=0->0 [0], model=0->0, peakres=0.0361527->0.0361527, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C209] iters=0->0 [0], model=0->0, peakres=0.0360076->0.0360076, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C210] iters=0->0 [0], model=0->0, peakres=0.0366588->0.0366588, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C211] iters=0->0 [0], model=0->0, peakres=0.0341692->0.0341692, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C212] iters=0->0 [0], model=0->0, peakres=0.0341815->0.0341815, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C213] iters=0->0 [0], model=0->0, peakres=0.0381319->0.0381319, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C214] iters=0->0 [0], model=0->0, peakres=0.0351868->0.0351868, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C215] iters=0->0 [0], model=0->0, peakres=0.0364943->0.0364943, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C216] iters=0->0 [0], model=0->0, peakres=0.0371979->0.0371979, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C217] iters=0->0 [0], model=0->0, peakres=0.0331594->0.0331594, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C218] iters=0->0 [0], model=0->0, peakres=0.032757->0.032757, Reached cyclethreshold.
+2020-06-24 20:01:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C219] iters=0->0 [0], model=0->0, peakres=0.0340667->0.0340667, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C220] iters=0->0 [0], model=0->0, peakres=0.0345062->0.0345062, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C221] iters=0->0 [0], model=0->0, peakres=0.0365244->0.0365244, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C222] iters=0->0 [0], model=0->0, peakres=0.0396604->0.0396604, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C223] iters=0->0 [0], model=0->0, peakres=0.0354171->0.0354171, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C224] iters=0->0 [0], model=0->0, peakres=0.0371115->0.0371115, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C225] iters=0->0 [0], model=0->0, peakres=0.0360499->0.0360499, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C226] iters=0->0 [0], model=0->0, peakres=0.0348252->0.0348252, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C227] iters=0->0 [0], model=0->0, peakres=0.036874->0.036874, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C228] iters=0->0 [0], model=0->0, peakres=0.037999->0.037999, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C229] iters=0->0 [0], model=0->0, peakres=0.0349553->0.0349553, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C230] iters=0->0 [0], model=0->0, peakres=0.0354947->0.0354947, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C231] iters=0->0 [0], model=0->0, peakres=0.0362168->0.0362168, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C232] iters=0->0 [0], model=0->0, peakres=0.0349795->0.0349795, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C233] iters=0->0 [0], model=0->0, peakres=0.0349148->0.0349148, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C234] iters=0->0 [0], model=0->0, peakres=0.0346671->0.0346671, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C235] iters=0->0 [0], model=0->0, peakres=0.0395762->0.0395762, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C236] iters=0->0 [0], model=0->0, peakres=0.0355395->0.0355395, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C237] iters=0->0 [0], model=0->0, peakres=0.0340487->0.0340487, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C238] iters=0->0 [0], model=0->0, peakres=0.0337522->0.0337522, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C239] iters=0->0 [0], model=0->0, peakres=0.0342699->0.0342699, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C240] iters=0->0 [0], model=0->0, peakres=0.0333865->0.0333865, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C241] iters=0->0 [0], model=0->0, peakres=0.0360238->0.0360238, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C242] iters=0->0 [0], model=0->0, peakres=0.0335197->0.0335197, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C243] iters=0->0 [0], model=0->0, peakres=0.0357362->0.0357362, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C244] iters=0->0 [0], model=0->0, peakres=0.035625->0.035625, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C245] iters=0->0 [0], model=0->0, peakres=0.0346171->0.0346171, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C246] iters=0->0 [0], model=0->0, peakres=0.0376575->0.0376575, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C247] iters=0->0 [0], model=0->0, peakres=0.0361947->0.0361947, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C248] iters=0->0 [0], model=0->0, peakres=0.0324793->0.0324793, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C249] iters=0->0 [0], model=0->0, peakres=0.0375594->0.0375594, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C250] iters=0->0 [0], model=0->0, peakres=0.0337177->0.0337177, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C251] iters=0->0 [0], model=0->0, peakres=0.0355242->0.0355242, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C252] iters=0->0 [0], model=0->0, peakres=0.0336938->0.0336938, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C253] iters=0->0 [0], model=0->0, peakres=0.0356045->0.0356045, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C254] iters=0->0 [0], model=0->0, peakres=0.0328914->0.0328914, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C255] iters=0->0 [0], model=0->0, peakres=0.0345983->0.0345983, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C256] iters=0->0 [0], model=0->0, peakres=0.039506->0.039506, Reached cyclethreshold.
+2020-06-24 20:01:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C257] iters=0->0 [0], model=0->0, peakres=0.0396511->0.0396511, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C258] iters=0->0 [0], model=0->0, peakres=0.0341431->0.0341431, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C259] iters=0->0 [0], model=0->0, peakres=0.0338078->0.0338078, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C260] iters=0->0 [0], model=0->0, peakres=0.0353381->0.0353381, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C261] iters=0->0 [0], model=0->0, peakres=0.038648->0.038648, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C262] iters=0->0 [0], model=0->0, peakres=0.0332352->0.0332352, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C263] iters=0->0 [0], model=0->0, peakres=0.0345339->0.0345339, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C264] iters=0->0 [0], model=0->0, peakres=0.0350661->0.0350661, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C265] iters=0->0 [0], model=0->0, peakres=0.0326657->0.0326657, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C266] iters=0->0 [0], model=0->0, peakres=0.0340289->0.0340289, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C267] iters=0->0 [0], model=0->0, peakres=0.0355646->0.0355646, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C268] iters=0->0 [0], model=0->0, peakres=0.0333142->0.0333142, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C269] iters=0->0 [0], model=0->0, peakres=0.0355042->0.0355042, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C270] iters=0->0 [0], model=0->0, peakres=0.035753->0.035753, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C271] iters=0->0 [0], model=0->0, peakres=0.0317685->0.0317685, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C272] iters=0->0 [0], model=0->0, peakres=0.0351375->0.0351375, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C273] iters=0->0 [0], model=0->0, peakres=0.0350665->0.0350665, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C274] iters=0->0 [0], model=0->0, peakres=0.0354839->0.0354839, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C275] iters=0->0 [0], model=0->0, peakres=0.0328914->0.0328914, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C276] iters=0->0 [0], model=0->0, peakres=0.0362946->0.0362946, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C277] iters=0->0 [0], model=0->0, peakres=0.040738->0.040738, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C278] iters=0->0 [0], model=0->0, peakres=0.036586->0.036586, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C279] iters=0->0 [0], model=0->0, peakres=0.0341099->0.0341099, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C280] iters=0->0 [0], model=0->0, peakres=0.0336799->0.0336799, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C281] iters=0->0 [0], model=0->0, peakres=0.0325566->0.0325566, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C282] iters=0->0 [0], model=0->0, peakres=0.0376845->0.0376845, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C283] iters=0->0 [0], model=0->0, peakres=0.0367422->0.0367422, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C284] iters=0->0 [0], model=0->0, peakres=0.0352906->0.0352906, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C285] iters=0->0 [0], model=0->0, peakres=0.0348929->0.0348929, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C286] iters=0->0 [0], model=0->0, peakres=0.0343604->0.0343604, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C287] iters=0->0 [0], model=0->0, peakres=0.0344981->0.0344981, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C288] iters=0->0 [0], model=0->0, peakres=0.0368011->0.0368011, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C289] iters=0->0 [0], model=0->0, peakres=0.0351602->0.0351602, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C290] iters=0->0 [0], model=0->0, peakres=0.0340916->0.0340916, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C291] iters=0->0 [0], model=0->0, peakres=0.0365->0.0365, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C292] iters=0->0 [0], model=0->0, peakres=0.0340602->0.0340602, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C293] iters=0->0 [0], model=0->0, peakres=0.0361984->0.0361984, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C294] iters=0->0 [0], model=0->0, peakres=0.0340831->0.0340831, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C295] iters=0->0 [0], model=0->0, peakres=0.0353061->0.0353061, Reached cyclethreshold.
+2020-06-24 20:01:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C296] iters=0->0 [0], model=0->0, peakres=0.0514932->0.0514932, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C297] iters=0->4 [4], model=0->0.0344465, peakres=0.100164->0.0657177, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C298] iters=4->12 [8], model=0->0.0860923, peakres=0.151015->0.0685965, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C299] iters=12->22 [10], model=0->0.125424, peakres=0.19185->0.0709296, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C300] iters=22->33 [11], model=0->0.137732, peakres=0.199567->0.0696348, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C301] iters=33->41 [8], model=0->0.0909344, peakres=0.159665->0.0709964, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C302] iters=41->45 [4], model=0->0.0342166, peakres=0.0994958->0.0652792, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C303] iters=45->45 [0], model=0->0, peakres=0.0617258->0.0617258, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C304] iters=45->45 [0], model=0->0, peakres=0.0582738->0.0582738, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C305] iters=45->47 [2], model=0->0.0153206, peakres=0.0806345->0.065314, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C306] iters=47->53 [6], model=0->0.0598153, peakres=0.127658->0.0678427, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C307] iters=53->63 [10], model=0->0.117324, peakres=0.178571->0.0693353, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C308] iters=63->75 [12], model=0->0.155835, peakres=0.213996->0.0699806, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C309] iters=75->88 [13], model=0->0.172585, peakres=0.226076->0.0676537, Reached cyclethreshold.
+2020-06-24 20:01:22	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C310] iters=88->100 [12], model=0->0.154889, peakres=0.210238->0.0697826, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C311] iters=100->110 [10], model=0->0.112057, peakres=0.167752->0.0688358, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C312] iters=110->116 [6], model=0->0.0604223, peakres=0.128288->0.0718496, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C313] iters=116->120 [4], model=0->0.0374325, peakres=0.108847->0.0714146, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C314] iters=120->124 [4], model=0->0.0365538, peakres=0.106292->0.0697381, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C315] iters=124->131 [7], model=0->0.0740173, peakres=0.141876->0.0685116, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C316] iters=131->144 [13], model=0->0.16953, peakres=0.223723->0.0683388, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C317] iters=144->161 [17], model=0->0.265209, peakres=0.305372->0.072042, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C318] iters=161->179 [18], model=0->0.288855, peakres=0.325836->0.0703652, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C319] iters=179->193 [14], model=0->0.206971, peakres=0.265384->0.0718483, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C320] iters=193->202 [9], model=0->0.105055, peakres=0.171496->0.0664411, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C321] iters=202->205 [3], model=0->0.0256467, peakres=0.0946373->0.0689906, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C322] iters=205->205 [0], model=0->0, peakres=0.0550332->0.0550332, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C323] iters=205->205 [0], model=0->0, peakres=0.0365037->0.0365037, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C324] iters=205->205 [0], model=0->0, peakres=0.0365614->0.0365614, Reached cyclethreshold.
+2020-06-24 20:01:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C325] iters=205->205 [0], model=0->0, peakres=0.0372193->0.0372193, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C326] iters=205->205 [0], model=0->0, peakres=0.0358904->0.0358904, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C327] iters=205->205 [0], model=0->0, peakres=0.0352281->0.0352281, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C328] iters=205->205 [0], model=0->0, peakres=0.0337599->0.0337599, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C329] iters=205->205 [0], model=0->0, peakres=0.0358888->0.0358888, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C330] iters=205->205 [0], model=0->0, peakres=0.0372559->0.0372559, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C331] iters=205->205 [0], model=0->0, peakres=0.0342658->0.0342658, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C332] iters=205->205 [0], model=0->0, peakres=0.0368474->0.0368474, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C333] iters=205->205 [0], model=0->0, peakres=0.0342106->0.0342106, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C334] iters=205->205 [0], model=0->0, peakres=0.0377441->0.0377441, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C335] iters=205->205 [0], model=0->0, peakres=0.0354029->0.0354029, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C336] iters=205->205 [0], model=0->0, peakres=0.0331078->0.0331078, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C337] iters=205->205 [0], model=0->0, peakres=0.0327393->0.0327393, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C338] iters=205->205 [0], model=0->0, peakres=0.0333846->0.0333846, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C339] iters=205->205 [0], model=0->0, peakres=0.0346775->0.0346775, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C340] iters=205->205 [0], model=0->0, peakres=0.0332717->0.0332717, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C341] iters=205->205 [0], model=0->0, peakres=0.0341468->0.0341468, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C342] iters=205->205 [0], model=0->0, peakres=0.0342674->0.0342674, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C343] iters=205->205 [0], model=0->0, peakres=0.0341639->0.0341639, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C344] iters=205->205 [0], model=0->0, peakres=0.0375465->0.0375465, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C345] iters=205->205 [0], model=0->0, peakres=0.0358567->0.0358567, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C346] iters=205->205 [0], model=0->0, peakres=0.0342137->0.0342137, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C347] iters=205->205 [0], model=0->0, peakres=0.0388386->0.0388386, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C348] iters=205->205 [0], model=0->0, peakres=0.0372879->0.0372879, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C349] iters=205->205 [0], model=0->0, peakres=0.0346775->0.0346775, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C350] iters=205->205 [0], model=0->0, peakres=0.0366046->0.0366046, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C351] iters=205->205 [0], model=0->0, peakres=0.0410522->0.0410522, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C352] iters=205->205 [0], model=0->0, peakres=0.0371529->0.0371529, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C353] iters=205->205 [0], model=0->0, peakres=0.0364929->0.0364929, Reached cyclethreshold.
+2020-06-24 20:01:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C354] iters=205->205 [0], model=0->0, peakres=0.0349548->0.0349548, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C355] iters=205->205 [0], model=0->0, peakres=0.0372899->0.0372899, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C356] iters=205->205 [0], model=0->0, peakres=0.0358854->0.0358854, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C357] iters=205->205 [0], model=0->0, peakres=0.0385807->0.0385807, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C358] iters=205->205 [0], model=0->0, peakres=0.0354945->0.0354945, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C359] iters=205->205 [0], model=0->0, peakres=0.0333883->0.0333883, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C360] iters=205->205 [0], model=0->0, peakres=0.0336825->0.0336825, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C361] iters=205->205 [0], model=0->0, peakres=0.0343993->0.0343993, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C362] iters=205->205 [0], model=0->0, peakres=0.0344727->0.0344727, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C363] iters=205->205 [0], model=0->0, peakres=0.038952->0.038952, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C364] iters=205->205 [0], model=0->0, peakres=0.0334766->0.0334766, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C365] iters=205->205 [0], model=0->0, peakres=0.0370971->0.0370971, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C366] iters=205->205 [0], model=0->0, peakres=0.0357661->0.0357661, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C367] iters=205->205 [0], model=0->0, peakres=0.0344899->0.0344899, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C368] iters=205->205 [0], model=0->0, peakres=0.0355659->0.0355659, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C369] iters=205->205 [0], model=0->0, peakres=0.0317437->0.0317437, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C370] iters=205->205 [0], model=0->0, peakres=0.0328475->0.0328475, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C371] iters=205->205 [0], model=0->0, peakres=0.0345154->0.0345154, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C372] iters=205->205 [0], model=0->0, peakres=0.0339123->0.0339123, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C373] iters=205->205 [0], model=0->0, peakres=0.0348347->0.0348347, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C374] iters=205->205 [0], model=0->0, peakres=0.0366758->0.0366758, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C375] iters=205->205 [0], model=0->0, peakres=0.0357203->0.0357203, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C376] iters=205->205 [0], model=0->0, peakres=0.0352028->0.0352028, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C377] iters=205->205 [0], model=0->0, peakres=0.0355944->0.0355944, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C378] iters=205->205 [0], model=0->0, peakres=0.0332554->0.0332554, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C379] iters=205->205 [0], model=0->0, peakres=0.0355559->0.0355559, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C380] iters=205->205 [0], model=0->0, peakres=0.0360832->0.0360832, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C381] iters=205->205 [0], model=0->0, peakres=0.0322083->0.0322083, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C382] iters=205->205 [0], model=0->0, peakres=0.0354756->0.0354756, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C383] iters=205->205 [0], model=0->0, peakres=0.0371069->0.0371069, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C384] iters=205->205 [0], model=0->0, peakres=0.0334097->0.0334097, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C385] iters=205->205 [0], model=0->0, peakres=0.0326147->0.0326147, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C386] iters=205->205 [0], model=0->0, peakres=0.0335939->0.0335939, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C387] iters=205->205 [0], model=0->0, peakres=0.0367441->0.0367441, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C388] iters=205->205 [0], model=0->0, peakres=0.0364326->0.0364326, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C389] iters=205->205 [0], model=0->0, peakres=0.0389199->0.0389199, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C390] iters=205->205 [0], model=0->0, peakres=0.034427->0.034427, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C391] iters=205->205 [0], model=0->0, peakres=0.0350326->0.0350326, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C392] iters=205->205 [0], model=0->0, peakres=0.034655->0.034655, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C393] iters=205->205 [0], model=0->0, peakres=0.034112->0.034112, Reached cyclethreshold.
+2020-06-24 20:01:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C394] iters=205->205 [0], model=0->0, peakres=0.0356864->0.0356864, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C395] iters=205->205 [0], model=0->0, peakres=0.0342571->0.0342571, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C396] iters=205->205 [0], model=0->0, peakres=0.0367912->0.0367912, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C397] iters=205->205 [0], model=0->0, peakres=0.0388135->0.0388135, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C398] iters=205->205 [0], model=0->0, peakres=0.0339619->0.0339619, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C399] iters=205->205 [0], model=0->0, peakres=0.0324898->0.0324898, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C400] iters=205->205 [0], model=0->0, peakres=0.0394274->0.0394274, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C401] iters=205->205 [0], model=0->0, peakres=0.0383606->0.0383606, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C402] iters=205->205 [0], model=0->0, peakres=0.0362136->0.0362136, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C403] iters=205->205 [0], model=0->0, peakres=0.0338366->0.0338366, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C404] iters=205->205 [0], model=0->0, peakres=0.0328618->0.0328618, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C405] iters=205->205 [0], model=0->0, peakres=0.0392788->0.0392788, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C406] iters=205->205 [0], model=0->0, peakres=0.0333272->0.0333272, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C407] iters=205->205 [0], model=0->0, peakres=0.0329466->0.0329466, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C408] iters=205->205 [0], model=0->0, peakres=0.0322649->0.0322649, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C409] iters=205->205 [0], model=0->0, peakres=0.0365549->0.0365549, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C410] iters=205->205 [0], model=0->0, peakres=0.0391171->0.0391171, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C411] iters=205->205 [0], model=0->0, peakres=0.0381122->0.0381122, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C412] iters=205->205 [0], model=0->0, peakres=0.0373879->0.0373879, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C413] iters=205->205 [0], model=0->0, peakres=0.0372889->0.0372889, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C414] iters=205->205 [0], model=0->0, peakres=0.0370639->0.0370639, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C415] iters=205->205 [0], model=0->0, peakres=0.0357211->0.0357211, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C416] iters=205->205 [0], model=0->0, peakres=0.0343659->0.0343659, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C417] iters=205->205 [0], model=0->0, peakres=0.0351908->0.0351908, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C418] iters=205->205 [0], model=0->0, peakres=0.032847->0.032847, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C419] iters=205->205 [0], model=0->0, peakres=0.0357417->0.0357417, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C420] iters=205->205 [0], model=0->0, peakres=0.0373589->0.0373589, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C421] iters=205->205 [0], model=0->0, peakres=0.0355192->0.0355192, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C422] iters=205->205 [0], model=0->0, peakres=0.035968->0.035968, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C423] iters=205->205 [0], model=0->0, peakres=0.0342996->0.0342996, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C424] iters=205->205 [0], model=0->0, peakres=0.0347503->0.0347503, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C425] iters=205->205 [0], model=0->0, peakres=0.0340851->0.0340851, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C426] iters=205->205 [0], model=0->0, peakres=0.0347805->0.0347805, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C427] iters=205->205 [0], model=0->0, peakres=0.0353326->0.0353326, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C428] iters=205->205 [0], model=0->0, peakres=0.0360668->0.0360668, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C429] iters=205->205 [0], model=0->0, peakres=0.0346019->0.0346019, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C430] iters=205->205 [0], model=0->0, peakres=0.0342755->0.0342755, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C431] iters=205->205 [0], model=0->0, peakres=0.035851->0.035851, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C432] iters=205->205 [0], model=0->0, peakres=0.036692->0.036692, Reached cyclethreshold.
+2020-06-24 20:01:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C433] iters=205->205 [0], model=0->0, peakres=0.0351398->0.0351398, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C434] iters=205->205 [0], model=0->0, peakres=0.0338647->0.0338647, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C435] iters=205->205 [0], model=0->0, peakres=0.0350137->0.0350137, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C436] iters=205->205 [0], model=0->0, peakres=0.0382217->0.0382217, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C437] iters=205->205 [0], model=0->0, peakres=0.0366771->0.0366771, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C438] iters=205->205 [0], model=0->0, peakres=0.0349597->0.0349597, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C439] iters=205->205 [0], model=0->0, peakres=0.0373685->0.0373685, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C440] iters=205->205 [0], model=0->0, peakres=0.0398813->0.0398813, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C441] iters=205->205 [0], model=0->0, peakres=0.0368591->0.0368591, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C442] iters=205->205 [0], model=0->0, peakres=0.034688->0.034688, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C443] iters=205->205 [0], model=0->0, peakres=0.0350383->0.0350383, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C444] iters=205->205 [0], model=0->0, peakres=0.0359647->0.0359647, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C445] iters=205->205 [0], model=0->0, peakres=0.0344238->0.0344238, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C446] iters=205->205 [0], model=0->0, peakres=0.0344158->0.0344158, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C447] iters=205->205 [0], model=0->0, peakres=0.0354495->0.0354495, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C448] iters=205->205 [0], model=0->0, peakres=0.0376305->0.0376305, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C449] iters=205->205 [0], model=0->0, peakres=0.0349558->0.0349558, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C450] iters=205->205 [0], model=0->0, peakres=0.0352957->0.0352957, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C451] iters=205->205 [0], model=0->0, peakres=0.0375224->0.0375224, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C452] iters=205->205 [0], model=0->0, peakres=0.0360728->0.0360728, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C453] iters=205->205 [0], model=0->0, peakres=0.0349675->0.0349675, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C454] iters=205->205 [0], model=0->0, peakres=0.0350352->0.0350352, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C455] iters=205->205 [0], model=0->0, peakres=0.0367198->0.0367198, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C456] iters=205->205 [0], model=0->0, peakres=0.0377529->0.0377529, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C457] iters=205->205 [0], model=0->0, peakres=0.0346456->0.0346456, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C458] iters=205->205 [0], model=0->0, peakres=0.040366->0.040366, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C459] iters=205->205 [0], model=0->0, peakres=0.0353238->0.0353238, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C460] iters=205->205 [0], model=0->0, peakres=0.0362815->0.0362815, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C461] iters=205->205 [0], model=0->0, peakres=0.0348097->0.0348097, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C462] iters=205->205 [0], model=0->0, peakres=0.0334033->0.0334033, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C463] iters=205->205 [0], model=0->0, peakres=0.0360935->0.0360935, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C464] iters=205->205 [0], model=0->0, peakres=0.0347611->0.0347611, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C465] iters=205->205 [0], model=0->0, peakres=0.0378366->0.0378366, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C466] iters=205->205 [0], model=0->0, peakres=0.0390404->0.0390404, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C467] iters=205->205 [0], model=0->0, peakres=0.0410344->0.0410344, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C468] iters=205->205 [0], model=0->0, peakres=0.0361729->0.0361729, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C469] iters=205->205 [0], model=0->0, peakres=0.0409277->0.0409277, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C470] iters=205->205 [0], model=0->0, peakres=0.0392986->0.0392986, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C471] iters=205->205 [0], model=0->0, peakres=0.0361252->0.0361252, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C472] iters=205->205 [0], model=0->0, peakres=0.0393309->0.0393309, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C473] iters=205->205 [0], model=0->0, peakres=0.0367231->0.0367231, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C474] iters=205->205 [0], model=0->0, peakres=0.0363458->0.0363458, Reached cyclethreshold.
+2020-06-24 20:01:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C475] iters=205->205 [0], model=0->0, peakres=0.0377849->0.0377849, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C476] iters=205->205 [0], model=0->0, peakres=0.0381354->0.0381354, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C477] iters=205->205 [0], model=0->0, peakres=0.0380361->0.0380361, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C478] iters=205->205 [0], model=0->0, peakres=0.0395065->0.0395065, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C479] iters=205->205 [0], model=0->0, peakres=0.0438482->0.0438482, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C480] iters=205->205 [0], model=0->0, peakres=0.0423541->0.0423541, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C481] iters=205->205 [0], model=0->0, peakres=0.0456644->0.0456644, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C482] iters=205->205 [0], model=0->0, peakres=0.0417836->0.0417836, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C483] iters=205->205 [0], model=0->0, peakres=0.0436233->0.0436233, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C484] iters=205->205 [0], model=0->0, peakres=0.0394771->0.0394771, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C485] iters=205->205 [0], model=0->0, peakres=0.0399597->0.0399597, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C486] iters=205->205 [0], model=0->0, peakres=0.0427564->0.0427564, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C487] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C488] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C489] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C490] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C491] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C492] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C493] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C494] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C495] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C496] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C497] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C498] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C499] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C500] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C501] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C502] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C503] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C504] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C505] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C506] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C507] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C508] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C509] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C510] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C511] iters=205->205 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:01:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6] Total model flux (over all planes) : 2.56637     Peak Residual (over all planes) : 0.072042 in C317:P0
+2020-06-24 20:01:28	INFO	task_tclean::SIIterBot_state::mergeCycleExecutionRecord 	Completed 205 iterations.
+2020-06-24 20:01:29	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run Major Cycle 2 -------------------------------------
+2020-06-24 20:04:59	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-06-24 20:05:18	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Peak residual (max,min) within mask : (0.0834095,-0.0430877) over full image : (0.0834095,-0.0430877)
+2020-06-24 20:05:19	INFO	task_tclean::SIImageStore::printImageStats 	[spw_6] Total Model Flux : 2.56637
+2020-06-24 20:05:40	INFO	task_tclean::SynthesisDeconvolver::executeMinorCycle 	---------------------------------------------------- Run Minor Cycle Iterations  ---------------------------------------------
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6] Run Hogbom minor-cycle on 512 chans | CycleThreshold=0.0185609, CycleNiter=99795, Gain=0.1
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C0] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C1] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C2] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C3] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C4] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C5] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C6] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C7] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C8] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C9] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C10] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C11] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C12] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C13] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C14] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C15] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C16] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C17] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C18] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C19] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C20] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C21] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C22] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C23] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C24] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C25] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-06-24 20:05:47	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C26] iters=0->4201 [4201], model=0->-0.489606, peakres=0.0430958->0.0234209, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:05:52	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C27] iters=4201->8008 [3807], model=0->-0.428838, peakres=0.0398563->0.0267887, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:05:57	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C28] iters=8008->11770 [3762], model=0->-0.17038, peakres=0.0452959->0.0220751, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:03	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C29] iters=11770->15680 [3910], model=0->-0.0532289, peakres=0.0397779->0.0229809, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C30] iters=15680->19524 [3844], model=0->-0.23806, peakres=0.039675->0.0236808, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:13	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C31] iters=19524->23191 [3667], model=0->0.0279271, peakres=0.0426405->0.0219407, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C32] iters=23191->26717 [3526], model=0->0.167435, peakres=0.0399672->0.0221008, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C33] iters=26717->29889 [3172], model=0->-0.311528, peakres=0.0373952->0.0235931, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C34] iters=29889->32843 [2954], model=0->-0.236606, peakres=0.0393645->0.0211278, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:31	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C35] iters=32843->35615 [2772], model=0->-0.0787401, peakres=0.035267->0.0245937, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:36	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C36] iters=35615->38446 [2831], model=0->0.0568053, peakres=0.0352433->0.0221861, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C37] iters=38446->41401 [2955], model=0->0.0486416, peakres=0.0400686->0.0236784, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:44	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C38] iters=41401->44393 [2992], model=0->0.349556, peakres=0.0378068->0.0214812, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:48	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C39] iters=44393->47397 [3004], model=0->0.471136, peakres=0.0364862->0.0253246, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:52	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C40] iters=47397->50319 [2922], model=0->0.0569413, peakres=0.0378185->0.0225479, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:06:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C41] iters=50319->53195 [2876], model=0->0.0229506, peakres=0.0388569->0.024892, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:00	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C42] iters=53195->55925 [2730], model=0->0.103139, peakres=0.0351245->0.0213512, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C43] iters=55925->58559 [2634], model=0->-0.0399988, peakres=0.0369061->0.0220029, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C44] iters=58559->61183 [2624], model=0->-0.448998, peakres=0.0352816->0.0209218, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:11	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C45] iters=61183->63808 [2625], model=0->-0.157597, peakres=0.0333461->0.0238829, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C46] iters=63808->66381 [2573], model=0->0.0863667, peakres=0.0368208->0.0246843, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C47] iters=66381->68922 [2541], model=0->0.194639, peakres=0.0380108->0.0200289, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C48] iters=68922->71540 [2618], model=0->-0.217912, peakres=0.0373994->0.0236048, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C49] iters=71540->74061 [2521], model=0->-0.143605, peakres=0.041458->0.0221626, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:30	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C50] iters=74061->76453 [2392], model=0->-0.202439, peakres=0.0347715->0.0200223, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:33	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C51] iters=76453->78888 [2435], model=0->0.158247, peakres=0.038678->0.0215732, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-06-24 20:07:37	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[spw_6:C52] iters=78888->81454 [2566], model=0->-0.0758733, peakres=0.0381376->0.0223942, Exited Hogbom minor cycle without reaching any stopping criterion.

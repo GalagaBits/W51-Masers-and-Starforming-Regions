@@ -1,0 +1,93 @@
+2020-07-16 19:03:11	INFO	::casa	
+2020-07-16 19:03:11	INFO	::casa	Checking telemetry submission interval
+2020-07-16 19:03:11	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-15216c1f411f3ea1e7.stamp
+2020-07-16 19:03:11	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-07-16 19:03:11	INFO	::casa	Next telemetry data submission in: 7 days, 0:00:00.005316
+2020-07-16 19:03:11	INFO	::casa	CASA Version  5.6.0-60  
+2020-07-16 19:05:12	INFO	tclean::::	
+2020-07-16 19:05:12	INFO	tclean::::+	##########################################
+2020-07-16 19:05:12	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-07-16 19:05:12	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="9",timerange="",
+2020-07-16 19:05:12	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-07-16 19:05:12	INFO	tclean::::+	        datacolumn="corrected",imagename="W51 North_spw=9_X7",imsize=1000,cell="0.05arcsec",phasecenter="",
+2020-07-16 19:05:12	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-07-16 19:05:12	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-07-16 19:05:12	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-07-16 19:05:12	INFO	tclean::::+	        psfphasecenter="",chanchunks=1,wprojplanes=1,vptable="",mosweight=True,
+2020-07-16 19:05:12	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-07-16 19:05:12	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-07-16 19:05:12	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-07-16 19:05:12	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="natural",
+2020-07-16 19:05:12	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=100000,
+2020-07-16 19:05:12	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-07-16 19:05:12	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-07-16 19:05:12	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-07-16 19:05:12	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-07-16 19:05:12	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-07-16 19:05:12	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-07-16 19:05:12	INFO	tclean::::	Verifying Input Parameters
+2020-07-16 19:05:13	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :9 | [Opened in readonly mode]
+2020-07-16 19:05:18	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-07-16 19:05:18	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)	Leap second table TAI_UTC seems out-of-date.
+2020-07-16 19:05:18	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	Until the table is updated (see the CASA documentation or your system admin),
+2020-07-16 19:05:18	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	times and coordinates derived from UTC could be wrong by 1s or more.
+2020-07-16 19:05:20	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51 North_spw=9_X7] : 
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.36897e+10 Hz
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 1024
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 1.59993e+07 Hz
+2020-07-16 19:05:21	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.36817e+10 Hz, upper edge = 2.36977e+10 Hz
+2020-07-16 19:05:21	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-07-16 19:05:21	INFO	SynthesisImagerVi2::defineImage 	Shape : [1000, 1000, 1, 1024]Spectral : [2.36817e+10] at [0] with increment [15624.4]
+2020-07-16 19:05:21	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51 North_spw=9_X7] with ftmachine : gridft
+2020-07-16 19:05:21	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Natural weighting
+2020-07-16 19:05:21	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-07-16 19:05:21	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :9 | [Opened in readonly mode]
+2020-07-16 19:05:25	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-07-16 19:05:26	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51 North_spw=9_X7] : hogbom
+2020-07-16 19:05:26	INFO	SynthesisIterBot::setupIteration 	Set Iteration Control Options
+2020-07-16 19:05:26	INFO	task_tclean::SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-07-16 19:05:26	SEVERE	tclean::task_tclean::	Exception from task_tclean : Error in making PSF : Cannot open existing image : W51 North_spw=9_X7.psf : Error in opening Image : W51 North_spw=9_X7.psf
+2020-07-16 19:05:26	SEVERE	tclean::::	An error occurred running task tclean.
+2020-07-16 19:05:54	INFO	tclean::::	
+2020-07-16 19:05:54	INFO	tclean::::+	##########################################
+2020-07-16 19:05:54	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-07-16 19:05:54	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="9",timerange="",
+2020-07-16 19:05:54	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-07-16 19:05:54	INFO	tclean::::+	        datacolumn="corrected",imagename="W51 North_spw=9_X8",imsize=1000,cell="0.05arcsec",phasecenter="",
+2020-07-16 19:05:54	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-07-16 19:05:54	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-07-16 19:05:54	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-07-16 19:05:54	INFO	tclean::::+	        psfphasecenter="",chanchunks=1,wprojplanes=1,vptable="",mosweight=True,
+2020-07-16 19:05:54	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-07-16 19:05:54	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-07-16 19:05:54	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-07-16 19:05:54	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="natural",
+2020-07-16 19:05:54	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=100000,
+2020-07-16 19:05:54	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-07-16 19:05:54	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-07-16 19:05:54	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-07-16 19:05:54	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-07-16 19:05:54	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-07-16 19:05:54	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-07-16 19:05:54	INFO	tclean::::	Verifying Input Parameters
+2020-07-16 19:05:54	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :9 | [Opened in readonly mode]
+2020-07-16 19:05:57	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-07-16 19:05:58	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51 North_spw=9_X8] : 
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.36897e+10 Hz
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 1024
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 1.59993e+07 Hz
+2020-07-16 19:05:59	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.36817e+10 Hz, upper edge = 2.36977e+10 Hz
+2020-07-16 19:05:59	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-07-16 19:05:59	INFO	SynthesisImagerVi2::defineImage 	Shape : [1000, 1000, 1, 1024]Spectral : [2.36817e+10] at [0] with increment [15624.4]
+2020-07-16 19:05:59	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51 North_spw=9_X8] with ftmachine : gridft
+2020-07-16 19:05:59	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Natural weighting
+2020-07-16 19:05:59	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-07-16 19:05:59	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :9 | [Opened in readonly mode]
+2020-07-16 19:06:02	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-07-16 19:06:03	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51 North_spw=9_X8] : hogbom
+2020-07-16 19:06:03	INFO	SynthesisIterBot::setupIteration 	Set Iteration Control Options
+2020-07-16 19:06:03	INFO	task_tclean::SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------

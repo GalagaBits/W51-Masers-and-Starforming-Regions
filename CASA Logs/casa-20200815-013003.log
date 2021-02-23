@@ -1,0 +1,544 @@
+2020-08-15 01:30:09	INFO	::casa	
+2020-08-15 01:30:09	INFO	::casa	Checking telemetry submission interval
+2020-08-15 01:30:09	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-d216c1f62701f0267.stamp
+2020-08-15 01:30:09	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-08-15 01:30:09	INFO	::casa	Next telemetry data submission in: 6 days, 23:59:59.999449
+2020-08-15 01:30:09	INFO	::casa	CASA Version  5.6.0-60  
+2020-08-15 01:30:38	INFO	tclean::::	
+2020-08-15 01:30:38	INFO	tclean::::+	##########################################
+2020-08-15 01:30:38	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-08-15 01:30:38	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="17",timerange="",
+2020-08-15 01:30:38	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-08-15 01:30:38	INFO	tclean::::+	        datacolumn="corrected",imagename="W51North_spw_17",imsize=1000,cell="0.05arcsec",phasecenter="",
+2020-08-15 01:30:38	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-08-15 01:30:38	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-08-15 01:30:38	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-08-15 01:30:38	INFO	tclean::::+	        psfphasecenter="",chanchunks=10,wprojplanes=1,vptable="",mosweight=True,
+2020-08-15 01:30:38	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-08-15 01:30:38	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-08-15 01:30:38	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-08-15 01:30:38	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="natural",
+2020-08-15 01:30:38	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=100000,
+2020-08-15 01:30:38	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-08-15 01:30:38	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-08-15 01:30:38	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-08-15 01:30:38	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-08-15 01:30:38	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-08-15 01:30:38	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-08-15 01:30:38	INFO	tclean::::	Verifying Input Parameters
+2020-08-15 01:30:40	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :17 | [Opened in readonly mode]
+2020-08-15 01:30:43	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-08-15 01:30:43	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)	Leap second table TAI_UTC seems out-of-date.
+2020-08-15 01:30:43	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	Until the table is updated (see the CASA documentation or your system admin),
+2020-08-15 01:30:43	SEVERE	MeasTable::dUTC(Double) (file ../../measures/Measures/MeasTable.cc, line 4290)+	times and coordinates derived from UTC could be wrong by 1s or more.
+2020-08-15 01:30:44	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51North_spw_17] : 
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.44685e+10 Hz
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 999959 Hz
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 128
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 1.27995e+08 Hz
+2020-08-15 01:30:45	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.44045e+10 Hz, upper edge = 2.45325e+10 Hz
+2020-08-15 01:30:45	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-08-15 01:30:45	INFO	SynthesisImagerVi2::defineImage 	Shape : [1000, 1000, 1, 128]Spectral : [2.4405e+10] at [0] with increment [999959]
+2020-08-15 01:30:45	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51North_spw_17] with ftmachine : gridft
+2020-08-15 01:30:45	INFO	SynthesisImager::createChanChunkImageStoreList	Creating 11 reference subCubes (channel chunks) for gridding 
+2020-08-15 01:30:45	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Natural weighting
+2020-08-15 01:30:45	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-08-15 01:30:45	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :17 | [Opened in readonly mode]
+2020-08-15 01:30:47	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-08-15 01:30:47	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51North_spw_17] : hogbom
+2020-08-15 01:30:47	INFO	SynthesisIterBot::setupIteration 	Set Iteration Control Options
+2020-08-15 01:30:47	INFO	task_tclean::SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-08-15 01:30:47	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 0
+2020-08-15 01:31:00	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 1
+2020-08-15 01:31:10	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 2
+2020-08-15 01:31:20	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 3
+2020-08-15 01:31:30	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 4
+2020-08-15 01:31:40	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 5
+2020-08-15 01:31:50	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 6
+2020-08-15 01:32:00	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 7
+2020-08-15 01:32:10	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 8
+2020-08-15 01:32:20	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 9
+2020-08-15 01:32:30	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 10
+2020-08-15 01:32:40	INFO	task_tclean::SIImageStore::calcSensitivity 	[W51North_spw_17] Theoretical sensitivity (Jy/bm):c0:none c1:none c2:none c3:none c4:none c5:none c6:none c7:0.000330352 c8:0.000330255 c9:0.000330194 c10:0.00033025 c11:0.000330281 c12:0.000330297 c13:0.000330325 c14:0.000330339 c15:0.000330332 c16:0.000330355 c17:0.000330381 c18:0.000330376 c19:0.000330373 c20:0.000330406 c21:0.000330475 c22:0.000330504 c23:0.000330566 c24:0.000330703 c25:0.000330843 c26:0.000330839 c27:0.000330884 c28:0.000330994 c29:0.000331103 c30:0.000331237 c31:0.000331346 c32:0.000331409 c33:0.000331481 c34:0.000331636 c35:0.000331938 c36:0.00033223 c37:0.000332418 c38:0.000332583 c39:0.000332747 c40:0.000332943 c41:0.000333086 c42:0.000333059 c43:0.00033316 c44:0.000333091 c45:0.000332995 c46:0.000332966 c47:0.00033279 c48:0.000332529 c49:0.000332493 c50:0.000332549 c51:0.000332494 c52:0.000332477 c53:0.000332479 c54:0.000332648 c55:0.000332848 c56:0.000332864 c57:0.000332876 c58:0.000332916 c59:0.000333041 c60:0.000333204 c61:0.000333174 c62:0.00033304 c63:0.000332694 c64:0.000332506 c65:0.000332247 c66:0.000331643 c67:0.000331127 c68:0.000330686 c69:0.000330374 c70:0.00033011 c71:0.000329868 c72:0.000329681 c73:0.000329586 c74:0.000329745 c75:0.000329546 c76:0.000329485 c77:0.000329465 c78:0.00032919 c79:0.000329052 c80:0.000328903 c81:0.000328828 c82:0.000328666 c83:0.000328479 c84:0.000328331 c85:0.000328168 c86:0.000327934 c87:0.000327832 c88:0.000327692 c89:0.000327628 c90:0.000327607 c91:0.000327564 c92:0.000327524 c93:0.000327472 c94:0.000327481 c95:0.000327401 c96:0.000327378 c97:0.0003274 c98:0.00032744 c99:0.00032744 c100:0.000327402 c101:0.000327375 c102:0.000327391 c103:0.000327505 c104:0.000327549 c105:0.000327639 c106:0.000327835 c107:0.000328039 c108:0.000328389 c109:0.000328796 c110:0.00032906 c111:0.000329522 c112:0.000330076 c113:0.000330701 c114:0.00033125 c115:0.000331723 c116:0.000332242 c117:0.000332868 c118:0.000333569 c119:0.000334308 c120:0.000335328 c121:0.000336403 c122:none c123:none c124:none c125:none c126:none c127:none 
+2020-08-15 01:32:42	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C122:P0] [C123:P0] [C124:P0] [C125:P0] [C126:P0] [C127:P0] 
+2020-08-15 01:32:42	INFO	task_tclean::SIImageStore::printBeamSet 	Restoring Beams 
+2020-08-15 01:32:42	INFO	task_tclean::SIImageStore::printBeamSet +	Pol   Type Chan        Freq   Vel
+2020-08-15 01:32:42	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Max    0 2.44050e+10 -8990    0.1299 arcsec x    0.0704 arcsec pa= 43.6298 deg
+2020-08-15 01:32:42	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Min  121 2.45260e+10 -10521    0.1293 arcsec x    0.0698 arcsec pa= 43.4022 deg
+2020-08-15 01:32:42	INFO	task_tclean::SIImageStore::printBeamSet +	  I Median   17 2.44220e+10 -9206    0.1297 arcsec x    0.0702 arcsec pa= 43.4385 deg
+2020-08-15 01:32:42	INFO	task_tclean::SynthesisImagerVi2::makePrimaryBeam 	vi2 : Evaluating Primary Beam model onto image grid(s)
+2020-08-15 01:32:56	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run Major Cycle 1 -------------------------------------
+2020-08-15 01:32:56	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 0
+2020-08-15 01:33:06	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 1
+2020-08-15 01:33:15	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 2
+2020-08-15 01:33:24	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 3
+2020-08-15 01:33:33	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 4
+2020-08-15 01:33:42	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 5
+2020-08-15 01:33:50	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 6
+2020-08-15 01:34:00	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 7
+2020-08-15 01:34:09	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 8
+2020-08-15 01:34:18	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 9
+2020-08-15 01:34:27	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 10
+2020-08-15 01:34:40	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C122:P0] [C123:P0] [C124:P0] [C125:P0] [C126:P0] [C127:P0] 
+2020-08-15 01:34:46	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Peak residual (max,min) over full image : (0.0167958,-0.0104661)
+2020-08-15 01:34:48	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Total Model Flux : 0
+2020-08-15 01:35:00	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[W51North_spw_17] Initializing new mask to 1.0 for the full image
+2020-08-15 01:35:01	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[W51North_spw_17] Number of pixels in the clean mask : 1.28e+08 out of a total of 1.28e+08 pixels. [ 100 % ]
+2020-08-15 01:35:09	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C122:P0] [C123:P0] [C124:P0] [C125:P0] [C126:P0] [C127:P0] 
+2020-08-15 01:35:14	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Peak residual (max,min) within mask : (0.0167958,-0.0104661) over full image : (0.0167958,-0.0104661)
+2020-08-15 01:35:15	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Total Model Flux : 0
+2020-08-15 01:35:26	INFO	task_tclean::SynthesisDeconvolver::executeMinorCycle 	---------------------------------------------------- Run Minor Cycle Iterations  ---------------------------------------------
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17] Run Hogbom minor-cycle on 128 chans | CycleThreshold=0.00420821, CycleNiter=100000, Gain=0.1
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C0] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C1] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C2] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C3] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C4] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C5] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C6] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:35:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C7] iters=0->947 [947], model=0->0.161988, peakres=0.0130305->0.00420803, Reached cyclethreshold.
+2020-08-15 01:35:30	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C8] iters=947->1921 [974], model=0->0.166786, peakres=0.0126764->0.00420548, Reached cyclethreshold.
+2020-08-15 01:35:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C9] iters=1921->2894 [973], model=0->0.143325, peakres=0.0119485->0.00483172, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:34	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C10] iters=2894->3874 [980], model=0->0.129502, peakres=0.0127784->0.00420625, Reached cyclethreshold.
+2020-08-15 01:35:36	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C11] iters=3874->4834 [960], model=0->0.123822, peakres=0.0135166->0.00420486, Reached cyclethreshold.
+2020-08-15 01:35:38	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C12] iters=4834->5787 [953], model=0->0.136957, peakres=0.0144401->0.00436453, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C13] iters=5787->6740 [953], model=0->0.156156, peakres=0.0144391->0.00420462, Reached cyclethreshold.
+2020-08-15 01:35:42	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C14] iters=6740->7690 [950], model=0->0.135414, peakres=0.0136324->0.00423361, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:44	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C15] iters=7690->8628 [938], model=0->0.157852, peakres=0.0128556->0.0042865, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:46	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C16] iters=8628->9591 [963], model=0->0.140638, peakres=0.0130497->0.00420507, Reached cyclethreshold.
+2020-08-15 01:35:49	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C17] iters=9591->10557 [966], model=0->0.148546, peakres=0.0135442->0.00499632, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:51	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C18] iters=10557->11545 [988], model=0->0.156017, peakres=0.0136694->0.00482193, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C19] iters=11545->12554 [1009], model=0->0.153753, peakres=0.0137912->0.00447608, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C20] iters=12554->13542 [988], model=0->0.150027, peakres=0.0145832->0.00458653, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:35:57	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C21] iters=13542->14484 [942], model=0->0.143788, peakres=0.0149112->0.00420776, Reached cyclethreshold.
+2020-08-15 01:35:59	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C22] iters=14484->15470 [986], model=0->0.150845, peakres=0.0137912->0.00420812, Reached cyclethreshold.
+2020-08-15 01:36:01	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C23] iters=15470->16459 [989], model=0->0.1659, peakres=0.0137367->0.00420699, Reached cyclethreshold.
+2020-08-15 01:36:03	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C24] iters=16459->17447 [988], model=0->0.165962, peakres=0.01398->0.0042065, Reached cyclethreshold.
+2020-08-15 01:36:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C25] iters=17447->18457 [1010], model=0->0.138271, peakres=0.0131023->0.0042082, Reached cyclethreshold.
+2020-08-15 01:36:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C26] iters=18457->19482 [1025], model=0->0.131352, peakres=0.0124227->0.00422485, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:10	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C27] iters=19482->20498 [1016], model=0->0.140212, peakres=0.0130579->0.00420702, Reached cyclethreshold.
+2020-08-15 01:36:12	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C28] iters=20498->21549 [1051], model=0->0.135588, peakres=0.0134396->0.00434822, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C29] iters=21549->22605 [1056], model=0->0.155822, peakres=0.0137151->0.00420763, Reached cyclethreshold.
+2020-08-15 01:36:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C30] iters=22605->23664 [1059], model=0->0.145319, peakres=0.0136362->0.0045075, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C31] iters=23664->24703 [1039], model=0->0.148194, peakres=0.0127583->0.0042055, Reached cyclethreshold.
+2020-08-15 01:36:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C32] iters=24703->25711 [1008], model=0->0.123953, peakres=0.0133975->0.00474334, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C33] iters=25711->26737 [1026], model=0->0.113135, peakres=0.0137388->0.00420661, Reached cyclethreshold.
+2020-08-15 01:36:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C34] iters=26737->27803 [1066], model=0->0.13241, peakres=0.013485->0.00420631, Reached cyclethreshold.
+2020-08-15 01:36:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C35] iters=27803->28914 [1111], model=0->0.137689, peakres=0.0135117->0.00475549, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:30	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C36] iters=28914->29989 [1075], model=0->0.17181, peakres=0.0142626->0.00509782, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C37] iters=29989->31058 [1069], model=0->0.145977, peakres=0.0144803->0.00453967, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:34	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C38] iters=31058->32081 [1023], model=0->0.146574, peakres=0.0137313->0.00455633, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:37	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C39] iters=32081->33148 [1067], model=0->0.123745, peakres=0.0134833->0.00435577, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:39	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C40] iters=33148->34275 [1127], model=0->0.139366, peakres=0.0135442->0.00424445, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C41] iters=34275->35424 [1149], model=0->0.16052, peakres=0.0126772->0.00420773, Reached cyclethreshold.
+2020-08-15 01:36:44	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C42] iters=35424->36519 [1095], model=0->0.142307, peakres=0.0131229->0.00421353, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:46	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C43] iters=36519->37573 [1054], model=0->0.130259, peakres=0.0144756->0.00420471, Reached cyclethreshold.
+2020-08-15 01:36:48	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C44] iters=37573->38642 [1069], model=0->0.120225, peakres=0.014447->0.00420537, Reached cyclethreshold.
+2020-08-15 01:36:51	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C45] iters=38642->39763 [1121], model=0->0.11239, peakres=0.0139685->0.00420812, Reached cyclethreshold.
+2020-08-15 01:36:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C46] iters=39763->40892 [1129], model=0->0.0960327, peakres=0.0142758->0.00420482, Reached cyclethreshold.
+2020-08-15 01:36:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C47] iters=40892->41968 [1076], model=0->0.116921, peakres=0.0134549->0.00473551, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:36:57	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C48] iters=41968->43005 [1037], model=0->0.13824, peakres=0.0131012->0.00479982, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:00	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C49] iters=43005->44067 [1062], model=0->0.133981, peakres=0.0130034->0.00512511, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:02	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C50] iters=44067->45123 [1056], model=0->0.145277, peakres=0.0134805->0.00420707, Reached cyclethreshold.
+2020-08-15 01:37:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C51] iters=45123->46198 [1075], model=0->0.118888, peakres=0.0139593->0.00420393, Reached cyclethreshold.
+2020-08-15 01:37:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C52] iters=46198->47270 [1072], model=0->0.126862, peakres=0.0133782->0.0042062, Reached cyclethreshold.
+2020-08-15 01:37:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C53] iters=47270->48355 [1085], model=0->0.138586, peakres=0.0134674->0.0042072, Reached cyclethreshold.
+2020-08-15 01:37:11	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C54] iters=48355->49434 [1079], model=0->0.15266, peakres=0.0135273->0.00420785, Reached cyclethreshold.
+2020-08-15 01:37:13	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C55] iters=49434->50521 [1087], model=0->0.144789, peakres=0.013551->0.00420794, Reached cyclethreshold.
+2020-08-15 01:37:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C56] iters=50521->51596 [1075], model=0->0.11778, peakres=0.0136106->0.00429814, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C57] iters=51596->52720 [1124], model=0->0.0976204, peakres=0.0124542->0.00420664, Reached cyclethreshold.
+2020-08-15 01:37:20	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C58] iters=52720->53871 [1151], model=0->0.108153, peakres=0.012586->0.00443599, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C59] iters=53871->54956 [1085], model=0->0.108243, peakres=0.0129553->0.00420715, Reached cyclethreshold.
+2020-08-15 01:37:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C60] iters=54956->56055 [1099], model=0->0.0850605, peakres=0.0126431->0.00449764, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C61] iters=56055->57163 [1108], model=0->0.0861752, peakres=0.0127928->0.00420718, Reached cyclethreshold.
+2020-08-15 01:37:30	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C62] iters=57163->58288 [1125], model=0->0.0987732, peakres=0.0140067->0.00425914, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C63] iters=58288->59412 [1124], model=0->0.0742173, peakres=0.0153019->0.00448537, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:34	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C64] iters=59412->60549 [1137], model=0->0.0826149, peakres=0.0161948->0.00420527, Reached cyclethreshold.
+2020-08-15 01:37:37	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C65] iters=60549->61648 [1099], model=0->0.0993031, peakres=0.0144247->0.00420457, Reached cyclethreshold.
+2020-08-15 01:37:39	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C66] iters=61648->62693 [1045], model=0->0.139365, peakres=0.012139->0.00420521, Reached cyclethreshold.
+2020-08-15 01:37:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C67] iters=62693->63773 [1080], model=0->0.145527, peakres=0.0131834->0.00420681, Reached cyclethreshold.
+2020-08-15 01:37:43	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C68] iters=63773->64807 [1034], model=0->0.133155, peakres=0.0141001->0.00420626, Reached cyclethreshold.
+2020-08-15 01:37:46	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C69] iters=64807->65842 [1035], model=0->0.115277, peakres=0.0139468->0.00420752, Reached cyclethreshold.
+2020-08-15 01:37:48	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C70] iters=65842->66927 [1085], model=0->0.0987342, peakres=0.0142727->0.00420776, Reached cyclethreshold.
+2020-08-15 01:37:50	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C71] iters=66927->68033 [1106], model=0->0.0806637, peakres=0.0148398->0.00420578, Reached cyclethreshold.
+2020-08-15 01:37:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C72] iters=68033->69108 [1075], model=0->0.0969209, peakres=0.0144219->0.00420722, Reached cyclethreshold.
+2020-08-15 01:37:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C73] iters=69108->70148 [1040], model=0->0.12179, peakres=0.0135961->0.0042042, Reached cyclethreshold.
+2020-08-15 01:37:57	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C74] iters=70148->71205 [1057], model=0->0.118862, peakres=0.0130195->0.00436755, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:37:59	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C75] iters=71205->72241 [1036], model=0->0.0906642, peakres=0.0138246->0.0042081, Reached cyclethreshold.
+2020-08-15 01:38:02	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C76] iters=72241->73285 [1044], model=0->0.0945104, peakres=0.0143906->0.00467969, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C77] iters=73285->74312 [1027], model=0->0.107324, peakres=0.0138188->0.0042071, Reached cyclethreshold.
+2020-08-15 01:38:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C78] iters=74312->75302 [990], model=0->0.0811892, peakres=0.0134274->0.00451073, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C79] iters=75302->76287 [985], model=0->0.0750345, peakres=0.0149773->0.00420371, Reached cyclethreshold.
+2020-08-15 01:38:10	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C80] iters=76287->77306 [1019], model=0->0.0877357, peakres=0.0157703->0.00420506, Reached cyclethreshold.
+2020-08-15 01:38:12	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C81] iters=77306->78288 [982], model=0->0.0896666, peakres=0.0142455->0.0042034, Reached cyclethreshold.
+2020-08-15 01:38:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C82] iters=78288->79255 [967], model=0->0.100458, peakres=0.0142518->0.00448099, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C83] iters=79255->80241 [986], model=0->0.0678173, peakres=0.0156642->0.00420576, Reached cyclethreshold.
+2020-08-15 01:38:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C84] iters=80241->81245 [1004], model=0->0.0935976, peakres=0.0159668->0.00420759, Reached cyclethreshold.
+2020-08-15 01:38:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C85] iters=81245->82230 [985], model=0->0.109792, peakres=0.0153273->0.00425771, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C86] iters=82230->83195 [965], model=0->0.100113, peakres=0.0153047->0.00420772, Reached cyclethreshold.
+2020-08-15 01:38:25	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C87] iters=83195->84205 [1010], model=0->0.103494, peakres=0.0146128->0.00445172, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C88] iters=84205->85220 [1015], model=0->0.0800231, peakres=0.0138494->0.00420699, Reached cyclethreshold.
+2020-08-15 01:38:30	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C89] iters=85220->86243 [1023], model=0->0.0764831, peakres=0.0140007->0.00420788, Reached cyclethreshold.
+2020-08-15 01:38:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C90] iters=86243->87258 [1015], model=0->0.112478, peakres=0.0136682->0.00420787, Reached cyclethreshold.
+2020-08-15 01:38:34	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C91] iters=87258->88247 [989], model=0->0.122682, peakres=0.0133128->0.00420719, Reached cyclethreshold.
+2020-08-15 01:38:36	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C92] iters=88247->89217 [970], model=0->0.133105, peakres=0.0136529->0.00420799, Reached cyclethreshold.
+2020-08-15 01:38:38	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C93] iters=89217->90177 [960], model=0->0.109512, peakres=0.0139642->0.00420632, Reached cyclethreshold.
+2020-08-15 01:38:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C94] iters=90177->91201 [1024], model=0->0.111885, peakres=0.0146106->0.00425083, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:43	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C95] iters=91201->92254 [1053], model=0->0.0941992, peakres=0.015077->0.00420957, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:45	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C96] iters=92254->93305 [1051], model=0->0.0787458, peakres=0.0149816->0.00420591, Reached cyclethreshold.
+2020-08-15 01:38:47	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C97] iters=93305->94386 [1081], model=0->0.0845826, peakres=0.0144667->0.00420682, Reached cyclethreshold.
+2020-08-15 01:38:50	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C98] iters=94386->95587 [1201], model=0->0.132107, peakres=0.014368->0.00439722, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C99] iters=95587->97081 [1494], model=0->0.122899, peakres=0.0149816->0.00440605, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:38:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C100] iters=97081->98763 [1682], model=0->0.0806027, peakres=0.0158198->0.00420724, Reached cyclethreshold.
+2020-08-15 01:38:59	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C101] iters=98763->100229 [1466], model=0->0.0849974, peakres=0.0167906->0.00424321, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:02	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C102] iters=100229->101391 [1162], model=0->0.102271, peakres=0.0167958->0.00420809, Reached cyclethreshold.
+2020-08-15 01:39:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C103] iters=101391->102449 [1058], model=0->0.10902, peakres=0.0162914->0.00454327, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C104] iters=102449->103479 [1030], model=0->0.0773484, peakres=0.0153228->0.00420794, Reached cyclethreshold.
+2020-08-15 01:39:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C105] iters=103479->104513 [1034], model=0->0.0736175, peakres=0.0143638->0.00420774, Reached cyclethreshold.
+2020-08-15 01:39:11	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C106] iters=104513->105577 [1064], model=0->0.0663028, peakres=0.0143431->0.0042071, Reached cyclethreshold.
+2020-08-15 01:39:13	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C107] iters=105577->106697 [1120], model=0->0.0932017, peakres=0.0145257->0.00435605, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C108] iters=106697->107876 [1179], model=0->0.0993381, peakres=0.0146278->0.00436363, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C109] iters=107876->109097 [1221], model=0->0.118429, peakres=0.0135278->0.00438599, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:21	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C110] iters=109097->110326 [1229], model=0->0.117034, peakres=0.0135366->0.00420799, Reached cyclethreshold.
+2020-08-15 01:39:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C111] iters=110326->111561 [1235], model=0->0.0883998, peakres=0.0142567->0.005021, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:26	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C112] iters=111561->112829 [1268], model=0->0.0366616, peakres=0.0148739->0.00420662, Reached cyclethreshold.
+2020-08-15 01:39:29	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C113] iters=112829->114116 [1287], model=0->0.0396679, peakres=0.0141387->0.0045326, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C114] iters=114116->115443 [1327], model=0->0.0761607, peakres=0.013738->0.00420611, Reached cyclethreshold.
+2020-08-15 01:39:34	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C115] iters=115443->116764 [1321], model=0->0.104745, peakres=0.0138192->0.00421736, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:37	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C116] iters=116764->118149 [1385], model=0->0.0899933, peakres=0.0145234->0.00420725, Reached cyclethreshold.
+2020-08-15 01:39:40	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C117] iters=118149->119551 [1402], model=0->0.053192, peakres=0.0155076->0.0043816, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:43	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C118] iters=119551->120991 [1440], model=0->0.0662474, peakres=0.0153288->0.00469274, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:47	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C119] iters=120991->122549 [1558], model=0->0.0668769, peakres=0.0144578->0.00446368, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:50	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C120] iters=122549->124100 [1551], model=0->0.10336, peakres=0.013571->0.00522133, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C121] iters=124100->125600 [1500], model=0->0.0912524, peakres=0.0130043->0.00460176, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C122] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C123] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C124] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C125] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C126] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17:C127] iters=125600->125600 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 01:39:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_17] Total model flux (over all planes) : 13.2017     Peak Residual (over all planes) : 0.00522133 in C120:P0
+2020-08-15 01:39:53	INFO	task_tclean::SIIterBot_state::mergeCycleExecutionRecord 	Completed 125600 iterations.
+2020-08-15 01:39:54	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run (Last) Major Cycle 2 -------------------------------------
+2020-08-15 01:39:54	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 0
+2020-08-15 01:40:08	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 1
+2020-08-15 01:40:24	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 2
+2020-08-15 01:40:40	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 3
+2020-08-15 01:40:56	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 4
+2020-08-15 01:41:12	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 5
+2020-08-15 01:41:27	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 6
+2020-08-15 01:41:43	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 7
+2020-08-15 01:41:59	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 8
+2020-08-15 01:42:16	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 9
+2020-08-15 01:42:32	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 10
+2020-08-15 01:42:54	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C122:P0] [C123:P0] [C124:P0] [C125:P0] [C126:P0] [C127:P0] 
+2020-08-15 01:43:00	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Peak residual (max,min) within mask : (0.00474822,-0.00436485) over full image : (0.00474822,-0.00436485)
+2020-08-15 01:43:00	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_17] Total Model Flux : 13.2017
+2020-08-15 01:43:11	INFO	tclean::::	Reached global stopping criterion : iteration limit
+2020-08-15 01:43:11	INFO	SDAlgorithmBase::restore 	[W51North_spw_17] : Restoring model image.
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 0 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 1 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 2 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 3 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 4 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:13	INFO	SIImageStore::restore 	Beam for chan : 5 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:14	INFO	SIImageStore::restore 	Beam for chan : 6 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:14	INFO	SIImageStore::restore 	Beam for chan : 7 : 0.12969 arcsec, 0.0702072 arcsec, 43.4279 deg
+2020-08-15 01:43:14	INFO	SIImageStore::restore 	Beam for chan : 8 : 0.12971 arcsec, 0.0702311 arcsec, 43.4299 deg
+2020-08-15 01:43:14	INFO	SIImageStore::restore 	Beam for chan : 9 : 0.129706 arcsec, 0.070228 arcsec, 43.4212 deg
+2020-08-15 01:43:15	INFO	SIImageStore::restore 	Beam for chan : 10 : 0.129696 arcsec, 0.0702153 arcsec, 43.4274 deg
+2020-08-15 01:43:15	INFO	SIImageStore::restore 	Beam for chan : 11 : 0.129698 arcsec, 0.0702168 arcsec, 43.431 deg
+2020-08-15 01:43:15	INFO	SIImageStore::restore 	Beam for chan : 12 : 0.129693 arcsec, 0.0702101 arcsec, 43.4315 deg
+2020-08-15 01:43:15	INFO	SIImageStore::restore 	Beam for chan : 13 : 0.129686 arcsec, 0.0702033 arcsec, 43.4232 deg
+2020-08-15 01:43:15	INFO	SIImageStore::restore 	Beam for chan : 14 : 0.129678 arcsec, 0.0701939 arcsec, 43.4173 deg
+2020-08-15 01:43:16	INFO	SIImageStore::restore 	Beam for chan : 15 : 0.129666 arcsec, 0.0701788 arcsec, 43.4237 deg
+2020-08-15 01:43:16	INFO	SIImageStore::restore 	Beam for chan : 16 : 0.129669 arcsec, 0.0701808 arcsec, 43.4325 deg
+2020-08-15 01:43:16	INFO	SIImageStore::restore 	Beam for chan : 17 : 0.129672 arcsec, 0.0701838 arcsec, 43.4385 deg
+2020-08-15 01:43:16	INFO	SIImageStore::restore 	Beam for chan : 18 : 0.129683 arcsec, 0.0701972 arcsec, 43.446 deg
+2020-08-15 01:43:17	INFO	SIImageStore::restore 	Beam for chan : 19 : 0.129681 arcsec, 0.0701955 arcsec, 43.4313 deg
+2020-08-15 01:43:17	INFO	SIImageStore::restore 	Beam for chan : 20 : 0.129666 arcsec, 0.0701775 arcsec, 43.4291 deg
+2020-08-15 01:43:17	INFO	SIImageStore::restore 	Beam for chan : 21 : 0.129655 arcsec, 0.070164 arcsec, 43.4308 deg
+2020-08-15 01:43:17	INFO	SIImageStore::restore 	Beam for chan : 22 : 0.129649 arcsec, 0.0701564 arcsec, 43.4338 deg
+2020-08-15 01:43:18	INFO	SIImageStore::restore 	Beam for chan : 23 : 0.129645 arcsec, 0.0701501 arcsec, 43.445 deg
+2020-08-15 01:43:18	INFO	SIImageStore::restore 	Beam for chan : 24 : 0.129636 arcsec, 0.0701387 arcsec, 43.4506 deg
+2020-08-15 01:43:18	INFO	SIImageStore::restore 	Beam for chan : 25 : 0.129629 arcsec, 0.0701303 arcsec, 43.4535 deg
+2020-08-15 01:43:18	INFO	SIImageStore::restore 	Beam for chan : 26 : 0.12963 arcsec, 0.0701309 arcsec, 43.4564 deg
+2020-08-15 01:43:18	INFO	SIImageStore::restore 	Beam for chan : 27 : 0.129621 arcsec, 0.0701196 arcsec, 43.4565 deg
+2020-08-15 01:43:19	INFO	SIImageStore::restore 	Beam for chan : 28 : 0.129611 arcsec, 0.0701075 arcsec, 43.458 deg
+2020-08-15 01:43:19	INFO	SIImageStore::restore 	Beam for chan : 29 : 0.129593 arcsec, 0.0700858 arcsec, 43.4585 deg
+2020-08-15 01:43:19	INFO	SIImageStore::restore 	Beam for chan : 30 : 0.129579 arcsec, 0.0700689 arcsec, 43.4588 deg
+2020-08-15 01:43:19	INFO	SIImageStore::restore 	Beam for chan : 31 : 0.129568 arcsec, 0.0700543 arcsec, 43.4656 deg
+2020-08-15 01:43:19	INFO	SIImageStore::restore 	Beam for chan : 32 : 0.129573 arcsec, 0.0700598 arcsec, 43.4719 deg
+2020-08-15 01:43:20	INFO	SIImageStore::restore 	Beam for chan : 33 : 0.129576 arcsec, 0.0700628 arcsec, 43.4739 deg
+2020-08-15 01:43:20	INFO	SIImageStore::restore 	Beam for chan : 34 : 0.129562 arcsec, 0.0700458 arcsec, 43.4728 deg
+2020-08-15 01:43:20	INFO	SIImageStore::restore 	Beam for chan : 35 : 0.129531 arcsec, 0.0700063 arcsec, 43.4913 deg
+2020-08-15 01:43:20	INFO	SIImageStore::restore 	Beam for chan : 36 : 0.129512 arcsec, 0.0699817 arcsec, 43.4989 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 37 : 0.129485 arcsec, 0.0699502 arcsec, 43.4966 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 38 : 0.129479 arcsec, 0.0699455 arcsec, 43.4757 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 39 : 0.129482 arcsec, 0.0699464 arcsec, 43.4926 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 40 : 0.129453 arcsec, 0.0699107 arcsec, 43.5026 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 41 : 0.129434 arcsec, 0.0698901 arcsec, 43.4809 deg
+2020-08-15 01:43:21	INFO	SIImageStore::restore 	Beam for chan : 42 : 0.129444 arcsec, 0.0698978 arcsec, 43.5113 deg
+2020-08-15 01:43:22	INFO	SIImageStore::restore 	Beam for chan : 43 : 0.129431 arcsec, 0.0698774 arcsec, 43.5495 deg
+2020-08-15 01:43:22	INFO	SIImageStore::restore 	Beam for chan : 44 : 0.129429 arcsec, 0.0698776 arcsec, 43.5327 deg
+2020-08-15 01:43:22	INFO	SIImageStore::restore 	Beam for chan : 45 : 0.12944 arcsec, 0.06989 arcsec, 43.5378 deg
+2020-08-15 01:43:22	INFO	SIImageStore::restore 	Beam for chan : 46 : 0.129438 arcsec, 0.069888 arcsec, 43.5332 deg
+2020-08-15 01:43:23	INFO	SIImageStore::restore 	Beam for chan : 47 : 0.129443 arcsec, 0.0698964 arcsec, 43.513 deg
+2020-08-15 01:43:23	INFO	SIImageStore::restore 	Beam for chan : 48 : 0.129463 arcsec, 0.069922 arcsec, 43.5092 deg
+2020-08-15 01:43:23	INFO	SIImageStore::restore 	Beam for chan : 49 : 0.12947 arcsec, 0.06993 arcsec, 43.5129 deg
+2020-08-15 01:43:23	INFO	SIImageStore::restore 	Beam for chan : 50 : 0.129462 arcsec, 0.0699197 arcsec, 43.5128 deg
+2020-08-15 01:43:24	INFO	SIImageStore::restore 	Beam for chan : 51 : 0.12945 arcsec, 0.0699058 arcsec, 43.5102 deg
+2020-08-15 01:43:24	INFO	SIImageStore::restore 	Beam for chan : 52 : 0.129438 arcsec, 0.0698938 arcsec, 43.4881 deg
+2020-08-15 01:43:24	INFO	SIImageStore::restore 	Beam for chan : 53 : 0.129446 arcsec, 0.0699056 arcsec, 43.4697 deg
+2020-08-15 01:43:24	INFO	SIImageStore::restore 	Beam for chan : 54 : 0.129425 arcsec, 0.0698813 arcsec, 43.4636 deg
+2020-08-15 01:43:24	INFO	SIImageStore::restore 	Beam for chan : 55 : 0.129409 arcsec, 0.0698622 arcsec, 43.4612 deg
+2020-08-15 01:43:25	INFO	SIImageStore::restore 	Beam for chan : 56 : 0.129411 arcsec, 0.0698665 arcsec, 43.4488 deg
+2020-08-15 01:43:25	INFO	SIImageStore::restore 	Beam for chan : 57 : 0.129401 arcsec, 0.0698519 arcsec, 43.4691 deg
+2020-08-15 01:43:25	INFO	SIImageStore::restore 	Beam for chan : 58 : 0.129402 arcsec, 0.0698525 arcsec, 43.4699 deg
+2020-08-15 01:43:25	INFO	SIImageStore::restore 	Beam for chan : 59 : 0.129414 arcsec, 0.0698673 arcsec, 43.4629 deg
+2020-08-15 01:43:25	INFO	SIImageStore::restore 	Beam for chan : 60 : 0.129393 arcsec, 0.0698428 arcsec, 43.4549 deg
+2020-08-15 01:43:26	INFO	SIImageStore::restore 	Beam for chan : 61 : 0.129396 arcsec, 0.0698431 arcsec, 43.4874 deg
+2020-08-15 01:43:26	INFO	SIImageStore::restore 	Beam for chan : 62 : 0.129417 arcsec, 0.0698674 arcsec, 43.499 deg
+2020-08-15 01:43:26	INFO	SIImageStore::restore 	Beam for chan : 63 : 0.129442 arcsec, 0.0698992 arcsec, 43.4826 deg
+2020-08-15 01:43:26	INFO	SIImageStore::restore 	Beam for chan : 64 : 0.129475 arcsec, 0.069939 arcsec, 43.4878 deg
+2020-08-15 01:43:27	INFO	SIImageStore::restore 	Beam for chan : 65 : 0.129496 arcsec, 0.0699612 arcsec, 43.5129 deg
+2020-08-15 01:43:27	INFO	SIImageStore::restore 	Beam for chan : 66 : 0.129511 arcsec, 0.0699786 arcsec, 43.5205 deg
+2020-08-15 01:43:27	INFO	SIImageStore::restore 	Beam for chan : 67 : 0.129543 arcsec, 0.0700187 arcsec, 43.508 deg
+2020-08-15 01:43:27	INFO	SIImageStore::restore 	Beam for chan : 68 : 0.129589 arcsec, 0.0700758 arcsec, 43.5009 deg
+2020-08-15 01:43:27	INFO	SIImageStore::restore 	Beam for chan : 69 : 0.12961 arcsec, 0.0701016 arcsec, 43.4971 deg
+2020-08-15 01:43:28	INFO	SIImageStore::restore 	Beam for chan : 70 : 0.129633 arcsec, 0.0701301 arcsec, 43.4956 deg
+2020-08-15 01:43:28	INFO	SIImageStore::restore 	Beam for chan : 71 : 0.129651 arcsec, 0.0701544 arcsec, 43.4774 deg
+2020-08-15 01:43:28	INFO	SIImageStore::restore 	Beam for chan : 72 : 0.129679 arcsec, 0.0701887 arcsec, 43.4748 deg
+2020-08-15 01:43:28	INFO	SIImageStore::restore 	Beam for chan : 73 : 0.129716 arcsec, 0.0702298 arcsec, 43.5061 deg
+2020-08-15 01:43:28	INFO	SIImageStore::restore 	Beam for chan : 74 : 0.129811 arcsec, 0.0703359 arcsec, 43.58 deg
+2020-08-15 01:43:29	INFO	SIImageStore::restore 	Beam for chan : 75 : 0.129871 arcsec, 0.0704048 arcsec, 43.6147 deg
+2020-08-15 01:43:29	INFO	SIImageStore::restore 	Beam for chan : 76 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:29	INFO	SIImageStore::restore 	Beam for chan : 77 : 0.129851 arcsec, 0.0703838 arcsec, 43.5858 deg
+2020-08-15 01:43:29	INFO	SIImageStore::restore 	Beam for chan : 78 : 0.129755 arcsec, 0.0702756 arcsec, 43.5156 deg
+2020-08-15 01:43:30	INFO	SIImageStore::restore 	Beam for chan : 79 : 0.129723 arcsec, 0.0702386 arcsec, 43.5027 deg
+2020-08-15 01:43:30	INFO	SIImageStore::restore 	Beam for chan : 80 : 0.129713 arcsec, 0.0702252 arcsec, 43.5078 deg
+2020-08-15 01:43:30	INFO	SIImageStore::restore 	Beam for chan : 81 : 0.129711 arcsec, 0.0702214 arcsec, 43.5168 deg
+2020-08-15 01:43:30	INFO	SIImageStore::restore 	Beam for chan : 82 : 0.129705 arcsec, 0.0702159 arcsec, 43.5027 deg
+2020-08-15 01:43:31	INFO	SIImageStore::restore 	Beam for chan : 83 : 0.129715 arcsec, 0.0702325 arcsec, 43.4718 deg
+2020-08-15 01:43:31	INFO	SIImageStore::restore 	Beam for chan : 84 : 0.129736 arcsec, 0.0702579 arcsec, 43.4724 deg
+2020-08-15 01:43:31	INFO	SIImageStore::restore 	Beam for chan : 85 : 0.129766 arcsec, 0.0702913 arcsec, 43.4925 deg
+2020-08-15 01:43:31	INFO	SIImageStore::restore 	Beam for chan : 86 : 0.129768 arcsec, 0.0702928 arcsec, 43.5013 deg
+2020-08-15 01:43:31	INFO	SIImageStore::restore 	Beam for chan : 87 : 0.129767 arcsec, 0.0702921 arcsec, 43.4968 deg
+2020-08-15 01:43:32	INFO	SIImageStore::restore 	Beam for chan : 88 : 0.129784 arcsec, 0.070315 arcsec, 43.4833 deg
+2020-08-15 01:43:32	INFO	SIImageStore::restore 	Beam for chan : 89 : 0.129787 arcsec, 0.0703185 arcsec, 43.4803 deg
+2020-08-15 01:43:32	INFO	SIImageStore::restore 	Beam for chan : 90 : 0.129774 arcsec, 0.070304 arcsec, 43.4706 deg
+2020-08-15 01:43:32	INFO	SIImageStore::restore 	Beam for chan : 91 : 0.12977 arcsec, 0.0702997 arcsec, 43.4681 deg
+2020-08-15 01:43:32	INFO	SIImageStore::restore 	Beam for chan : 92 : 0.129764 arcsec, 0.0702938 arcsec, 43.4582 deg
+2020-08-15 01:43:33	INFO	SIImageStore::restore 	Beam for chan : 93 : 0.129782 arcsec, 0.0703137 arcsec, 43.4743 deg
+2020-08-15 01:43:33	INFO	SIImageStore::restore 	Beam for chan : 94 : 0.129779 arcsec, 0.07031 arcsec, 43.4698 deg
+2020-08-15 01:43:33	INFO	SIImageStore::restore 	Beam for chan : 95 : 0.12979 arcsec, 0.0703237 arcsec, 43.4718 deg
+2020-08-15 01:43:33	INFO	SIImageStore::restore 	Beam for chan : 96 : 0.129786 arcsec, 0.0703211 arcsec, 43.4563 deg
+2020-08-15 01:43:33	INFO	SIImageStore::restore 	Beam for chan : 97 : 0.129783 arcsec, 0.0703166 arcsec, 43.458 deg
+2020-08-15 01:43:34	INFO	SIImageStore::restore 	Beam for chan : 98 : 0.129778 arcsec, 0.0703106 arcsec, 43.4603 deg
+2020-08-15 01:43:34	INFO	SIImageStore::restore 	Beam for chan : 99 : 0.129784 arcsec, 0.0703162 arcsec, 43.4673 deg
+2020-08-15 01:43:34	INFO	SIImageStore::restore 	Beam for chan : 100 : 0.129799 arcsec, 0.0703358 arcsec, 43.4597 deg
+2020-08-15 01:43:34	INFO	SIImageStore::restore 	Beam for chan : 101 : 0.129807 arcsec, 0.0703457 arcsec, 43.4575 deg
+2020-08-15 01:43:34	INFO	SIImageStore::restore 	Beam for chan : 102 : 0.129819 arcsec, 0.0703599 arcsec, 43.4624 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 103 : 0.129802 arcsec, 0.0703391 arcsec, 43.4683 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 104 : 0.129798 arcsec, 0.0703351 arcsec, 43.4566 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 105 : 0.129805 arcsec, 0.0703432 arcsec, 43.4604 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 106 : 0.129791 arcsec, 0.0703239 arcsec, 43.4793 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 107 : 0.129781 arcsec, 0.0703113 arcsec, 43.4816 deg
+2020-08-15 01:43:35	INFO	SIImageStore::restore 	Beam for chan : 108 : 0.129756 arcsec, 0.0702817 arcsec, 43.4722 deg
+2020-08-15 01:43:36	INFO	SIImageStore::restore 	Beam for chan : 109 : 0.129753 arcsec, 0.0702777 arcsec, 43.4823 deg
+2020-08-15 01:43:36	INFO	SIImageStore::restore 	Beam for chan : 110 : 0.129734 arcsec, 0.070258 arcsec, 43.4541 deg
+2020-08-15 01:43:36	INFO	SIImageStore::restore 	Beam for chan : 111 : 0.129703 arcsec, 0.0702191 arcsec, 43.4616 deg
+2020-08-15 01:43:36	INFO	SIImageStore::restore 	Beam for chan : 112 : 0.129664 arcsec, 0.0701717 arcsec, 43.4562 deg
+2020-08-15 01:43:36	INFO	SIImageStore::restore 	Beam for chan : 113 : 0.129637 arcsec, 0.0701394 arcsec, 43.4514 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 114 : 0.129599 arcsec, 0.0700952 arcsec, 43.4393 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 115 : 0.129568 arcsec, 0.07006 arcsec, 43.4191 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 116 : 0.129543 arcsec, 0.070037 arcsec, 43.3584 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 117 : 0.129525 arcsec, 0.0700146 arcsec, 43.3656 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 118 : 0.129503 arcsec, 0.0699826 arcsec, 43.4126 deg
+2020-08-15 01:43:37	INFO	SIImageStore::restore 	Beam for chan : 119 : 0.129467 arcsec, 0.0699355 arcsec, 43.4369 deg
+2020-08-15 01:43:38	INFO	SIImageStore::restore 	Beam for chan : 120 : 0.129398 arcsec, 0.0698544 arcsec, 43.4128 deg
+2020-08-15 01:43:38	INFO	SIImageStore::restore 	Beam for chan : 121 : 0.129334 arcsec, 0.0697789 arcsec, 43.4022 deg
+2020-08-15 01:43:38	INFO	SIImageStore::restore 	Beam for chan : 122 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:38	INFO	SIImageStore::restore 	Beam for chan : 123 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:38	INFO	SIImageStore::restore 	Beam for chan : 124 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:39	INFO	SIImageStore::restore 	Beam for chan : 125 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:39	INFO	SIImageStore::restore 	Beam for chan : 126 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:39	INFO	SIImageStore::restore 	Beam for chan : 127 : 0.129903 arcsec, 0.0704418 arcsec, 43.6298 deg
+2020-08-15 01:43:40	INFO	tclean::::	##### End Task: tclean               #####
+2020-08-15 01:43:40	INFO	tclean::::+	##########################################
+2020-08-15 01:50:56	INFO	tclean::::	
+2020-08-15 01:50:56	INFO	tclean::::+	##########################################
+2020-08-15 01:50:56	INFO	tclean::::+	##### Begin Task: tclean             #####
+2020-08-15 01:50:56	INFO	tclean::::	tclean(vis="/orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms",selectdata=True,field="3",spw="15",timerange="",
+2020-08-15 01:50:56	INFO	tclean::::+	        uvrange="",antenna="",scan="",observation="",intent="",
+2020-08-15 01:50:56	INFO	tclean::::+	        datacolumn="corrected",imagename="W51North_spw_15",imsize=1000,cell="0.05arcsec",phasecenter="",
+2020-08-15 01:50:56	INFO	tclean::::+	        stokes="I",projection="SIN",startmodel="",specmode="cube",reffreq="",
+2020-08-15 01:50:56	INFO	tclean::::+	        nchan=-1,start="",width="",outframe="",veltype="radio",
+2020-08-15 01:50:56	INFO	tclean::::+	        restfreq=[],interpolation="linear",perchanweightdensity=True,gridder="standard",facets=1,
+2020-08-15 01:50:56	INFO	tclean::::+	        psfphasecenter="",chanchunks=10,wprojplanes=1,vptable="",mosweight=True,
+2020-08-15 01:50:56	INFO	tclean::::+	        aterm=True,psterm=False,wbawp=True,conjbeams=False,cfcache="",
+2020-08-15 01:50:56	INFO	tclean::::+	        usepointing=False,computepastep=360.0,rotatepastep=360.0,pointingoffsetsigdev=0.0,pblimit=0.1,
+2020-08-15 01:50:56	INFO	tclean::::+	        normtype="flatnoise",deconvolver="hogbom",scales=[],nterms=2,smallscalebias=0.0,
+2020-08-15 01:50:56	INFO	tclean::::+	        restoration=True,restoringbeam=[],pbcor=False,outlierfile="",weighting="natural",
+2020-08-15 01:50:56	INFO	tclean::::+	        robust=0.5,noise="1.0Jy",npixels=0,uvtaper=[],niter=100000,
+2020-08-15 01:50:56	INFO	tclean::::+	        gain=0.1,threshold=0.0,nsigma=0.0,cycleniter=-1,cyclefactor=1.0,
+2020-08-15 01:50:56	INFO	tclean::::+	        minpsffraction=0.05,maxpsffraction=0.8,interactive=False,usemask="user",mask="",
+2020-08-15 01:50:56	INFO	tclean::::+	        pbmask=0.0,sidelobethreshold=3.0,noisethreshold=5.0,lownoisethreshold=1.5,negativethreshold=0.0,
+2020-08-15 01:50:56	INFO	tclean::::+	        smoothfactor=1.0,minbeamfrac=0.3,cutthreshold=0.01,growiterations=75,dogrowprune=True,
+2020-08-15 01:50:56	INFO	tclean::::+	        minpercentchange=-1.0,verbose=False,fastnoise=True,restart=True,savemodel="none",
+2020-08-15 01:50:56	INFO	tclean::::+	        calcres=True,calcpsf=True,parallel=False)
+2020-08-15 01:50:56	INFO	tclean::::	Verifying Input Parameters
+2020-08-15 01:50:56	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :15 | [Opened in readonly mode]
+2020-08-15 01:50:58	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-08-15 01:50:58	INFO	SynthesisImagerVi2::defineImage 	Define image coordinates for [W51North_spw_15] : 
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs	 phaseCenter='Direction: [0.345613, -0.904272, 0.250687]'  Channels equidistant in freq
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs+	 Central frequency (in output frame) = 2.42005e+10 Hz
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs+	 Width of central channel (in output frame) = 15624.4 Hz
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs+	 Number of channels = 512
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs+	 Total width of SPW (in output frame) = 7.99967e+06 Hz
+2020-08-15 01:50:59	INFO	MSTransformRegridder::calcChanFreqs+	 Lower edge = 2.41965e+10 Hz, upper edge = 2.42045e+10 Hz
+2020-08-15 01:50:59	INFO	SynthesisImagerVi2::defineImage 	Impars : start 
+2020-08-15 01:50:59	INFO	SynthesisImagerVi2::defineImage 	Shape : [1000, 1000, 1, 512]Spectral : [2.41965e+10] at [0] with increment [15624.4]
+2020-08-15 01:50:59	INFO	SynthesisImagerVi2::defineImage 	Set Gridding options for [W51North_spw_15] with ftmachine : gridft
+2020-08-15 01:50:59	INFO	SynthesisImager::createChanChunkImageStoreList	Creating 11 reference subCubes (channel chunks) for gridding 
+2020-08-15 01:50:59	INFO	SynthesisImagerVi2::weight() 	Set imaging weights : Natural weighting
+2020-08-15 01:50:59	INFO	SynthesisImager::tuneSelectData 	Tuning frequency data selection to match image spectral coordinates
+2020-08-15 01:50:59	INFO	SynthesisImagerVi2::selectData 	MS : /orange/adamginsburg/w51/vla/19A-254/derod/19A-254_2019_08_02_T15_20_05.733/19A-254.sb36820841.eb37001660.58697.18583002315.ms | Selecting on fields : 3 | Selecting on spw :15 | [Opened in readonly mode]
+2020-08-15 01:51:01	INFO	SynthesisImagerVi2::selectData 	  NRows selected : 323100
+2020-08-15 01:51:01	INFO	task_tclean::SynthesisDeconvolver::setupDeconvolution 	Set Deconvolution Options for [W51North_spw_15] : hogbom
+2020-08-15 01:51:01	INFO	SynthesisIterBot::setupIteration 	Set Iteration Control Options
+2020-08-15 01:51:01	INFO	task_tclean::SynthesisImager::makePSF 	----------------------------------------------------------- Make PSF ---------------------------------------------
+2020-08-15 01:51:02	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 0
+2020-08-15 01:51:25	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 1
+2020-08-15 01:51:52	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 2
+2020-08-15 01:52:18	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 3
+2020-08-15 01:52:45	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 4
+2020-08-15 01:53:12	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 5
+2020-08-15 01:53:39	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 6
+2020-08-15 01:54:07	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 7
+2020-08-15 01:54:34	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 8
+2020-08-15 01:55:01	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 9
+2020-08-15 01:55:21	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 10
+2020-08-15 01:55:42	INFO	task_tclean::SIImageStore::calcSensitivity 	[W51North_spw_15] Theoretical sensitivity (Jy/bm):c0:none c1:none c2:none c3:none c4:none c5:none c6:none c7:none c8:none c9:none c10:none c11:none c12:none c13:none c14:none c15:none c16:none c17:none c18:none c19:none c20:none c21:none c22:none c23:none c24:none c25:none c26:0.00231019 c27:0.00230601 c28:0.00230205 c29:0.00230626 c30:0.0023059 c31:0.00230151 c32:0.00229866 c33:0.00229632 c34:0.00229589 c35:0.00229505 c36:0.00229486 c37:0.00229273 c38:0.0022868 c39:0.00228812 c40:0.00229209 c41:0.00229014 c42:0.00228521 c43:0.0022858 c44:0.00228568 c45:0.00228543 c46:0.00228721 c47:0.00228474 c48:0.00228064 c49:0.00228772 c50:0.00229023 c51:0.00228762 c52:0.00228608 c53:0.00228171 c54:0.00227635 c55:0.00228445 c56:0.00228619 c57:0.00228442 c58:0.00228277 c59:0.0022778 c60:0.00227857 c61:0.0022802 c62:0.00228015 c63:0.0022792 c64:0.00227718 c65:0.002282 c66:0.00228641 c67:0.0022859 c68:0.00228432 c69:0.00228444 c70:0.00228352 c71:0.00227813 c72:0.00227692 c73:0.00227908 c74:0.00227639 c75:0.00227686 c76:0.00228118 c77:0.00228329 c78:0.0022819 c79:0.00228188 c80:0.00228104 c81:0.00227546 c82:0.00227899 c83:0.00227949 c84:0.00227666 c85:0.00227686 c86:0.00228291 c87:0.00228663 c88:0.00228725 c89:0.00228323 c90:0.00227485 c91:0.00227772 c92:0.00227844 c93:0.00227763 c94:0.00227644 c95:0.00227906 c96:0.00228393 c97:0.00228322 c98:0.00227708 c99:0.00227416 c100:0.00227606 c101:0.00227931 c102:0.0022793 c103:0.00228026 c104:0.00228057 c105:0.00227881 c106:0.00228096 c107:0.00228275 c108:0.0022852 c109:0.00228769 c110:0.00228605 c111:0.00228288 c112:0.00228411 c113:0.00228789 c114:0.00228652 c115:0.0022842 c116:0.00228585 c117:0.00228482 c118:0.00228098 c119:0.00227643 c120:0.00227936 c121:0.00227927 c122:0.0022776 c123:0.00227759 c124:0.00227993 c125:0.00228189 c126:0.00228229 c127:0.00228266 c128:0.00228074 c129:0.00227684 c130:0.00228353 c131:0.00228945 c132:0.00228896 c133:0.00228213 c134:0.00227922 c135:0.00227963 c136:0.00228059 c137:0.00227785 c138:0.00227824 c139:0.00228044 c140:0.00228447 c141:0.00228558 c142:0.00228398 c143:0.00228169 c144:0.0022782 c145:0.00228312 c146:0.00228409 c147:0.00228064 c148:0.00228278 c149:0.00228263 c150:0.00227978 c151:0.00228094 c152:0.00228421 c153:0.00228451 c154:0.00228426 c155:0.00228542 c156:0.00228589 c157:0.00228323 c158:0.00228661 c159:0.00228701 c160:0.00228187 c161:0.00228078 c162:0.00228311 c163:0.00228348 c164:0.00228346 c165:0.00228378 c166:0.00228282 c167:0.00227862 c168:0.00227794 c169:0.00228068 c170:0.00227976 c171:0.00227909 c172:0.00227789 c173:0.00227527 c174:0.00227359 c175:0.0022753 c176:0.00227617 c177:0.00228051 c178:0.00228515 c179:0.00228627 c180:0.00228418 c181:0.00228075 c182:0.0022836 c183:0.00228269 c184:0.00227671 c185:0.00227627 c186:0.00227929 c187:0.00228649 c188:0.00228589 c189:0.00228478 c190:0.00228479 c191:0.00228519 c192:0.00228415 c193:0.00228327 c194:0.00228957 c195:0.00229015 c196:0.0022854 c197:0.00228019 c198:0.00227806 c199:0.00227515 c200:0.00227214 c201:0.00227293 c202:0.00227596 c203:0.0022781 c204:0.00228262 c205:0.00228455 c206:0.00228456 c207:0.00228418 c208:0.00228435 c209:0.00228644 c210:0.00228457 c211:0.00227802 c212:0.00227889 c213:0.00228068 c214:0.00228482 c215:0.00228301 c216:0.00227903 c217:0.00228127 c218:0.00228157 c219:0.00227989 c220:0.00227771 c221:0.00227784 c222:0.00227641 c223:0.0022737 c224:0.00227532 c225:0.00228264 c226:0.00228527 c227:0.00228419 c228:0.00228472 c229:0.00228534 c230:0.00228127 c231:0.00228026 c232:0.00228329 c233:0.00228463 c234:0.0022845 c235:0.00228489 c236:0.00228437 c237:0.00228196 c238:0.0022846 c239:0.0022842 c240:0.00228164 c241:0.00227838 c242:0.00227516 c243:0.00227424 c244:0.00227219 c245:0.00227837 c246:0.00228412 c247:0.00228102 c248:0.00227572 c249:0.00227825 c250:0.00228033 c251:0.00228178 c252:0.00228132 c253:0.00228579 c254:0.00228736 c255:0.00228517 c256:0.00228332 c257:0.00228651 c258:0.00228679 c259:0.00228575 c260:0.00228101 c261:0.00227657 c262:0.00227497 c263:0.00227206 c264:0.00227494 c265:0.00228097 c266:0.00228424 c267:0.0022828 c268:0.00228206 c269:0.00228402 c270:0.00228527 c271:0.00228524 c272:0.00228509 c273:0.00228392 c274:0.00228168 c275:0.00227935 c276:0.00227849 c277:0.00228197 c278:0.00228407 c279:0.0022841 c280:0.00228338 c281:0.00228374 c282:0.00228397 c283:0.00228257 c284:0.00228625 c285:0.0022874 c286:0.00228392 c287:0.00228663 c288:0.00228752 c289:0.00228449 c290:0.00228341 c291:0.00228214 c292:0.00228113 c293:0.00228134 c294:0.00227963 c295:0.00227997 c296:0.00228281 c297:0.00228367 c298:0.00228149 c299:0.00227756 c300:0.00227777 c301:0.00227831 c302:0.00227332 c303:0.0022743 c304:0.00227597 c305:0.00227706 c306:0.00227805 c307:0.00227985 c308:0.00228297 c309:0.00228213 c310:0.00228149 c311:0.00227991 c312:0.00227678 c313:0.00227822 c314:0.00227933 c315:0.00229124 c316:0.00229166 c317:0.00228373 c318:0.00228026 c319:0.00228132 c320:0.00227854 c321:0.00228129 c322:0.00228504 c323:0.00228621 c324:0.00228429 c325:0.00228018 c326:0.00227931 c327:0.0022754 c328:0.00227375 c329:0.00228263 c330:0.00228499 c331:0.00228284 c332:0.00228398 c333:0.00228422 c334:0.00228426 c335:0.00228626 c336:0.00228603 c337:0.00228353 c338:0.00228085 c339:0.00228057 c340:0.00228172 c341:0.00228601 c342:0.00228894 c343:0.00229222 c344:0.00229213 c345:0.00228299 c346:0.00228262 c347:0.00228161 c348:0.00227722 c349:0.00227878 c350:0.0022831 c351:0.00228283 c352:0.0022823 c353:0.00228359 c354:0.00228223 c355:0.00228165 c356:0.00228505 c357:0.00228441 c358:0.00228321 c359:0.00228191 c360:0.00227745 c361:0.00227831 c362:0.00228256 c363:0.00228208 c364:0.00228262 c365:0.00228712 c366:0.00228844 c367:0.0022876 c368:0.00229203 c369:0.00229273 c370:0.0022857 c371:0.00228293 c372:0.00228005 c373:0.0022819 c374:0.00228435 c375:0.00228676 c376:0.00228629 c377:0.00228427 c378:0.00228659 c379:0.00228669 c380:0.00228326 c381:0.00228052 c382:0.00228326 c383:0.00228652 c384:0.00228443 c385:0.0022791 c386:0.00228002 c387:0.00228764 c388:0.0022889 c389:0.00228398 c390:0.00228023 c391:0.00228135 c392:0.00228309 c393:0.00228371 c394:0.00228417 c395:0.00228471 c396:0.00228529 c397:0.00228458 c398:0.00228586 c399:0.00228823 c400:0.0022848 c401:0.00227835 c402:0.0022779 c403:0.002276 c404:0.00228019 c405:0.00228204 c406:0.00227806 c407:0.00227741 c408:0.00228387 c409:0.00228735 c410:0.00228706 c411:0.00228488 c412:0.0022833 c413:0.00228575 c414:0.00228713 c415:0.00228489 c416:0.00228166 c417:0.0022846 c418:0.00228501 c419:0.00228135 c420:0.00228542 c421:0.00228756 c422:0.00228455 c423:0.00228232 c424:0.00228133 c425:0.00228099 c426:0.00228566 c427:0.00228717 c428:0.0022887 c429:0.00228844 c430:0.00228513 c431:0.00228353 c432:0.00228132 c433:0.00228375 c434:0.00228767 c435:0.00228687 c436:0.00228255 c437:0.00228292 c438:0.00228798 c439:0.00228899 c440:0.00228774 c441:0.00228504 c442:0.00228408 c443:0.00228241 c444:0.00228136 c445:0.0022858 c446:0.00228551 c447:0.00228505 c448:0.00228561 c449:0.00228512 c450:0.00228639 c451:0.00229386 c452:0.00229298 c453:0.00228747 c454:0.00228658 c455:0.0022888 c456:0.00228978 c457:0.00229043 c458:0.00228897 c459:0.00228077 c460:0.00228267 c461:0.00228733 c462:0.0022888 c463:0.00228918 c464:0.0022882 c465:0.00228401 c466:0.00228334 c467:0.00229042 c468:0.00229506 c469:0.00229587 c470:0.00229369 c471:0.00229919 c472:0.00230026 c473:0.0023022 c474:0.00230228 c475:0.0022959 c476:0.00229649 c477:0.00229741 c478:0.00229776 c479:0.00230652 c480:0.00230948 c481:0.00230906 c482:0.00230478 c483:0.00230389 c484:0.00231102 c485:0.00231344 c486:0.00231741 c487:none c488:none c489:none c490:none c491:none c492:none c493:none c494:none c495:none c496:none c497:none c498:none c499:none c500:none c501:none c502:none c503:none c504:none c505:none c506:none c507:none c508:none c509:none c510:none c511:none 
+2020-08-15 01:55:53	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-08-15 01:55:53	INFO	task_tclean::SIImageStore::printBeamSet 	Restoring Beams 
+2020-08-15 01:55:53	INFO	task_tclean::SIImageStore::printBeamSet +	Pol   Type Chan          Freq     Vel
+2020-08-15 01:55:53	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Max    0 2.4196469e+10 -6351.50    0.1317 arcsec x    0.0726 arcsec pa= 44.2838 deg
+2020-08-15 01:55:53	INFO	task_tclean::SIImageStore::printBeamSet +	  I    Min  486 2.4204062e+10 -6447.58    0.1313 arcsec x    0.0721 arcsec pa= 44.2618 deg
+2020-08-15 01:55:53	INFO	task_tclean::SIImageStore::printBeamSet +	  I Median  148 2.4198781e+10 -6380.76    0.1315 arcsec x    0.0724 arcsec pa= 44.2526 deg
+2020-08-15 01:55:54	INFO	task_tclean::SynthesisImagerVi2::makePrimaryBeam 	vi2 : Evaluating Primary Beam model onto image grid(s)
+2020-08-15 01:57:52	INFO	task_tclean::SynthesisImager::executeMajorCycle 	----------------------------------------------------------- Run Major Cycle 1 -------------------------------------
+2020-08-15 01:57:52	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 0
+2020-08-15 01:59:47	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 1
+2020-08-15 02:00:42	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 2
+2020-08-15 02:01:36	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 3
+2020-08-15 02:02:32	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 4
+2020-08-15 02:03:27	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 5
+2020-08-15 02:04:22	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 6
+2020-08-15 02:05:17	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 7
+2020-08-15 02:06:13	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 8
+2020-08-15 02:07:07	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 9
+2020-08-15 02:07:54	INFO	task_tclean::SynthesisImagerVi2::runMajorCycle2 	Running major cycle for chunk : 10
+2020-08-15 02:08:50	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-08-15 02:09:18	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_15] Peak residual (max,min) within mask : (0.0376333,-0.0342844) over full image : (0.0376333,-0.0342844)
+2020-08-15 02:09:19	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_15] Total Model Flux : -3.52108
+2020-08-15 02:10:05	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[W51North_spw_15] Initializing to existing mask
+2020-08-15 02:10:07	INFO	task_tclean::SynthesisDeconvolver::setupMask 	[W51North_spw_15] Number of pixels in the clean mask : 5.12e+08 out of a total of 5.12e+08 pixels. [ 100 % ]
+2020-08-15 02:10:41	WARN	task_tclean::SIImageStore::getPSFGaussian (file ../../synthesis/ImagerObjects/SIImageStore.cc, line 1895)	PSF is blank for[C0:P0] [C1:P0] [C2:P0] [C3:P0] [C4:P0] [C5:P0] [C6:P0] [C7:P0] [C8:P0] [C9:P0] [C10:P0] [C11:P0] [C12:P0] [C13:P0] [C14:P0] [C15:P0] [C16:P0] [C17:P0] [C18:P0] [C19:P0] [C20:P0] [C21:P0] [C22:P0] [C23:P0] [C24:P0] [C25:P0] [C487:P0] [C488:P0] [C489:P0] [C490:P0] [C491:P0] [C492:P0] [C493:P0] [C494:P0] [C495:P0] [C496:P0] [C497:P0] [C498:P0] [C499:P0] [C500:P0] [C501:P0] [C502:P0] [C503:P0] [C504:P0] [C505:P0] [C506:P0] [C507:P0] [C508:P0] [C509:P0] [C510:P0] [C511:P0] 
+2020-08-15 02:11:09	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_15] Peak residual (max,min) within mask : (0.0376333,-0.0342844) over full image : (0.0376333,-0.0342844)
+2020-08-15 02:11:11	INFO	task_tclean::SIImageStore::printImageStats 	[W51North_spw_15] Total Model Flux : -3.52108
+2020-08-15 02:11:55	INFO	task_tclean::SynthesisDeconvolver::executeMinorCycle 	---------------------------------------------------- Run Minor Cycle Iterations  ---------------------------------------------
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15] Run Hogbom minor-cycle on 512 chans | CycleThreshold=0.00932059, CycleNiter=100000, Gain=0.1
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C0] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C1] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C2] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C3] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C4] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C5] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C6] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C7] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C8] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C9] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C10] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C11] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C12] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C13] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C14] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:55	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C15] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C16] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C17] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C18] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C19] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C20] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C21] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C22] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C23] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C24] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C25] iters=0->0 [0], model=0->0, peakres=0->0, Reached cyclethreshold.
+2020-08-15 02:11:57	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C26] iters=0->460 [460], model=-0.483339->-0.513109, peakres=0.0126697->0.0111708, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:11:58	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C27] iters=460->819 [359], model=-0.0537777->-0.0326551, peakres=0.0130311->0.00992168, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:11:58	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C28] iters=819->1185 [366], model=0.213949->0.191656, peakres=0.0133259->0.0101177, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:11:59	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C29] iters=1185->1545 [360], model=-0.240497->-0.260926, peakres=0.0133501->0.0114768, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:00	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C30] iters=1545->1929 [384], model=-0.437516->-0.459143, peakres=0.0145225->0.0104888, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:01	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C31] iters=1929->2304 [375], model=-0.326086->-0.370031, peakres=0.0128048->0.0121067, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:02	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C32] iters=2304->2616 [312], model=-0.0679231->-0.0800643, peakres=0.0123292->0.0112104, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:03	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C33] iters=2616->2907 [291], model=-0.0177849->-0.0267829, peakres=0.0126264->0.0114891, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C34] iters=2907->3232 [325], model=0.0646969->0.0630331, peakres=0.0117988->0.00993662, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C35] iters=3232->3548 [316], model=-0.129348->-0.172615, peakres=0.0131067->0.00931414, Reached cyclethreshold.
+2020-08-15 02:12:05	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C36] iters=3548->3930 [382], model=-0.0144564->-0.00429233, peakres=0.0126832->0.0112224, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C37] iters=3930->4243 [313], model=-0.113197->-0.11451, peakres=0.0126229->0.0103668, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:06	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C38] iters=4243->4514 [271], model=-0.463509->-0.456038, peakres=0.0129236->0.00989644, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:07	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C39] iters=4514->4774 [260], model=-0.377207->-0.327806, peakres=0.0124003->0.0102824, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:07	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C40] iters=4774->5016 [242], model=-0.162366->-0.134106, peakres=0.0125489->0.0101211, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C41] iters=5016->5227 [211], model=0.188956->0.183588, peakres=0.0125056->0.0114387, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:08	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C42] iters=5227->5439 [212], model=0.108775->0.0925545, peakres=0.0117272->0.00972096, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C43] iters=5439->5666 [227], model=-0.215651->-0.248677, peakres=0.0123439->0.0119781, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C44] iters=5666->5885 [219], model=-0.150874->-0.211758, peakres=0.0131063->0.0102095, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:10	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C45] iters=5885->6080 [195], model=-0.107751->-0.11797, peakres=0.0114292->0.0110072, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:10	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C46] iters=6080->6277 [197], model=-0.123764->-0.137148, peakres=0.0117283->0.0108225, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:11	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C47] iters=6277->6470 [193], model=-0.12677->-0.131834, peakres=0.0124064->0.0103452, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:12	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C48] iters=6470->6744 [274], model=-0.0770557->-0.0942414, peakres=0.0128799->0.0104055, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:12	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C49] iters=6744->7036 [292], model=0.035528->0.0439377, peakres=0.0123083->0.0106948, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:13	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C50] iters=7036->7260 [224], model=0.0967448->0.100598, peakres=0.0118689->0.0110272, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:13	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C51] iters=7260->7462 [202], model=0.496304->0.48658, peakres=0.012141->0.00980647, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C52] iters=7462->7690 [228], model=0.131588->0.117147, peakres=0.01168->0.00960331, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C53] iters=7690->7880 [190], model=-0.293746->-0.30365, peakres=0.0115941->0.00980567, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C54] iters=7880->8056 [176], model=-0.245965->-0.251573, peakres=0.0117621->0.0110396, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C55] iters=8056->8237 [181], model=-0.275111->-0.312885, peakres=0.012475->0.0118554, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:15	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C56] iters=8237->8410 [173], model=0.0506317->0.0576965, peakres=0.0124686->0.0100762, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C57] iters=8410->8593 [183], model=-0.0505369->-0.0263932, peakres=0.0120725->0.0115181, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C58] iters=8593->8781 [188], model=-0.161894->-0.137262, peakres=0.0121386->0.0109795, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:16	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C59] iters=8781->8941 [160], model=-0.131052->-0.129425, peakres=0.0116324->0.0116289, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C60] iters=8941->9112 [171], model=-0.142796->-0.152926, peakres=0.0113954->0.0100646, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C61] iters=9112->9252 [140], model=-0.0307803->-0.0325886, peakres=0.0112433->0.0106928, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C62] iters=9252->9411 [159], model=-0.25227->-0.245324, peakres=0.0117061->0.0115221, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:18	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C63] iters=9411->9724 [313], model=0.364776->0.377928, peakres=0.013242->0.0131605, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:35	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C64] iters=9724->17781 [8057], model=0->-0.0722121, peakres=0.0233716->0.0127542, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:12:53	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C65] iters=17781->27396 [9615], model=0->0.0828407, peakres=0.0249198->0.0120483, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:13:12	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C66] iters=27396->37042 [9646], model=0->0.0394728, peakres=0.0271781->0.0123839, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:13:31	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C67] iters=37042->46728 [9686], model=0->-0.00211046, peakres=0.027704->0.0126621, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:13:50	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C68] iters=46728->56511 [9783], model=0->0.193204, peakres=0.0285737->0.0127601, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:14:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C69] iters=56511->66175 [9664], model=0->0.0692398, peakres=0.0253548->0.0122324, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:14:28	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C70] iters=66175->75694 [9519], model=0->0.118928, peakres=0.0256467->0.0130623, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:14:46	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C71] iters=75694->85217 [9523], model=0->0.0768864, peakres=0.0264753->0.0111422, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:15:05	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C72] iters=85217->94755 [9538], model=0->-0.171784, peakres=0.025771->0.0116292, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:15:24	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C73] iters=94755->104246 [9491], model=0->-0.182247, peakres=0.026125->0.0138211, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:15:42	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C74] iters=104246->113607 [9361], model=0->-0.309138, peakres=0.0264214->0.0118615, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:16:00	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C75] iters=113607->122776 [9169], model=0->-0.240361, peakres=0.0280287->0.0169808, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:16:19	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C76] iters=122776->132268 [9492], model=0->-0.0330282, peakres=0.0261734->0.0166468, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:16:38	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C77] iters=132268->141954 [9686], model=0->0.0655995, peakres=0.0279805->0.0123118, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:16:56	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C78] iters=141954->151214 [9260], model=0->-0.35207, peakres=0.0266421->0.0124972, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:17:14	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C79] iters=151214->160288 [9074], model=0->-0.0504341, peakres=0.0276777->0.0124614, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:17:32	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C80] iters=160288->169769 [9481], model=0->-0.177854, peakres=0.0270878->0.0130501, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:17:51	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C81] iters=169769->179301 [9532], model=0->-0.0320338, peakres=0.0283825->0.0138291, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:18:09	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C82] iters=179301->188551 [9250], model=0->-0.0159952, peakres=0.0267143->0.0150478, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:18:27	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C83] iters=188551->197867 [9316], model=0->0.0156227, peakres=0.0280233->0.0144453, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:18:46	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C84] iters=197867->207181 [9314], model=0->-0.0820431, peakres=0.025801->0.0150483, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:19:04	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C85] iters=207181->216579 [9398], model=0->0.0148111, peakres=0.0295288->0.0139005, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:19:23	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C86] iters=216579->226024 [9445], model=0->-0.133703, peakres=0.0281854->0.0126649, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:19:41	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C87] iters=226024->235345 [9321], model=0->-0.0904136, peakres=0.0253719->0.0139495, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:19:59	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C88] iters=235345->244595 [9250], model=0->-0.0453955, peakres=0.0263232->0.0140591, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:20:17	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C89] iters=244595->253823 [9228], model=0->-0.495136, peakres=0.0266622->0.0136111, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:20:36	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C90] iters=253823->263374 [9551], model=0->0.227171, peakres=0.0246103->0.0128073, Exited Hogbom minor cycle without reaching any stopping criterion.
+2020-08-15 02:20:54	INFO	task_tclean::SDAlgorithmBase::deconvolve 	[W51North_spw_15:C91] iters=263374->272732 [9358], model=0->0.0787351, peakres=0.0254162->0.0139445, Exited Hogbom minor cycle without reaching any stopping criterion.

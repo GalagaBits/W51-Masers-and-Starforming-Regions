@@ -1,0 +1,5 @@
+2020-06-25 04:16:05	INFO	::casa	
+2020-06-25 04:16:05	INFO	::casa	Checking telemetry submission interval
+2020-06-25 04:16:05	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-06-25 04:16:05	INFO	::casa	Next telemetry data submission in: 6 days, 15:16:44.737587
+2020-06-25 04:16:05	INFO	::casa	CASA Version  5.6.0-60  

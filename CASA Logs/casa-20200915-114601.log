@@ -1,0 +1,38 @@
+2020-09-15 11:46:07	INFO	::casa	
+2020-09-15 11:46:07	INFO	::casa	Checking telemetry submission interval
+2020-09-15 11:46:07	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-f01e82c836132f20d.stamp
+2020-09-15 11:46:07	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-09-15 11:46:07	INFO	::casa	Next telemetry data submission in: 6 days, 23:59:59.999094
+2020-09-15 11:46:07	INFO	::casa	CASA Version  5.6.0-60  
+2020-09-15 11:51:29	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename 
+2020-09-15 11:51:29	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2020-09-15 11:51:29	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-09-15 11:55:31	INFO	exportfits::::	
+2020-09-15 11:55:31	INFO	exportfits::::+	##########################################
+2020-09-15 11:55:31	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-09-15 11:55:31	INFO	exportfits::::	exportfits(imagename="W51North_spw_28.image",fitsimage="W51North_spw_28.fits",velocity=True,optical=False,bitpix=-32,
+2020-09-15 11:55:31	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-09-15 11:55:31	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-09-15 11:55:33	SEVERE	exportfits::image::tofits (file ../../tools/images/image_cmpt.cc, line 6211)	Exception Reported: Exception: File W51North_spw_28.fits exists, and the user does not want to remove it..
+2020-09-15 11:55:33	SEVERE	exportfits::image::tofits (file ../../tools/images/image_cmpt.cc, line 6211)+	... thrown by static void casa::ImageFactory::_checkOutfile(const casacore::String&, casacore::Bool) at File: ../../imageanalysis/ImageAnalysis/ImageFactory2.cc, line: 568
+2020-09-15 11:55:33	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-09-15 11:56:18	INFO	exportfits::::	
+2020-09-15 11:56:18	INFO	exportfits::::+	##########################################
+2020-09-15 11:56:18	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-09-15 11:56:18	INFO	exportfits::::	exportfits(imagename="W51North_spw_28.image",fitsimage="W51North_spw_28.fits",velocity=True,optical=False,bitpix=-32,
+2020-09-15 11:56:18	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=True,dropstokes=False,stokeslast=True,
+2020-09-15 11:56:18	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-09-15 11:56:19	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-09-15 11:56:19	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2020-09-15 11:56:40	INFO	exportfits::::	##### End Task: exportfits           #####
+2020-09-15 11:56:40	INFO	exportfits::::+	##########################################
+2020-09-15 12:22:11	INFO	exportfits::::	
+2020-09-15 12:22:11	INFO	exportfits::::+	##########################################
+2020-09-15 12:22:11	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-09-15 12:22:11	INFO	exportfits::::	exportfits(imagename="W51North_spw_21.image",fitsimage="W51North_spw_21.fits",velocity=True,optical=False,bitpix=-32,
+2020-09-15 12:22:11	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=True,dropstokes=False,stokeslast=True,
+2020-09-15 12:22:11	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-09-15 12:22:12	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-09-15 12:22:12	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2020-09-15 12:22:15	INFO	exportfits::::	##### End Task: exportfits           #####
+2020-09-15 12:22:15	INFO	exportfits::::+	##########################################

@@ -1,0 +1,19 @@
+2020-08-21 20:21:27	INFO	::casa	
+2020-08-21 20:21:27	INFO	::casa	Checking telemetry submission interval
+2020-08-21 20:21:27	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-2b41c528233230a38e.stamp
+2020-08-21 20:21:27	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-08-21 20:21:27	INFO	::casa	Next telemetry data submission in: 6 days, 23:59:59.997930
+2020-08-21 20:21:27	INFO	::casa	CASA Version  5.6.0-60  
+2020-08-21 20:22:26	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename 
+2020-08-21 20:22:26	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2020-08-21 20:22:26	SEVERE	exportfits::::	An error occurred running task exportfits.
+2020-08-21 20:23:13	INFO	exportfits::::	
+2020-08-21 20:23:13	INFO	exportfits::::+	##########################################
+2020-08-21 20:23:13	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2020-08-21 20:23:13	INFO	exportfits::::	exportfits(imagename="W51North_spw_48.image",fitsimage="W51North_spw_48.fits",velocity=False,optical=False,bitpix=-32,
+2020-08-21 20:23:13	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2020-08-21 20:23:13	INFO	exportfits::::+	        history=True,dropdeg=False)
+2020-08-21 20:23:14	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2020-08-21 20:23:14	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2020-08-21 20:23:24	INFO	exportfits::::	##### End Task: exportfits           #####
+2020-08-21 20:23:24	INFO	exportfits::::+	##########################################

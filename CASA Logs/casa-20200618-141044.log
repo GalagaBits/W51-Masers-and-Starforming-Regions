@@ -1,0 +1,12 @@
+2020-06-18 14:10:55	INFO	::casa	
+2020-06-18 14:10:55	INFO	::casa	Checking telemetry submission interval
+2020-06-18 14:10:55	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-06-18 14:10:55	INFO	::casa	Next telemetry data submission in: 5 days, 7:22:46.268438
+2020-06-18 14:10:55	INFO	::casa	CASA Version  5.6.0-60  
+2020-06-18 14:11:16	INFO	viewer::::	
+2020-06-18 14:11:16	INFO	viewer::::+	##########################################
+2020-06-18 14:11:16	INFO	viewer::::+	##### Begin Task: viewer             #####
+2020-06-18 14:11:16	INFO	viewer::::	viewer(infile="",displaytype="raster",channel=0,zoom=1,outfile="",
+2020-06-18 14:11:16	INFO	viewer::::+	        outscale=1.0,outdpi=300,outformat="jpg",outlandscape=False,gui=True)
+2020-06-18 14:11:30	INFO	viewer::::	##### End Task: viewer               #####
+2020-06-18 14:11:30	INFO	viewer::::+	##########################################
