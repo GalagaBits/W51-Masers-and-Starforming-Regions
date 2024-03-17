@@ -391,23 +391,23 @@ class HIIregion(object):
         pl.errorbar(self.nu.value, self.flux.to(u.mJy).value,
                     yerr=self.fluxerr.to(u.mJy).value,
                     zorder=10,
-                    fmt='s', markersize=3, alpha=0.75, **kwargs)
+                    fmt='s', markersize=6, alpha=0.75, **kwargs)
 
         self.physprops()
         if do_annotations:
             #pl.annotate("size (as): {0:0.2g}".format(self.srcsize), [annotation_xpos, .35],textcoords='axes fraction',xycoords='axes fraction')
             if hasattr(self, 'beta'):
-                pl.annotate("$\\beta$: {0:0.3g}".format(self.beta), [annotation_xpos, .4],textcoords='axes fraction',xycoords='axes fraction')
-                pl.annotate("$T_{{dust}}$: {0:0.2g} K".format(self.dustT), [annotation_xpos, .35],textcoords='axes fraction',xycoords='axes fraction')
+                pl.annotate("$\\beta$: {0:0.3g}".format(self.beta), [annotation_xpos, .4],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+                pl.annotate("$T_{{dust}}$: {0:0.2g} K".format(self.dustT), [annotation_xpos, .35],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
             elif hasattr(self, 'alpha'):
-                pl.annotate("$\\alpha$: {0:0.3g}".format(self.alpha), [annotation_xpos, .35],textcoords='axes fraction',xycoords='axes fraction')
+                pl.annotate("$\\alpha$: {0:0.3g}".format(self.alpha), [annotation_xpos, .35],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
 
-            pl.annotate("size (au): {0.value:0.2g}{0.unit:latex}".format(self.srcsize), [annotation_xpos, .3],textcoords='axes fraction',xycoords='axes fraction')
-            pl.annotate("mass (msun): {0.value:0.2g}{0.unit:latex}".format(self.mass), [annotation_xpos, .25],textcoords='axes fraction',xycoords='axes fraction')
-            pl.annotate("EM: {0.value:0.2g}{0.unit:latex}".format(self.em), [annotation_xpos, .2],textcoords='axes fraction',xycoords='axes fraction')
-            pl.annotate("Nu(Tau=1): {0:0.2g}".format(self.nutau), [annotation_xpos, .15],textcoords='axes fraction',xycoords='axes fraction')
-            pl.annotate("N(lyc): {0.value:0.2g}{0.unit:latex}".format(self.Nlyc), [annotation_xpos,.1],textcoords='axes fraction',xycoords='axes fraction')
-            pl.annotate("dens: {0.value:0.2g}{0.unit:latex}".format(self.dens), [annotation_xpos,.05],textcoords='axes fraction',xycoords='axes fraction')
+            pl.annotate("size (au): {0.value:0.2g}{0.unit:latex}".format(self.srcsize), [annotation_xpos, .3],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+            pl.annotate("mass (msun): {0.value:0.2g}{0.unit:latex}".format(self.mass), [annotation_xpos, .25],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+            pl.annotate("EM: {0.value:0.2g}{0.unit:latex}".format(self.em), [annotation_xpos, .2],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+            pl.annotate("Nu(Tau=1): {0:0.2g}".format(self.nutau), [annotation_xpos, .15],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+            pl.annotate("N(lyc): {0.value:0.2g}{0.unit:latex}".format(self.Nlyc), [annotation_xpos,.1],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
+            pl.annotate("dens: {0.value:0.2g}{0.unit:latex}".format(self.dens), [annotation_xpos,.05],textcoords='axes fraction',xycoords='axes fraction',fontsize=20)
 
     def physprops(self):
         """
