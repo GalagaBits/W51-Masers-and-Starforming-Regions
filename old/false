@@ -1,0 +1,6 @@
+2022-01-05 16:11:09 :: 20058 :: CASAStart :: Starting CASA at: 2022-01-05 16:11:09.247416 Version 5.7.0-134   Platform: Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-redhat-7.7-Maipo Variant: 
+2022-01-05 16:11:25 :: 20058 :: CASAStop :: Stopping CASA at: 2022-01-05 16:11:25.309441 Version 5.7.0-134   Platform: Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-redhat-7.7-Maipo Start time: 2022-01-05 16:11:09.247416 Variant: 
+2022-04-02 12:10:38 :: 33314 :: CASAStart :: Starting CASA at: 2022-04-02 12:10:38.960796 Version 5.7.0-134   Platform: Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-redhat-7.7-Maipo Variant: 
+2022-04-02 12:23:48 :: 33314 :: tcleantask_tclean :: Task tclean complete. Start time: 2022-04-02 12:19:17.026870 End time: 2022-04-02 12:23:48.666780
+2022-04-02 12:30:00 :: 33314 :: exportfits :: Task exportfits complete. Start time: 2022-04-02 12:29:56.538791 End time: 2022-04-02 12:30:00.020832
+2022-04-02 13:05:06 :: 33314 :: CASAStop :: Stopping CASA at: 2022-04-02 13:05:06.838864 Version 5.7.0-134   Platform: Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-redhat-7.7-Maipo Start time: 2022-04-02 12:10:38.960796 Variant: 

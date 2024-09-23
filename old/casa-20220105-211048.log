@@ -1,0 +1,7 @@
+2022-01-05 21:11:05	INFO	::casa	
+2022-01-05 21:11:05	INFO	::casa	Checking telemetry submission interval
+2022-01-05 21:11:05	INFO	::casa	Creating a new telemetry time stamp file./home/dealderod/.casa/telemetry-d2e21c527429c198.stamp
+2022-01-05 21:11:05	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2022-01-05 21:11:05	INFO	::casa	Next telemetry data submission in: 6 days, 23:59:59.996261
+2022-01-05 21:11:05	INFO	::casa	CASA Version  5.7.0-134  
+2022-01-05 21:11:09	INFO	::casa	
