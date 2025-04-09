@@ -1,0 +1,116 @@
+2024-10-04 18:42:29	INFO	::casa	
+2024-10-04 18:42:29	INFO	::casa	Checking telemetry submission interval
+2024-10-04 18:42:29	INFO	::casa	Telemetry submit interval reached, submitting telemetry data.
+2024-10-04 18:42:29	INFO	::casa	No telemetry files to submit.
+2024-10-04 18:42:29	INFO	::casa	CASA Version  5.7.0-134  
+2024-10-04 18:42:35	INFO	::casa	
+2024-10-04 18:54:40	INFO	exportfits::::	
+2024-10-04 18:54:40	INFO	exportfits::::+	##########################################
+2024-10-04 18:54:40	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 18:54:40	INFO	exportfits::::	exportfits(imagename="W51North_spw_6_corrected11_1.image",fitsimage="W51North_spw_6_corrected11_1_aug_02.image",velocity=False,optical=False,bitpix=-32,
+2024-10-04 18:54:40	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 18:54:40	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 18:54:44	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 18:54:45	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 18:54:47	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 18:54:47	INFO	exportfits::::+	##########################################
+2024-10-04 18:59:07	INFO	exportfits::::	
+2024-10-04 18:59:07	INFO	exportfits::::+	##########################################
+2024-10-04 18:59:07	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 18:59:07	INFO	exportfits::::	exportfits(imagename="W51North_spw_6_corrected11_1.image",fitsimage="W51North_spw_6_corrected11_1_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 18:59:07	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 18:59:07	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 18:59:08	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 18:59:08	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 18:59:10	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 18:59:10	INFO	exportfits::::+	##########################################
+2024-10-04 19:00:36	INFO	exportfits::::	
+2024-10-04 19:00:36	INFO	exportfits::::+	##########################################
+2024-10-04 19:00:36	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:00:36	INFO	exportfits::::	exportfits(imagename="W51North_spw_28_corrected31.image",fitsimage="W51North_spw_28_corrected31_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:00:36	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:00:36	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:00:40	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:00:40	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:00:42	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:00:42	INFO	exportfits::::+	##########################################
+2024-10-04 19:03:27	INFO	exportfits::::	
+2024-10-04 19:03:27	INFO	exportfits::::+	##########################################
+2024-10-04 19:03:27	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:03:28	INFO	exportfits::::	exportfits(imagename="W51North_spw_41_corrected2.image",fitsimage="W51North_spw_41_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:03:28	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:03:28	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:03:29	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:03:29	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:03:32	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:03:32	INFO	exportfits::::+	##########################################
+2024-10-04 19:04:24	INFO	exportfits::::	
+2024-10-04 19:04:24	INFO	exportfits::::+	##########################################
+2024-10-04 19:04:24	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:04:24	INFO	exportfits::::	exportfits(imagename="W51North_spw_44_corrected2.image",fitsimage="W51North_spw_44_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:04:24	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:04:24	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:04:25	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:04:25	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:04:27	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:04:27	INFO	exportfits::::+	##########################################
+2024-10-04 19:05:17	INFO	exportfits::::	
+2024-10-04 19:05:17	INFO	exportfits::::+	##########################################
+2024-10-04 19:05:17	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:05:17	INFO	exportfits::::	exportfits(imagename="W51North_spw_50_corrected2.image",fitsimage="W51North_spw_50_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:05:17	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:05:17	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:05:18	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:05:18	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:05:20	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:05:20	INFO	exportfits::::+	##########################################
+2024-10-04 19:06:04	INFO	exportfits::::	
+2024-10-04 19:06:04	INFO	exportfits::::+	##########################################
+2024-10-04 19:06:04	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:06:04	INFO	exportfits::::	exportfits(imagename="W51North_spw_56_corrected2.image",fitsimage="W51North_spw_56_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:06:04	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:06:04	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:06:04	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mymask1'
+2024-10-04 19:06:04	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:06:05	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:06:05	INFO	exportfits::::+	##########################################
+2024-10-04 19:07:11	INFO	exportfits::::	
+2024-10-04 19:07:11	INFO	exportfits::::+	##########################################
+2024-10-04 19:07:11	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:07:11	INFO	exportfits::::	exportfits(imagename="W51North_spw_53_corrected2.image",fitsimage="W51North_spw_53_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:07:11	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:07:11	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:07:14	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:07:14	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:07:18	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:07:18	INFO	exportfits::::+	##########################################
+2024-10-04 19:07:52	INFO	exportfits::::	
+2024-10-04 19:07:52	INFO	exportfits::::+	##########################################
+2024-10-04 19:07:52	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:07:52	INFO	exportfits::::	exportfits(imagename="W51North_spw_38_corrected6.image",fitsimage="W51North_spw_38_corrected6_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:07:52	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:07:52	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:07:52	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:07:52	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:07:54	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:07:54	INFO	exportfits::::+	##########################################
+2024-10-04 19:08:56	INFO	exportfits::::	
+2024-10-04 19:08:56	INFO	exportfits::::+	##########################################
+2024-10-04 19:08:56	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:08:57	INFO	exportfits::::	exportfits(imagename="W51North_spw_48_corrected2.image",fitsimage="W51North_spw_48_corrected2_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:08:57	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:08:57	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:08:58	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:08:58	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:09:01	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:09:01	INFO	exportfits::::+	##########################################
+2024-10-04 19:09:43	INFO	exportfits::::	
+2024-10-04 19:09:43	INFO	exportfits::::+	##########################################
+2024-10-04 19:09:43	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2024-10-04 19:09:43	INFO	exportfits::::	exportfits(imagename="W51North_spw_8_corrected21.image",fitsimage="W51North_spw_8_corrected21_aug_02.fits",velocity=False,optical=False,bitpix=-32,
+2024-10-04 19:09:43	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2024-10-04 19:09:43	INFO	exportfits::::+	        history=True,dropdeg=False)
+2024-10-04 19:09:43	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2024-10-04 19:09:43	INFO	exportfits::ImageFitsConverter::ImageHeaderToFITS 	Truncating miscinfo field useweightimage to useweigh
+2024-10-04 19:09:47	INFO	exportfits::::	##### End Task: exportfits           #####
+2024-10-04 19:09:47	INFO	exportfits::::+	##########################################
