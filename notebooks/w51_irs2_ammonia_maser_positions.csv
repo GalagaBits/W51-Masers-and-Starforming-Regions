@@ -1,4 +1,4 @@
-region,line,color,spw,channel,x_pix,y_pix,amplitude,amplitude_error,x_mean,x_mean_error,y_mean,y_mean_error
+source,line,color,spw,channel,x_pix,y_pix,amplitude,amplitude_error,x_mean,x_mean_error,y_mean,y_mean_error
 "CA3","(7,6)","tab:cyan",6,50,144,215,2.35845739e-01,2.535924575e-02,2.90917076e+02,8.806292325e-07,1.45182317e+01,8.653174454e-07
 "CA3","(7,6)","tab:cyan",6,59,144,215,2.586604639e-01,3.405496540e-02,2.909170772e+02,1.182598187e-06,1.451823226e+01,1.162035967e-06
 "CA3","(7,6)","tab:cyan",6,68,144,215,3.672272278e-01,4.305534102e-02,2.909170774e+02,1.495146673e-06,1.451823164e+01,1.469150071e-06
